@@ -1,0 +1,61 @@
+body {
+  margin: 0px;
+}
+
+.hero_img {
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+}
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(190, 13, 102);
+}
+.logo {
+  width: 120px;
+  cursor: pointer;
+  margin-left: 50px;
+  color: white;
+}
+
+.logo_link {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.2s;
+}
+
+.navbar ul li:hover:after {
+  width: 100%;
+}
