@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0px;
 }
@@ -62,5 +67,13 @@ body {
 
 .counters {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border-color: brown;
+  background-color: blue;
+  padding: 5px;
+  margin: 5px;
+}
+
+iframe {
 }
