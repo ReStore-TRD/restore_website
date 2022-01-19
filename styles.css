@@ -59,3 +59,8 @@ body {
 .navbar ul li:hover:after {
   width: 100%;
 }
+
+.counters {
+  display: flex;
+  justify-content: center;
+}
