@@ -121,6 +121,8 @@ body {
   border-style: solid none none none;
   border-color: rgba(129, 129, 129, 0.3);
   border-width: 1px;
+  position: relaative;
+  bottom: 0;
 }
 
 .footerLinks {
@@ -136,6 +138,54 @@ body {
 .footer li {
   text-decoration: none;
   list-style: none;
+}
+
+p.accordion {
+  background-color: rgba(212, 211, 211, 0.671);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom: 10px;
+}
+
+p.accordion.active,
+p.accordion:hover {
+  background-color: #ddd;
+}
+
+.faq {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.faq_title {
+  padding-bottom: 50px;
+}
+
+.faq p {
+  font-weight: bold;
+}
+
+div.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  margin-bottom: 10px;
+}
+
+div.panel.show {
+  opacity: 1;
+  max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 }
 
 p {
