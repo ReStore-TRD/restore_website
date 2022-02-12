@@ -124,6 +124,7 @@ body {
   border-width: 1px;
   position: absolute;
   bottom: 0;
+  border-bottom: 1px;
 }
 
 .footerLinks {
