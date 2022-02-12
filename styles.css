@@ -122,7 +122,7 @@ body {
   border-style: solid none none none;
   border-color: rgba(129, 129, 129, 0.3);
   border-width: 1px;
-  position: absolute;
+  position: relative;
   bottom: 0;
   border-bottom: 1px;
 }
