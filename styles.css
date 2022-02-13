@@ -81,7 +81,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
   z-index: 99;
 }
 
@@ -226,6 +225,13 @@ p.accordion:hover {
 
 .faq p {
   font-weight: bold;
+}
+
+.someContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 div.panel {
