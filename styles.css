@@ -46,7 +46,6 @@ body {
   align-items: center;
   gap: 60px;
 }
-
 .heroLeft h3 {
   font-size: 45px;
   line-height: 45px;
@@ -67,6 +66,7 @@ body {
   font-weight: 600;
   font-style: normal;
 }
+
 
 .banner {
   width: 100%;
@@ -258,3 +258,16 @@ a {
   text-decoration: none;
   color: hsl(340, 93%, 63%);
 }
+
+
+ .container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+.text1 {
+  font-size: 20px;
+  padding: 20px;
+}
+
