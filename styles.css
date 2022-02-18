@@ -274,9 +274,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width:100%;
+  height:auto;
+
 }
 
 .text1 {
-  font-size: 20px;
+  font-size: 1vw;
   padding: 20px;
 }
