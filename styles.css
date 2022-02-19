@@ -109,33 +109,46 @@ body {
 .block1 {
   display: flex;
   justify-content: space-evenly;
+  gap: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
-.block1 .textContent {
-}
-
-.block1 .imgContent {
+.text1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .block1img {
+  width: 50%;
+  object-fit: contain;
 }
 
 .block2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 80px;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.block2img {
+  width: 50%;
+  object-fit: contain;
+}
+
 .block3 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-}
-
-.block2img {
-  max-width: 30%;
-  max-height: 30%;
 }
 
 .block3img {
