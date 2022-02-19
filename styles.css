@@ -13,16 +13,16 @@ body {
 }
 
 .hero_img {
-  width: 100%;
   object-fit: contain;
+  width: 70%;
+  height: auto;
 }
 
 .heroDiv {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
-  background-color: aqua;
+  height: 90vh;
 }
 
 .banner {
@@ -34,7 +34,7 @@ body {
 }
 .navbar {
   width: 100%;
-  padding: 20px 0;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -106,29 +106,31 @@ body {
   border-radius: 2px;
 }
 
-.block1{
+.block1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.block1 .textContent {
+}
+
+.block1 .imgContent {
+}
+
+.block1img {
 }
 
 .block2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0 80px;
 }
 .block3 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-}
-
-.block1img {
-  max-width: 25%;
-  max-height: 25%;
 }
 
 .block2img {
@@ -140,7 +142,6 @@ body {
   max-width: 30%;
   max-height: 30%;
 }
-
 
 .paragraphs a {
   padding-top: 20px;
