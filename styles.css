@@ -157,15 +157,14 @@ body {
 }
 
 .footer {
+  flex-shrink: 0;
+  background-color:  rgba(212, 211, 211, 0.671) ;
   width: 100%;
-  height: 400px;
+  height: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 50px;
-  border-style: solid none none none;
-  border-color: rgba(129, 129, 129, 0.3);
-  border-width: 1px;
   position: relative;
   bottom: 0;
   border-bottom: 1px;
@@ -173,7 +172,7 @@ body {
 
 .footerLeft {
   width: 50%;
-  padding-left: 40px;
+  padding-left: 20px;
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -181,14 +180,15 @@ body {
 }
 
 .footerRight {
-  width: 50%;
   display: flex;
   justify-content: space-evenly;
   padding-top: 30px;
+  padding-right:20px;
+  float: right;
 }
 
 .footerRight .lines {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .footer a {
@@ -273,4 +273,26 @@ a {
 
 .text1 {
   font-size: 20px;
+}
+
+
+.fa {
+  min-width: 30px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: rgb(197, 177, 177);
+}
+
+.fa-instagram {  
+
+  color: white;  
+}  
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
 }
