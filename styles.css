@@ -150,18 +150,28 @@ body {
   border-radius: 2px;
 }
 
-.block1 {
+.block1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .block2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.block1img {
-  width: 500px;
+.block1 img {
+  max-width: 30%;
+  max-height: 30%;
 }
 
 .block2img {
-  height: 500px;
+  max-width: 30%;
+  max-height: 30%;
 }
 
 .paragraphs a {
@@ -295,5 +305,4 @@ a {
 
 .text1 {
   font-size: 20px;
-  padding: 20px;
 }
