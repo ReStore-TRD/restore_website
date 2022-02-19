@@ -12,61 +12,17 @@ body {
   flex-direction: column;
 }
 
-.heroImgContainer {
-  background-image: url(Images/restore.jpg);
-  width: 629px;
-  height: 629px;
+.hero_img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .heroDiv {
   display: flex;
-  width: 100%;
-  height: 600px;
-  margin: 0px;
-  margin-bottom: 100px;
-}
-
-.heroContent {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-.heroRight {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.heroLeft {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
-.heroLeft h3 {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.heroLeft h2 {
-  font-size: 64px;
-  line-height: 64px;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.heroLeft h1 {
-  font-size: 96px;
-  line-height: 96px;
-  font-weight: 600;
-  font-style: normal;
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
 }
 
 .banner {
@@ -83,7 +39,7 @@ body {
   align-items: center;
   justify-content: space-between;
   z-index: 99;
-  background-color: #ff00671a;
+  background-color: #948f8f1a;
 }
 
 .logo {
