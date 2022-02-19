@@ -163,16 +163,28 @@ body {
   align-items: center;
   padding: 20px;
 }
+.block3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-.block1 img {
-  max-width: 30%;
-  max-height: 30%;
+.block1img {
+  max-width: 25%;
+  max-height: 25%;
 }
 
 .block2img {
   max-width: 30%;
   max-height: 30%;
 }
+
+.block3img {
+  max-width: 30%;
+  max-height: 30%;
+}
+
 
 .paragraphs a {
   padding-top: 20px;
