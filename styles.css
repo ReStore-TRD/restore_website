@@ -164,32 +164,35 @@ body {
   height: 150px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   gap: 50px;
   position: relative;
   bottom: 0;
-  border-bottom: 1px;
+}
+
+.footer img{
+  max-width: 20% ;
+  max-height: 20% ;
 }
 
 .footerLeft {
-  width: 50%;
-  padding-left: 20px;
-  padding-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+}
+
+.footerLeft p {
+  font-size: 15px;
 }
 
 .footerRight {
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 30px;
-  padding-right:20px;
-  float: right;
+  flex-direction: column ;
 }
 
-.footerRight .lines {
-  padding-top: 10px;
+.footerRight p {
+  flex-shrink: 0;
+  font-size: 8px;
 }
 
 .footer a {
@@ -286,14 +289,16 @@ a {
 
 .fa-facebook {
   color: rgb(197, 177, 177);
+  display: block;
 }
 
 .fa-instagram {  
-
   color: white;  
+  display: block;
 }  
 
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
+
