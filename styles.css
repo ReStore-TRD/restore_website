@@ -1,7 +1,17 @@
+@font-face {
+  font-family: "Josefin Sans Light";
+  src: url("/Fonts/JosefinSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans Bold";
+  src: url("/Fonts/JosefinSans-Bold.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans Light";
 }
 
 body {
@@ -90,8 +100,7 @@ body {
 .counters {
   display: flex;
   justify-content: space-around;
-  padding: 5px;
-  margin: 5px;
+  padding: 0 20px;
 }
 
 .paragraphs {
@@ -102,22 +111,44 @@ body {
 .paragraphs h3 {
   padding-bottom: 20px;
   font-size: 28px;
-  border-color: aquamarine;
   border-radius: 2px;
+}
+
+.homepageBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  padding: 80px 80px;
 }
 
 .block1 {
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
 }
 
 .text1 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+}
+
+.text1 .textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text1 .textContent p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.text1 .textContent h1 {
+  font-size: 64px;
+  font-weight: 400;
 }
 
 .block1img {
@@ -129,8 +160,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
 }
 
 .text2 {
@@ -139,21 +168,65 @@ body {
   justify-content: end;
 }
 
+.text2 .textContent {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 20px;
+}
+
 .block2img {
   width: 50%;
   object-fit: contain;
 }
 
+.text2 .textContent p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.text2 .textContent h1 {
+  font-size: 64px;
+  font-weight: 400;
+}
+
 .block3 {
   display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.text3 {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
+  gap: 20px;
+  width: 50%;
+}
+
+.text3 .textContent p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.text3 .textContent h1 {
+  font-size: 64px;
+  font-weight: normal;
+}
+
+.img3Container {
+  display: flex;
+  width: 50%;
+  justify-content: center;
 }
 
 .block3img {
-  max-width: 30%;
-  max-height: 30%;
+  width: 70%;
+  object-fit: contain;
 }
 
 .paragraphs a {
