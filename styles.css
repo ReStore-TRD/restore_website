@@ -253,6 +253,7 @@ body {
   align-items: center;
   position: relative;
   bottom: 0;
+  opacity: 0.5;
 }
 
 
@@ -304,11 +305,11 @@ body {
 }
 
 .fa-facebook {
-  color: rgb(197, 177, 177);
+  color: black;
 }
 
 .fa-instagram {
-  color: rgb(197, 177, 177);
+  color: black;
 }
 
 .fa:hover {
