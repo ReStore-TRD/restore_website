@@ -177,45 +177,71 @@ body {
   height: 150px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  gap: 50px;
   position: relative;
   bottom: 0;
 }
 
-.footer img {
+
+.footer .supporter{
+  flex-grow: 1;
+  flex-basis: 0;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.supporter img{
   max-width: 20%;
   max-height: 20%;
 }
 
-.footerLeft {
+
+.footer .footerLeft{
+  flex-grow: 1;
+  flex-basis: 0;
   display: flex;
+  margin-left: 20px;
   flex-direction: column;
+  float: left;
 }
 
 .footerLeft p {
   font-size: 15px;
+  text-align: left;
 }
 
-.footerRight {
-  display: flex;
-  flex-direction: column;
+.footer .footerRight{
+  float: right;
+  text-align: right;
+  display: block;
+  margin-right: 20px;
 }
 
 .footerRight p {
-  flex-shrink: 0;
   font-size: 8px;
+  text-align: right;
 }
 
-.footer a {
-  color: black;
-}
 
-.footer li {
+.fa {
+  min-width: 30px;
+  font-size: 30px;
+  text-align: center;
   text-decoration: none;
-  list-style: none;
 }
+
+.fa-facebook {
+  color: rgb(197, 177, 177);
+}
+
+.fa-instagram {
+  color: rgb(197, 177, 177);
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
 
 p.accordion {
   background-color: rgba(212, 211, 211, 0.671);
@@ -292,24 +318,3 @@ a {
   font-size: 20px;
 }
 
-.fa {
-  min-width: 30px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa-facebook {
-  color: rgb(197, 177, 177);
-  display: block;
-}
-
-.fa-instagram {
-  color: white;
-  display: block;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
