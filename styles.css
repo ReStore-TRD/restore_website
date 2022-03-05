@@ -49,7 +49,7 @@ body {
   align-items: center;
   justify-content: space-between;
   z-index: 99;
-  background-color: rgba(212, 211, 211, 0.671);
+  background-color: rgba(212, 212, 212, 0.7);
 }
 
 .logo {
@@ -118,16 +118,20 @@ body {
   display: flex;
   flex-direction: column;
   gap: 150px;
-  padding: 80px 80px;
 }
 
 .block1 {
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
+  padding: 80px 80px;
+}
+
+.background1 {
 }
 
 .text1 {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -160,12 +164,14 @@ body {
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
+  padding: 80px 80px;
 }
 
 .text2 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  width: 50%;
 }
 
 .text2 .textContent {
@@ -196,6 +202,10 @@ body {
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
+  padding: 80px 80px;
+}
+
+.background3 {
 }
 
 .text3 {
@@ -243,37 +253,34 @@ body {
   padding: 20px;
 }
 
-.main_content{
+.main_content {
   flex: 1 0 auto;
-
 }
 .footer {
   flex-shrink: 0;
-  background-color: rgba(212, 211, 211, 0.671);
   width: 100%;
   height: 150px;
   display: flex;
   flex-direction: row;
   align-items: center;
   bottom: 0;
-  opacity: 0.5;
+  opacity: 0.75;
+  background-color: rgba(212, 212, 212, 0.7);
 }
 
-
-.footer .supporter{
+.footer .supporter {
   flex-grow: 1;
   flex-basis: 0;
   justify-content: space-around;
   align-content: center;
 }
 
-.supporter img{
+.supporter img {
   max-width: 20%;
   max-height: 20%;
 }
 
-
-.footer .footerLeft{
+.footer .footerLeft {
   flex-grow: 1;
   flex-basis: 0;
   display: flex;
@@ -287,7 +294,7 @@ body {
   text-align: left;
 }
 
-.footer .footerRight{
+.footer .footerRight {
   float: right;
   text-align: right;
   display: block;
@@ -298,7 +305,6 @@ body {
   font-size: 8px;
   text-align: right;
 }
-
 
 .fa {
   min-width: 20px;
@@ -319,6 +325,66 @@ body {
   opacity: 0.7;
 }
 
+/*------------------------------ ABOUT PAGE --------------------------------------- */
+
+.our_projects {
+  padding: 80px 0;
+}
+
+.our_projects_bg {
+  height: 700px;
+  background-color: rgba(243, 243, 243, 0.555);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our_projects_content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  padding: 0 80px;
+}
+
+.our_projects_title {
+  font-size: 38px;
+}
+
+.our_projects_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0 20px;
+}
+
+.our_projects_cards h3 {
+  font-size: 22px;
+}
+
+.our_projects_cards img {
+  height: 150px;
+  width: 150px;
+}
+
+.our_projects_cards_row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our_projects_cards_row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our_projects_single_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ----------------------------- FAQ PAGE ---------------------------------------- */
 
 p.accordion {
   background-color: rgba(212, 211, 211, 0.671);
