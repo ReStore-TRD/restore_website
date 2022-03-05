@@ -395,3 +395,25 @@ a {
   font-size: 20px;
 }
 
+.box{
+  position: center;
+  display:flex;
+  flex-direction: row;
+  height: 400px;
+  background-color: rgb(253, 244, 246);
+  margin: 120px;
+  justify-content:center;
+  align-items: center;
+}
+
+.box .text1{
+  margin:0;
+  position: relative;
+  margin-left: -20px;
+
+}
+
+.box img{
+  width: 50%;
+  margin:0;
+}
