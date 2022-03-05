@@ -253,9 +253,8 @@ body {
   padding: 20px;
 }
 
-.main_content{
+.main_content {
   flex: 1 0 auto;
-
 }
 .footer {
   flex-shrink: 0;
@@ -325,6 +324,67 @@ body {
 .fa:hover {
   opacity: 0.7;
 }
+
+/*------------------------------ ABOUT PAGE --------------------------------------- */
+
+.our_projects {
+  padding: 80px 0;
+}
+
+.our_projects_bg {
+  height: 700px;
+  background-color: rgba(243, 243, 243, 0.555);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our_projects_content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  padding: 0 80px;
+}
+
+.our_projects_title {
+  font-size: 38px;
+}
+
+.our_projects_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0 20px;
+}
+
+.our_projects_cards h3 {
+  font-size: 22px;
+}
+
+.our_projects_cards img {
+  height: 150px;
+  width: 150px;
+}
+
+.our_projects_cards_row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our_projects_cards_row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our_projects_single_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ----------------------------- FAQ PAGE ---------------------------------------- */
 
 p.accordion {
   background-color: rgba(212, 211, 211, 0.671);
