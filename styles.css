@@ -328,6 +328,28 @@ body {
 
 /*------------------------------ ABOUT PAGE --------------------------------------- */
 
+.our_story {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+}
+
+.our_story_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.our_story_left h1 {
+  font-size: 64px;
+}
+
+.our_story_img {
+  width: 500px;
+}
+
 .our_projects {
   padding: 80px 0;
 }
@@ -387,22 +409,34 @@ body {
 
 /* ----------------------------- FAQ PAGE ---------------------------------------- */
 
-p.accordion {
+.accordion {
+  width: 100%;
+}
+
+.test_container {
+  background-color: blue;
+  display: flex;
+  padding: 50px;
+
   background-color: rgba(212, 211, 211, 0.671);
   color: #444;
   cursor: pointer;
-  padding: 18px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
-  margin-bottom: 10px;
 }
 
-p.accordion.active,
-p.accordion:hover {
-  background-color: #ddd;
+.faq_section {
+  background-color: bisque;
+  padding: 20px;
+  display: flex;
+}
+
+h2.accordion.active,
+h2.accordion:hover {
+  background-color: rgb(199, 0, 0);
 }
 
 .faq {
@@ -410,14 +444,16 @@ p.accordion:hover {
   padding-bottom: 60px;
   margin: 0 auto;
   width: 50%;
-}
-
-.faq_title {
-  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .faq p {
   font-weight: bold;
+}
+
+.faq h2 {
 }
 
 .someContainer {
@@ -427,14 +463,13 @@ p.accordion:hover {
   min-height: 100vh;
 }
 
-div.panel {
-  padding: 0 18px;
-  background-color: white;
+.faq .panel {
+  padding: 0 0px;
+  background-color: aqua;
   max-height: 0;
   overflow: hidden;
   transition: 0.4s ease-in-out;
   opacity: 0;
-  margin-bottom: 10px;
 }
 
 div.panel.show {
@@ -462,9 +497,9 @@ a {
   font-size: 20px;
 }
 
-.box{
+.box {
   position: center;
-  display:flex;
+  display: flex;
   flex-direction: row;
   height: 400px;
   background-color: rgb(253, 244, 246);
@@ -475,14 +510,15 @@ a {
   margin-bottom: 20px;
 }
 
-.box .text1{
-  margin-left:20px;
-  width:50%;
-  margin-right:10px;
 
+.box .text1 {
+  margin: 0;
+  position: relative;
+  margin-left: -20px;
 }
 
-.box img{
-  width: 60%;
-  margin-left:80px;
+.box img {
+  width: 50%;
+  margin: 0;
+
 }
