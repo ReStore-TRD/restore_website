@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Josefin Sans Light";
+  src: url("/Fonts/JosefinSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans Bold";
+  src: url("/Fonts/JosefinSans-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans Light";
+}
+
+body {
+  margin: 0px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p {
+  line-height: 22px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(340, 93%, 63%);
+}
+
+/*------------------------------ NAVBAR --------------------------------------- */
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  background-color: rgba(212, 212, 212, 0.7);
+}
+
+.navbar b {
+  font-family: "Josefin Sans Bold";
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+  color: black;
+  margin-left: 80px;
+  font-weight: 100;
+}
+
+.logo_link {
+  text-decoration: none;
+  color: black;
+  gap: 20px;
+}
+
+.navbar ul {
+  margin-right: 80px;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  margin-right: 50px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.2s;
+}
+
+.navbar ul li:hover:after {
+  width: 100%;
+}
+
+/*------------------------------ NAVBAR --------------------------------------- */
+
+.footer {
+  flex-shrink: 0;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  bottom: 0;
+  opacity: 0.75;
+  background-color: rgba(245, 200, 200, 0.7);
+}
+
+.footer .footerLeft {
+  display: flex;
+  padding-left: 80px;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: auto;
+  float: left;
+}
+
+.footerLeft p {
+  font-size: 15px;
+  text-align: left;
+}
+
+.footer .footercenter {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.footercenter p {
+  flex: 1;
+  font-size: 10px;
+}
+
+.footer .supporter {
+  flex: 1;
+  margin-left: auto;
+}
+
+.supporter img {
+  max-width: 10%;
+  max-height: 10%;
+}
+
+.supporter p {
+  font-size: 8px;
+}
+
+.fa {
+  min-width: 30px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: black;
+}
+
+.fa-instagram {
+  color: black;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
