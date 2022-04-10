@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @font-face {
   font-family: "Josefin Sans Light";
   src: url("/Fonts/JosefinSans-Light.ttf");
@@ -97,24 +98,22 @@ a {
 /*------------------------------ NAVBAR --------------------------------------- */
 
 .footer {
-  flex-shrink: 0;
+  margin: 0;
   width: 100%;
   height: 150px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   bottom: 0;
   opacity: 0.75;
   background-color: rgba(245, 200, 200, 0.7);
 }
 
 .footer .footerLeft {
-  display: flex;
   padding-left: 80px;
+  display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  flex-basis: auto;
-  float: left;
 }
 
 .footerLeft p {
@@ -123,43 +122,54 @@ a {
 }
 
 .footer .footercenter {
-  flex: 1;
+  padding-left: 130px;
+  display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footercenter .socialMedia{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
 .footercenter p {
-  flex: 1;
   font-size: 10px;
 }
 
-.footer .supporter {
-  flex: 1;
-  margin-left: auto;
+.footer .footerRight{
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
 }
 
-.supporter img {
-  max-width: 10%;
-  max-height: 10%;
+.footerRight img {
+  width: 20%;
+  height: 20%;
 }
 
-.supporter p {
-  font-size: 8px;
+.footerRight a {
+  font-size: 12px;
+  color: black;
 }
 
 .fa {
-  min-width: 30px;
+  width: 35px;
   font-size: 40px;
   text-align: center;
   text-decoration: none;
 }
 
 .fa-facebook {
-  color: black;
+  color: rgba(169, 169, 169, 0.7);
 }
 
 .fa-instagram {
-  color: black;
+  color: rgba(169, 169, 169, 0.7);
 }
 
 .fa:hover {
