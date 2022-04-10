@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 100px 80px;
+  gap: 30px;
 }
 
 .our_story_left {
@@ -19,7 +20,7 @@
 }
 
 .our_story_img {
-  width: 500px;
+  width: 50%;
 }
 
 .our_projects {
