@@ -42,7 +42,8 @@ a {
   align-items: center;
   justify-content: space-between;
   z-index: 99;
-  background-color: rgba(212, 212, 212, 0.7);
+  background-color: rgba(245, 200, 200, 0.5);
+  flex-wrap: wrap;
 }
 
 .navbar b {
@@ -63,23 +64,24 @@ a {
   gap: 20px;
 }
 
-.navbar ul {
+.nav-ul {
   margin-right: 80px;
 }
 
-.navbar ul li {
+.nav-ul li {
   list-style: none;
   display: inline-block;
   position: relative;
   margin-right: 50px;
 }
 
-.navbar ul li a {
+.nav-ul li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
 }
-.navbar ul li::after {
+
+.nav-ul li::after {
   content: "";
   height: 3px;
   width: 0;
@@ -90,11 +92,25 @@ a {
   transition: 0.2s;
 }
 
-.navbar ul li:hover:after {
+.nav-ul li:hover:after {
   width: 100%;
 }
 
-/*------------------------------ NAVBAR --------------------------------------- */
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  font-size: 38px;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+/*------------------------------ FOOTER --------------------------------------- */
 
 .footer {
   flex-shrink: 0;
@@ -164,4 +180,69 @@ a {
 
 .fa:hover {
   opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+  .counters {
+    display: none;
+    overflow: hidden;
+  }
+
+  .navbar {
+    height: 15vh;
+    transition: padding-bottom 0.2s ease-in-out;
+  }
+
+  .logo {
+    margin-left: 20px;
+    font-size: 38px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-right: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+  }
+
+  .nav-ul li {
+    margin: 0;
+    padding: 10px 30px;
+  }
+
+  .nav-ul {
+    display: flex;
+    position: absolute;
+    top: 15vh;
+    width: 100%;
+    height: 250px;
+    align-items: flex-start;
+  }
+
+  .main_content {
+    z-index: 99;
+    background-color: white;
+  }
+
+  .navbar.show {
+    padding-bottom: 250px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 50px;
+  }
+
+  .nav-ul a {
+    font-size: 28px;
+  }
+
+  .nav-ul li::after {
+    content: none;
+  }
 }

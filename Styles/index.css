@@ -2,7 +2,7 @@
 
 .hero_img {
   object-fit: contain;
-  width: 70%;
+  width: 100%;
   height: auto;
 }
 
@@ -24,7 +24,7 @@
 .counters {
   display: flex;
   justify-content: space-around;
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 
 .paragraphs {
@@ -172,5 +172,75 @@
 }
 
 .main_content {
-  flex: 1 0 auto;
+  /*flex: 1 0 auto;*/
+}
+
+@media screen and (max-width: 600px) {
+  .hero_img {
+    content: url("/Images/hero_img.png");
+    width: 100%;
+  }
+
+  .homepageBlocks {
+    gap: 100px;
+  }
+
+  .block1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .block1img {
+    width: 100%;
+  }
+
+  .text1 {
+    width: 100%;
+  }
+  .block2 {
+    flex-direction: column;
+    padding: 10px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .block2img {
+    width: 100%;
+  }
+
+  .text2 {
+    width: 100%;
+    text-align: center;
+  }
+  .block3 {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .img3Container {
+    width: 100%;
+  }
+
+  .block3img {
+    width: 100%;
+  }
+
+  .text3 {
+    width: 100%;
+  }
+
+  .counters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  p {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
 }

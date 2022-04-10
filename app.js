@@ -16,3 +16,18 @@ const accordionItemHeaders = document.querySelectorAll(
       }
     });
   });
+
+const hamburger = document.getElementById('hamburger');
+const navBar = document.getElementById('navbar');
+const navUL = document.getElementById('nav-ul');
+
+hamburger.addEventListener('click', () => {
+  navUL.classList.toggle('show');
+  navBar.classList.toggle('show');
+});
+
+$(document).ready(function(){
+	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+});
