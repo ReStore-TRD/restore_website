@@ -1,26 +1,33 @@
 
-document.addEventListener("DOMContentLoaded", function(event) { 
 
-var acc = document.getElementsByClassName("accordion");
-var panel = document.getElementsByClassName('panel');
+const accordionItemHeaders = document.querySelectorAll(
+    '.accordion-item-header'
+  );
+  
+  accordionItemHeaders.forEach((accordionItemHeader) => {
+    accordionItemHeader.addEventListener('click', (event) => {
+      console.log("pikken min er stor");
+      accordionItemHeader.classList.toggle('active');
+      const accordionItemBody = accordionItemHeader.nextElementSibling;
+      if (accordionItemHeader.classList.contains('active')) {
+        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + 'px';
+      } else {
+        accordionItemBody.style.maxHeight = 0;
+      }
+    });
+  });
 
-for (var i = 0; i < acc.length; i++) {
-    acc[i].onclick = function() {
-        var setClasses = !this.classList.contains('active');
-        setClass(acc, 'active', 'remove');
-        setClass(panel, 'show', 'remove');
+const hamburger = document.getElementById('hamburger');
+const navBar = document.getElementById('navbar');
+const navUL = document.getElementById('nav-ul');
 
-        if (setClasses) {
-            this.classList.toggle("active");
-            this.nextElementSibling.classList.toggle("show");
-        }
-    }
-}
+hamburger.addEventListener('click', () => {
+  navUL.classList.toggle('show');
+  navBar.classList.toggle('show');
+});
 
-function setClass(els, className, fnName) {
-    for (var i = 0; i < els.length; i++) {
-        els[i].classList[fnName](className);
-    }
-}
-
+$(document).ready(function(){
+	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
 });

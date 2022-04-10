@@ -1,0 +1,184 @@
+@import url("./base.css");
+
+.our_story {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+}
+
+.our_story_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.our_story_left h1 {
+  font-size: 64px;
+}
+
+.our_story_img {
+  width: 500px;
+}
+
+.our_projects {
+  padding: 80px 0;
+  display: flex;
+}
+
+.our_projects_bg {
+  height: 700px;
+  background-color: rgba(243, 243, 243, 0.555);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our_projects_content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  padding: 0 80px;
+}
+
+.our_projects_title {
+  font-size: 38px;
+}
+
+.our_projects_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0 20px;
+}
+
+.our_projects_cards h3 {
+  font-size: 22px;
+}
+
+.our_projects_cards img {
+  height: 182px;
+  width: 150px;
+}
+
+.our_projects_cards_row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our_projects_cards_row2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our_projects_single_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text1 {
+  font-size: 20px;
+}
+
+.box {
+  position: center;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  background-color: rgb(253, 244, 246);
+  margin: auto;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.box .text1 {
+  margin: 0;
+  position: relative;
+  margin-left: -20px;
+}
+
+.box img {
+  width: 50%;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .main_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .our_story {
+    padding: 50px 30px;
+  }
+
+  .our_story_img {
+    display: none;
+  }
+  .our_story_left {
+    width: 100%;
+  }
+  .box {
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our_projects_bg {
+    height: 100%;
+  }
+
+  .our_projects_content {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .our_projects_cards {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+
+  .our_projects_cards_row1 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .our_projects_cards_row2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .card-even {
+    gap: 10px;
+  }
+
+  .card-odd {
+    gap: 10px;
+  }
+
+  .our_projects_title {
+    padding-left: 30px;
+  }
+}
