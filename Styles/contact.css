@@ -1,1 +1,8 @@
 @import url("base.css");
+
+.main_content {
+  background-color: white;
+  display: flex;
+  height: 100%;
+  flex: 1;
+}

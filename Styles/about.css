@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 100px 80px;
+  gap: 30px;
 }
 
 .our_story_left {
@@ -19,11 +20,12 @@
 }
 
 .our_story_img {
-  width: 500px;
+  width: 50%;
 }
 
 .our_projects {
   padding: 80px 0;
+  display: flex;
 }
 
 .our_projects_bg {
@@ -111,4 +113,73 @@
 .box img {
   width: 50%;
   margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .main_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .our_story {
+    padding: 50px 30px;
+  }
+
+  .our_story_img {
+    display: none;
+  }
+  .our_story_left {
+    width: 100%;
+  }
+  .box {
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our_projects_bg {
+    height: 100%;
+  }
+
+  .our_projects_content {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .our_projects_cards {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+
+  .our_projects_cards_row1 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .our_projects_cards_row2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .card-even {
+    gap: 10px;
+  }
+
+  .card-odd {
+    gap: 10px;
+  }
+
+  .our_projects_title {
+    padding-left: 30px;
+  }
 }

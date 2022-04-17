@@ -4,37 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>About</title>
+
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="Styles/contact.css">
 </head>
 <body>
-    <div class="navbar">
+    <div id="navbar" class="navbar">
         <h1 class="logo"><a class="logo_link" href="index.html"><b>RE</b>STORE</a> </h1>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="contact.html">Contact</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+        <button class="hamburger" id="hamburger">
+            &#9776
+        </button>
+        <ul class="nav-ul" id="nav-ul">
+            <li><a href="about.html" id="about-link">About</a></li>
+            <li><a href="contact.html" id="contact-link">Contact</a></li>
+            <li><a href="faq.html" id="faq-link">FAQ</a></li>
         </ul>
     </div>
     
-    <div class="main-content">
-        
+    <div class="main_content">
+        <div id="nav-icon4">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
     </div>
 
     <div class="footer">
-        <span class="footerLeft">
+        <div class="footerLeft">
             <p>Prestekragevegen 14 <br> 7050 Trondheim, Norway<br>
-            info@restore-trd.no</p>
-            </span>
-        <span class="footercenter">
-            <span class="socialMedia">
+            restore@info-trd.no</p>
+        </div>
+        <div class="supporter">
+            <img src="Images/sit.png"></div>
+        <div class="footerRight">
+            <a href="https://www.facebook.com/ReStore.TRD" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/restore.trdxals/?hl=en" class="fa fa-instagram"></a>
-            <a href="https://www.facebook.com/ReStore.TRD" class="fa fa-facebook"></a></span>
             <br><p>2022 NTNU RESTORE</p>    
-        </span>
-        <span class="footerRight">
-            <a>In collabration with</a><br>
-            <img src="Images/sit.png"></span>
+        </div>
     </div>  
 </body>
 </html>
