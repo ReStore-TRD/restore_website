@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
 @font-face {
   font-family: "Josefin Sans Light";
   src: url("/Fonts/JosefinSans-Light.ttf");
@@ -64,7 +66,6 @@ a {
   gap: 20px;
 }
 
-
 .nav-ul {
   margin-right: 80px;
 }
@@ -75,7 +76,6 @@ a {
   position: relative;
   margin-right: 50px;
 }
-
 
 .nav-ul li a {
   text-decoration: none;
@@ -145,7 +145,7 @@ a {
   justify-content: center;
 }
 
-.footercenter .socialMedia{
+.footercenter .socialMedia {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -155,7 +155,7 @@ a {
   font-size: 10px;
 }
 
-.footer .footerRight{
+.footer .footerRight {
   padding-left: 30px;
   display: flex;
   flex-direction: column;
