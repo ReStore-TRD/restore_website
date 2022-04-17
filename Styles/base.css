@@ -64,6 +64,7 @@ a {
   gap: 20px;
 }
 
+
 .nav-ul {
   margin-right: 80px;
 }
@@ -74,6 +75,7 @@ a {
   position: relative;
   margin-right: 50px;
 }
+
 
 .nav-ul li a {
   text-decoration: none;
@@ -125,12 +127,9 @@ a {
 }
 
 .footer .footerLeft {
-  display: flex;
   padding-left: 80px;
+  display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  flex-basis: auto;
-  float: left;
 }
 
 .footerLeft p {
@@ -139,43 +138,54 @@ a {
 }
 
 .footer .footercenter {
-  flex: 1;
+  padding-left: 130px;
+  display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footercenter .socialMedia{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
 .footercenter p {
-  flex: 1;
   font-size: 10px;
 }
 
-.footer .supporter {
-  flex: 1;
-  margin-left: auto;
+.footer .footerRight{
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
 }
 
-.supporter img {
-  max-width: 10%;
-  max-height: 10%;
+.footerRight img {
+  width: 20%;
+  height: 20%;
 }
 
-.supporter p {
-  font-size: 8px;
+.footerRight a {
+  font-size: 12px;
+  color: black;
 }
 
 .fa {
-  min-width: 30px;
+  width: 35px;
   font-size: 40px;
   text-align: center;
   text-decoration: none;
 }
 
 .fa-facebook {
-  color: black;
+  color: rgba(169, 169, 169, 0.7);
 }
 
 .fa-instagram {
-  color: black;
+  color: rgba(169, 169, 169, 0.7);
 }
 
 .fa:hover {
