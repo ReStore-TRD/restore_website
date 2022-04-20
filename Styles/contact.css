@@ -5,4 +5,62 @@
   display: flex;
   height: 100%;
   flex: 1;
+  margin: 0 auto;
+}
+
+.getintouch-block {
+  display: flex;
+  padding: 100px 80px;
+}
+
+.getintouch-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  gap: 50px;
+}
+
+.getintouch-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.getintouch-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icon-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.icon-row img {
+  width: 60px;
+  height: 60px;
+}
+
+.getintouch-text h1 {
+  font-family: "Josefin Sans Bold";
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.getintouch-right {
+  width: 50%;
+  display: flex;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+  .getintouch-right {
+    display: none;
+  }
+  .getintouch-left {
+    width: 100%;
+  }
 }
