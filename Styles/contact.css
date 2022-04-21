@@ -59,7 +59,7 @@
 
 .map{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   overflow:hidden;
   padding-bottom:56.25%;
