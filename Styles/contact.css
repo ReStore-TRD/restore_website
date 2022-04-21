@@ -3,6 +3,7 @@
 .main_content {
   background-color: white;
   display: flex;
+  flex-direction: column; 
   height: 100%;
   flex: 1;
   margin: 0 auto;
@@ -54,6 +55,25 @@
   width: 50%;
   display: flex;
   object-fit: contain;
+}
+
+.map{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  margin: 0 auto;
+}
+
+.map iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 @media screen and (max-width: 600px) {
