@@ -48,14 +48,14 @@
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
-  padding: 80px 80px;
+  padding: 0px 80px;
 }
 
 .text1 {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
 }
 
 .text1 .textContent {
@@ -85,13 +85,13 @@
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
-  padding: 80px 80px;
+  padding: 0px 80px;
 }
 
 .text2 {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   width: 50%;
 }
 
@@ -123,7 +123,7 @@
   display: flex;
   justify-content: space-evenly;
   gap: 50px;
-  padding: 80px 80px;
+  padding: 0px 80px;
 }
 
 .text3 {
@@ -176,9 +176,15 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .heroDiv {
+    display: none;
+  }
+
   .hero_img {
     content: url("/Images/hero_img.png");
     width: 100%;
+    display: none;
   }
 
   .homepageBlocks {

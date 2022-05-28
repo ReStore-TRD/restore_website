@@ -26,8 +26,8 @@ body {
 }
 
 p {
-  line-height: 22px;
-  font-size: 18px;
+  line-height: 28px;
+  font-size: 24px;
 }
 
 a {
@@ -44,7 +44,7 @@ a {
   align-items: center;
   justify-content: space-between;
   z-index: 99;
-  background-color: rgba(245, 200, 200, 0.5);
+  background-color: #FAF7F8;
   flex-wrap: wrap;
 }
 
@@ -125,7 +125,7 @@ a {
   align-items: center;
   justify-content: space-between;
   opacity: 0.75;
-  background-color: rgba(245, 200, 200, 0.7);
+  background-color: #FAF7F8;
 }
 
 .footerLeft {

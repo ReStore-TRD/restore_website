@@ -8,6 +8,10 @@
   gap: 30px;
 }
 
+.our_story p {
+  font-size: 28px;
+}
+
 .our_story_left {
   width: 50%;
   display: flex;
@@ -87,61 +91,108 @@
   justify-content: center;
 }
 
-.text1 {
+.aalesund-right {
   font-size: 20px;
-}
-
-.box {
-  position: center;
   display: flex;
-  flex-direction: row;
-  height: 400px;
-  background-color: rgb(253, 244, 246);
-  margin: auto;
-  width: 80%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aalesund-block {
+  height: 500px;
+  display: flex;
   justify-content: center;
+}
+
+.aalesund-card {
+  width: 100%;
+  margin: 0px 80px;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 20px;
+  background-color: #FFF6F6;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #e0dcdc;
 }
 
-.box .text1 {
-  margin: 0;
-  position: relative;
-  margin-left: -20px;
+.aalesund-left {
 }
 
-.box img {
-  width: 50%;
-  margin: 0;
+.aalesund-right h1 {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.aalesund-block b {
+  font-family: "Josefin Sans Bold";
+}
+
+.aalesund-right {
+
+}
+
+.aalesund-block img {
+
+  height: 400px;
+  width: 400px;
 }
 
 @media screen and (max-width: 600px) {
+
   .main_content {
     display: flex;
     flex-direction: column;
   }
   .our_story {
-    padding: 50px 30px;
+    padding: 0px;
+    padding-top: 50px;
+    flex-direction: column;
   }
 
   .our_story_img {
-    display: none;
-  }
-  .our_story_left {
     width: 100%;
-  }
-  .box {
-    margin: 0;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
+    height: auto;
   }
 
-  .box div {
+  .our_story_left {
+    width: auto;
+    padding: 0px 30px;
+  }
+
+  .aalesund-block {
+    height: auto;
+  }
+
+  .aalesund-card {
+    flex-direction: column-reverse;
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 80px 0px;
+    gap: 40px;
+  }
+
+  .aalesund-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aalesund-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+  }
+
+  .aalesund-text p {
+    padding-top: 60px;
+  }
+
+  .aalesund-left img {
+    width: 80%;
+    height: auto;
   }
 
   .our_projects_bg {
