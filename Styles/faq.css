@@ -7,7 +7,7 @@
 }
 
 .accordion-item {
-  background-color: white;
+  background-color: #FAF7F8;
   color: black;
   margin: 1rem 0;
   border-radius: 0.5rem;
@@ -46,14 +46,19 @@
 }
 
 .accordion-item-body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  
 }
 
 .accordion-item-body-content {
   padding: 1rem;
   line-height: 1.5rem;
+  
 }
 
 .accordion h3 {
