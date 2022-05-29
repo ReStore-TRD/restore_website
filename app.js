@@ -1,12 +1,13 @@
 
 
+
+// FAQ accordion
 const accordionItemHeaders = document.querySelectorAll(
     '.accordion-item-header'
   );
   
   accordionItemHeaders.forEach((accordionItemHeader) => {
     accordionItemHeader.addEventListener('click', (event) => {
-      console.log("pikken min er stor");
       accordionItemHeader.classList.toggle('active');
       const accordionItemBody = accordionItemHeader.nextElementSibling;
       if (accordionItemHeader.classList.contains('active')) {
@@ -17,6 +18,8 @@ const accordionItemHeaders = document.querySelectorAll(
     });
   });
 
+
+  // Mobile hamburger menu
 const hamburger = document.getElementById('hamburger');
 const navBar = document.getElementById('navbar');
 const navUL = document.getElementById('nav-ul');
