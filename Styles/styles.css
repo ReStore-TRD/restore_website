@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Josefin Sans Light";
-  src: url("Fonts/JosefinSans-Light.ttf");
+  src: url("/Fonts/JosefinSans-Light.ttf");
 }
 
 @font-face {
   font-family: "Josefin Sans Bold";
-  src: url("Fonts/JosefinSans-Bold.ttf");
+  src: url("/Fonts/JosefinSans-Bold.ttf");
 }
 
 * {
@@ -32,14 +32,13 @@ body {
   align-items: center;
   justify-content: space-between;
   z-index: 99;
-  
-  background-color: aqua;
+  background-color: rgba(212, 212, 212, 0.7);
 }
 
 .logo {
   width: 120px;
   cursor: pointer;
-  color: black;
+  color: blue;
   margin-left: 80px;
   font-weight: 100;
 }
