@@ -43,6 +43,7 @@
 .icon-row img {
   width: 60px;
   height: 60px;
+  flex-shrink: 0;
 }
 
 .getintouch-text h1 {
