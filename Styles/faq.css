@@ -28,16 +28,17 @@
 
 .accordion-item-header::after {
   content: "\005E";
-  font-size: 2rem;
+  font-size: 3rem;
+  transform: rotate(180deg);
   position: absolute;
-  right: 1rem;
+  right: 4rem;
   transition: transform 0.2s ease-in-out;
   transform-origin: top;
 }
 
 .accordion-item-header.active::after {
   /* content: '\005E'; */
-  transform: rotate(180deg);
+  transform: rotate(360deg);
   transform-origin: top;
 }
 

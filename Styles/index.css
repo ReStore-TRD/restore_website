@@ -39,9 +39,14 @@
 }
 
 .homepageBlocks {
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 50px;
+}
+
+.homepage-image {
+  width: 30%;
 }
 
 .block1 {
@@ -49,6 +54,7 @@
   justify-content: space-evenly;
   gap: 50px;
   padding: 0px 80px;
+
 }
 
 .text1 {
@@ -77,7 +83,7 @@
 }
 
 .block1img {
-  width: 50%;
+  
   object-fit: contain;
 }
 
@@ -103,7 +109,7 @@
 }
 
 .block2img {
-  width: 50%;
+
   object-fit: contain;
 }
 
@@ -146,14 +152,7 @@
   font-weight: normal;
 }
 
-.img3Container {
-  display: flex;
-  width: 50%;
-  justify-content: center;
-}
-
 .block3img {
-  width: 70%;
   object-fit: contain;
 }
 
