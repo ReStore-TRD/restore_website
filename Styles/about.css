@@ -19,10 +19,6 @@
   gap: 40px;
 }
 
-.our_story_left h1 {
-  font-size: 64px;
-}
-
 .our_story_img {
   width: 50%;
 }
@@ -70,12 +66,12 @@
 
 .our_projects_cards_row1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .our_projects_cards_row2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .our_projects_single_card {
@@ -115,8 +111,7 @@
   box-shadow: 0px 0px 10px #e0dcdc;
 }
 
-.aalesund-left {
-}
+
 
 .aalesund-right h1 {
   font-size: 64px;
@@ -127,9 +122,7 @@
   font-family: "Josefin Sans Bold";
 }
 
-.aalesund-right {
 
-}
 
 .aalesund-block img {
 

@@ -39,9 +39,14 @@
 }
 
 .homepageBlocks {
+  padding: 50px 0px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 50px;
+}
+
+.homepage-image {
+  width: 30%;
 }
 
 .block1 {
@@ -49,6 +54,7 @@
   justify-content: space-evenly;
   gap: 50px;
   padding: 0px 80px;
+
 }
 
 .text1 {
@@ -71,13 +77,8 @@
   font-style: normal;
 }
 
-.text1 .textContent h1 {
-  font-size: 64px;
-  font-weight: 400;
-}
-
 .block1img {
-  width: 50%;
+  
   object-fit: contain;
 }
 
@@ -103,7 +104,7 @@
 }
 
 .block2img {
-  width: 50%;
+
   object-fit: contain;
 }
 
@@ -112,11 +113,6 @@
   font-size: 24px;
   line-height: 28px;
   font-style: normal;
-}
-
-.text2 .textContent h1 {
-  font-size: 64px;
-  font-weight: 400;
 }
 
 .block3 {
@@ -141,19 +137,7 @@
   font-style: normal;
 }
 
-.text3 .textContent h1 {
-  font-size: 64px;
-  font-weight: normal;
-}
-
-.img3Container {
-  display: flex;
-  width: 50%;
-  justify-content: center;
-}
-
 .block3img {
-  width: 70%;
   object-fit: contain;
 }
 
@@ -169,10 +153,6 @@
 .p2 {
   width: 50%;
   padding: 20px;
-}
-
-.main_content {
-  /*flex: 1 0 auto;*/
 }
 
 @media screen and (max-width: 600px) {

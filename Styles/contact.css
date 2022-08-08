@@ -46,12 +46,6 @@
   flex-shrink: 0;
 }
 
-.getintouch-text h1 {
-  font-family: "Josefin Sans Bold";
-  font-size: 40px;
-  letter-spacing: 5px;
-}
-
 .getintouch-right {
   width: 50%;
   display: flex;
