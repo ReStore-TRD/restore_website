@@ -27,8 +27,7 @@
 }
 
 .accordion-item-header h1{
-  font-size: 42px;
-  font-weight: bold;
+  font-size: 40px;
 }
 
 .accordion-item-header::after {
