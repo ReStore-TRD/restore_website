@@ -26,6 +26,11 @@
   cursor: pointer;
 }
 
+.accordion-item-header h1{
+  font-size: 42px;
+  font-weight: bold;
+}
+
 .accordion-item-header::after {
   content: "\005E";
   font-size: 3rem;

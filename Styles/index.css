@@ -77,11 +77,6 @@
   font-style: normal;
 }
 
-.text1 .textContent h1 {
-  font-size: 64px;
-  font-weight: 400;
-}
-
 .block1img {
   
   object-fit: contain;
@@ -120,11 +115,6 @@
   font-style: normal;
 }
 
-.text2 .textContent h1 {
-  font-size: 64px;
-  font-weight: 400;
-}
-
 .block3 {
   display: flex;
   justify-content: space-evenly;
@@ -147,11 +137,6 @@
   font-style: normal;
 }
 
-.text3 .textContent h1 {
-  font-size: 64px;
-  font-weight: normal;
-}
-
 .block3img {
   object-fit: contain;
 }
@@ -168,10 +153,6 @@
 .p2 {
   width: 50%;
   padding: 20px;
-}
-
-.main_content {
-  /*flex: 1 0 auto;*/
 }
 
 @media screen and (max-width: 600px) {
