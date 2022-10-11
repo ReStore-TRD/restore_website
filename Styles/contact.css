@@ -34,6 +34,13 @@
   gap: 20px;
 }
 
+.getintouch-icon-link-text{
+  color: black;
+  font-weight: bold;
+  font-size : 35px;
+
+}
+
 .icon-row {
   display: flex;
   align-items: center;
