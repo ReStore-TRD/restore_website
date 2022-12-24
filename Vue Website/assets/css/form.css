@@ -1,0 +1,143 @@
+/* .form-container{
+margin-top: 5%;    
+ 
+width: 80%;
+left: 0;
+right: 0;
+margin: 5% auto;
+background-color:#f6f6f6;
+}
+hr{
+   
+    height: 2px;
+    background-color:#ED0F69;
+    border: none
+}
+.header-logo-left{
+    margin-top: 10%;
+}
+.form-header{
+    padding-left: 15px;
+    margin-top: 3%;
+    font-size: 2em;
+    color: #4a4a4a;
+    font-weight: 600;
+}
+.form-label{
+    color: #060606;
+    font-size: 16px;
+    font-weight: 500;
+}
+.form-checkbox-name{
+    font-size: .9375em;
+    color: #060606 !important;
+}
+.form-subheader{
+    padding-left: 15px;
+    color: #962D53;
+    font-size: 1em;
+    font-weight: 500;
+}
+.form-field{
+    margin-top: 5%;    
+ 
+width: 80%;
+left: 0;
+right: 0;
+margin: 5% auto;
+}
+.form-field-total{
+    width:90%;
+    margin: 0 auto;
+}
+.form-radio{
+    width:90%;
+    margin: 0 auto;
+}
+.form-checkbox{
+    width:90%;
+    margin: 0 auto;
+}
+.form-button{
+    background-color: #962D53!important;
+    border-color: #962D53!important;
+    color: #fff;
+    min-width: 180px;
+    font-size: 14px;
+}
+.checkbox-text{
+    font-size: 14px;
+} */
+
+.form-image{
+    background-image: url('../../assets/images/form-img.jpg');
+    background-repeat: no-repeat;
+
+}
+#input-group-1{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px
+}
+#input-group-2{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+     
+}
+#input-group-3{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px
+}
+.form-label1{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px
+}
+ 
+.form-label2{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px
+}
+.form-label3{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px
+}
+.header-text h4{
+    color:aliceblue;
+    font-weight: bolder;
+}
+.form-image{
+    display: flex;
+    align-items: center;
+    
+}
+.form-text-checkbox{
+    font-weight: 700;
+    
+     
+}
+.btn-btn{
+    background-color: #962D53!important;
+    border-color: #962D53!important;
+    color: #fff;
+    min-width: 150px;
+    font-size: 14px;
+}
+.btn-btn-reset{
+    background-color: #f6f5f5!important;
+    border-color: #f6f5f5!important;
+    color: #962D53!important;
+    font-weight: 800;
+    font-size: 20px;
+}
+.btn-btn-reset:hover{
+    background-color: #962D53!important;
+    border-color: #962D53!important;
+    color: #fff!important;
+    min-width: 100px;
+    font-size: 14px;
+}
