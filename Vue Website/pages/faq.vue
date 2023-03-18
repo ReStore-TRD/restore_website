@@ -72,7 +72,7 @@
               done with them :)
             </p>
             <p>
-              We are also lucky to have generous support Sit Bolig.
+              We are also lucky to have generous support from Sit Bolig.
             </p>
           </div>
           <div class="accordion-item-body-content">

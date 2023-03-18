@@ -15,6 +15,7 @@
                                 reduce waste from household equipment and furniture and 
                                 improve quality of student life by facilitating reuse of 
                                 goods for all students in Trondheim.
+                                
                             </p>
                         </div>
                     </div>
