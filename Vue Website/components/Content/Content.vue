@@ -11,7 +11,7 @@
                         <div class="textContent">
                             <h1>Who are we?</h1>
                             <p>
-                                Restore is a voluntary student organization that works to 
+                                ReStore is a voluntary student organization that works to 
                                 reduce waste from household equipment and furniture and 
                                 improve quality of student life by facilitating reuse of 
                                 goods for all students in Trondheim.

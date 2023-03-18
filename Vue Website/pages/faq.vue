@@ -7,15 +7,26 @@
         </div>
         <div class="accordion-item-body collapse show" id="collapseOne"   aria-labelledby="headingOne" data-parent="#accordionExample">
           <div class="accordion-item-body-content">
-            <h3>Where is the old Moholt kindergarten?</h3>
+            <h3>Where are you located?</h3>
             <p>
-              Just down the hill from the new Moholt kindergarten-
-              <a
+              We have two buildings at Moholt Studentby in Trondheim.
+               <a
                 href="https://goo.gl/maps/5LbnwiFeX4erbNyR6"
                 class="google_maps anchor"
                 target="_blank"
-                >here is a link to our location on google maps</a
+                >ReStore Red</a
               >
+              is the old Moholt kindergarten, which is down the hill from the new Moholt kindergarten.
+              We organize donated items in this building. Also we have workshops for repairing bicycles and furniture at the same place. 
+               
+              <a
+                href="https://goo.gl/maps/GQhuMvDGDUHE3yWw8"
+                class="google_maps anchor"
+                target="_blank"
+                >ReStore Yellow,</a
+              >
+              is just behind the Red building, and we have a sewing workshop, plant room and a cozy space for our volunteers to have social events in this building.
+              
             </p>
           </div>
           <div class="accordion-item-body-content">
@@ -28,10 +39,13 @@
           <div class="accordion-item-body-content">
             <h3>This seems really cool, how can I get involved?</h3>
             <p>
-              Send us a message on FB or email info@restore-trd.no! We’re always
+              We’re always
               happy to have more volunteers. We especially need volunteers in
-              December/January and May/June. Check out the
-              <a class="anchor" href="/contact">Contact page</a> for details!
+              December/January and May/June. You can volunteer as much as you want and have time for!!
+              Check out 
+              <a class="anchor" href="https://linktr.ee/restore.trd" target="_blank"
+                >this link</a
+              > for becoming a volunteer and more information! 
             </p>
           </div>
         </div>
@@ -42,6 +56,7 @@
           <div class="accordion-item-body-content">
             <h3>When can I come by to take things?</h3>
             <p>
+              We give away the items on opening days, which are usually held at the beginning of each semester (August and January).
               Check
               <a class="anchor" href="https://www.facebook.com/ReStore.TRD" target="_blank"
                 >our Facebook page</a
@@ -57,27 +72,17 @@
               done with them :)
             </p>
             <p>
-              We are also lucky to have generous support from the Velferdstinget
-              and Sit Bolig.
+              We are also lucky to have generous support Sit Bolig.
             </p>
           </div>
           <div class="accordion-item-body-content">
             <h3>Is ReStore only for NTNU students?</h3>
             <p>
               All students in Trondheim are welcome, whether you’re from NTNU,
-              BI, HiST, or DMMH. PhD students, you’re students too!
+              BI, HiST, or DMMH. PhD students, you’re student too!
             </p>
           </div>
-          <div class="accordion-item-body-content">
-            <h3>
-              I need this table, but it has a bunch of stuff on it. Can I move
-              the stuff and take the table?
-            </h3>
-            <p>
-              Talk to our volunteers (in the super-fly ReStore gear) and we'll
-              figure something out with you.
-            </p>
-          </div>
+  
         </div>
       </div>
       <div class="accordion-item">
@@ -92,11 +97,26 @@
             </p>
           </div>
           <div class="accordion-item-body-content">
+            <h3>Can I donate my bed/mattress?</h3>
+            <p>
+              Unfortunately not. Due to bedbug concerns we are unable to accept
+              beds and mattresses. But we accept bed frames.
+            </p>
+          </div>
+          <div class="accordion-item-body-content">
+            <h3>When can I donate items</h3>
+            <p>
+              You can leave your donations on the backside portch at our Red building at anytime. 
+              But, it is recommended to donate items during donation hours on Thursdays 16:30 - 18:30 and Saturdays 10:30 - 12:30, 
+              so that our volunteers can take in the items and organize them quickly. 
+            </p>
+          </div>
+          <div class="accordion-item-body-content">
             <h3>Can you pick up my stuff?</h3>
             <p>
               Definetely! Check available pickup dates
               <a class="anchor"
-                href="https://docs.google.com/forms/d/1erG95Q3LJsnqtHV35bYwMFx2KFuoEVWRfVlY53hqDXo/edit"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScaC410K55v9Kc5os30IyLhloetM1r1HKKSMoU0MlU1ZZcnBw/viewform"
                 target="_blank"
                 >here</a
               >. It's free of charge but it all has a cost, so you can donate to
@@ -104,13 +124,7 @@
               571348.
             </p>
           </div>
-          <div class="accordion-item-body-content">
-            <h3>Can I donate my bed/mattress?</h3>
-            <p>
-              Unfortunately not. Due to bedbug concerns we are unable to accept
-              beds and mattresses. But we accept bed frames.
-            </p>
-          </div>
+
         </div>
       </div>
     </div>
