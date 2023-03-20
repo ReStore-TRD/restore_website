@@ -49,12 +49,50 @@
                     <div class="our_projects_cards">
                         <div class="our_projects_cards_row1">
                             <div class="restore_card our_projects_single_card card-odd">
-                                <img src="../assets/images/About/Project-icons/Rehome.png" alt="">
+                                <div id="app">
+                                    <button
+                                    type="button"
+                                    class="btn"
+                                    @click="showModal"
+                                    >
+                                
+                                    <img src="../assets/images/About/Project-icons/Rehome.png" alt="">
+                                    </button>
+
+                                    <Modal
+                                    v-show="isModalVisible"
+                                    @aclose="closeModal"
+                                    >
+                                    <template v-slot:our_projects_body>
+                                        <p>rehome </p>
+                                    </template>
+                                    </Modal>
+
+                                </div>
+
+                            <!--    <img src="../assets/images/About/Project-icons/Rehome.png" alt=""> -->
                                 
                             </div>
                             <div class="resykkel_card our_projects_single_card card-even">
-                                <img src="../assets/images/About/Project-icons/Rebuild.png" alt="">
-                                
+                                <div id="app">
+                                    <button
+                                    type="button"
+                                    class="btn"
+                                    @click="showModal"
+                                    >
+                                    <img src="../assets/images/About/Project-icons/Rebuild.png" alt="">
+                                    </button>
+
+                                    <Modal
+                                    v-show="isModalVisible"
+                                    @aclose="closeModal"
+                                    >
+                                    <template v-slot:our_projects_body_2>
+                                        <p>rebuild</p>
+                                    </template>
+                                    </Modal>
+                                    </div>
+
                             </div>
                             <div class="rebuild_card our_projects_single_card card-odd">
                                 <img src="../assets/images/About/Project-icons/Refood.png" alt="">
@@ -82,9 +120,27 @@
 </template>
 
 <script>
-export default {
+import Modal from '@/components/Modal.vue';
 
-}
+  export default {
+    name: 'about',
+    components: {
+      Modal,
+    },
+    data() {
+      return {
+        isModalVisible: false,
+      };
+    },
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
+    }
+  };
 </script>
 
 <style>
