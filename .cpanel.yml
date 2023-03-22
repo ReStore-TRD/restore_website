@@ -4,7 +4,7 @@ deployment:
  # where on cPanel should things be put
  - export DEPLOY_PATH=/home/user/deployment_html/
  # copy files
- - /bin/cp -r Fonts $DEPLOY_PATH
- - /bin/cp -r Images $DEPLOY_PATH
- - /bin/cp -r Styles $DEPLOY_PATH
+ - /bin/cp -R Fonts $DEPLOY_PATH
+ - /bin/cp -R Images $DEPLOY_PATH
+ - /bin/cp -R Styles $DEPLOY_PATH
  - /bin/cp about.html app.js contact.html faq.html index.html projects.html $DEPLOY_PATH
