@@ -2,7 +2,7 @@
 deployment:
  tasks:
  # where on cPanel should things be put
- - export DEPLOY_PATH=/home/user/deployment_html/
+ - export DEPLOY_PATH=/home/deployment_html/
  # copy files
  - /bin/cp -R Fonts $DEPLOY_PATH
  - /bin/cp -R Images $DEPLOY_PATH
