@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Restore',
+    title: 'ReStore',
     htmlAttrs: {
       lang: 'en'
     },

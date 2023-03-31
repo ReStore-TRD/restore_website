@@ -13,10 +13,10 @@
             <li  id="nav-li" class="nav-li"> <nuxt-link to="/faq"  class="showing2"  id="showing2"> FAQ</nuxt-link></li>
             <li  id="nav-li" class="nav-li"> <nuxt-link to="/volenteer" class="showing3"  id="showing3" target="_blank"> Become volunteer </nuxt-link></li>    -->
                
-              <li id="nav-li" class="nav-li"><a href="/about" class="showing"  id="showing"> ABOUT</a></li>
+            <li  id="nav-li" class="nav-li"><a href="/about" class="showing"  id="showing"> ABOUT</a></li>
             <li  id="nav-li" class="nav-li  "> <a  href="/contact"  class="showing1" id="showing1"> CONTACT</a></li>
             <li  id="nav-li" class="nav-li"> <a href="/faq"  class="showing2"  id="showing2"> FAQ</a></li>
-            <li  id="nav-li" class="nav-li"> <a href="/volunteer" class="showing3"  id="showing3" > Become volunteer </a></li>   
+            <!--li  id="nav-li" class="nav-li"> <a href="/volunteer" class="showing3"  id="showing3" > Become volunteer </a></li-->   
               
         </ul>
     </div>  

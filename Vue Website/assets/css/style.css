@@ -266,7 +266,6 @@
     display: flex;
     padding-left: 80px;
     flex-direction: column;
-    flex-grow: 1;
     flex-basis: auto;
     float: left;
   }
