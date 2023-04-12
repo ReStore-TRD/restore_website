@@ -1,4 +1,4 @@
- @import url("./base.css");
+@import url("./base.css");
 
 .main_content {
   background-color: white;
@@ -29,9 +29,9 @@
   
 }
 .getintouch-text h1{
-  font-family: "Josefin Sans Light";
+  font-family: "Josefin Sans";
   font-size: 64px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .getintouch-icons {
   display: flex;
@@ -45,7 +45,8 @@
   font-size : 35px;
   line-height: 28px;
   font-size: 24px;
-  font-family: "Josefin Sans Light";
+  font-family: "Josefin Sans";
+  font-weight: 300;
   text-decoration: none;
 }
 

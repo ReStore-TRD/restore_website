@@ -1,4 +1,4 @@
- @import url(./base.css);
+@import url(./base.css);
 
 .our_story {
   display: flex;
@@ -11,7 +11,8 @@
 .our_story p {
   font-size: 28px;
   line-height: 28px;
-  font-family: "Josefin Sans Light";
+  font-family: "Josefin Sans";
+  font-weight: 300;
 }
 
 .our_story_left {
@@ -48,8 +49,8 @@
 
 .our_projects_title {
   font-size: 38px;
-  font-family: "Josefin Sans Light";
-  font-weight: 800;
+  font-family: "Josefin Sans";
+  font-weight: 300;
 }
 
 .our_projects_cards {
@@ -89,49 +90,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.aalesund-right {
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.aalesund-block {
-  height: 500px;
-  display: flex;
-  justify-content: center;
-}
-
-.aalesund-card {
-  width: 100%;
-  margin: 0px 80px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #FFF6F6;
-  border-radius: 15px;
-  box-shadow: 0px 0px 10px #e0dcdc;
-}
-
-
-
-.aalesund-right h1 {
-  font-size: 64px;
-  font-weight: 400;
-}
-
-.aalesund-block b {
-  font-family: "Josefin Sans Bold";
-}
-
-
-
-.aalesund-block img {
-
-  height: 400px;
-  width: 400px;
 }
 
 @media screen and (max-width: 600px) {

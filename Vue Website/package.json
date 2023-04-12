@@ -1,23 +1,19 @@
 {
-  "name": "ReStore",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "bootstrap": "^5.2.2",
-    "bootstrap-vue": "^2.22.0",
-    "core-js": "^3.25.3",
-    "nuxt": "^2.15.8",
-    "vue": "^2.7.10",
-    "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
-  },
-  "devDependencies": {
-    "@nuxtjs/google-fonts": "^2.0.0"
-  }
+	"name": "nuxt-app",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"devDependencies": {
+		"@nuxtjs/google-fonts": "^3.0.0",
+		"nuxt": "^3.4.0"
+	},
+	"dependencies": {
+		"bootstrap": "^5.2.3",
+		"font-awesome": "^4.7.0"
+	}
 }

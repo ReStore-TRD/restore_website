@@ -1,4 +1,4 @@
-@import url(./base.css);
+@import url("./base.css");
 
 .accordion {
   width: 90%;
@@ -29,7 +29,7 @@
 .accordion-item-header h1{
   font-size: 40px;
   font-weight: 400;
-  font-family: "Josefin Sans Light";
+  font-family: "Josefin Sans";
 }
 
 .accordion-item-header::after {
@@ -70,12 +70,13 @@
 .accordion-item-body-content p{
   line-height: 28px;
     font-size: 24px;
-    font-family: "Josefin Sans Light";
+    font-family: "Josefin Sans";
+    font-weight: 300;
   
 }
 
 .accordion h3 {
-  font-family: "Josefin Sans Bold";
+  font-family: "Josefin Sans";
   font-size: 1.17em;
   margin-block-start: 1em;
   margin-block-end: 1em;
