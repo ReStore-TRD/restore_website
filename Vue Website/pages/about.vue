@@ -23,7 +23,7 @@
             <img src="../assets/images/About/about_new.png" alt="" class="our_story_img">
         </div>
 
-
+<!-- Comment 
         <div class="aalesund-block">
             <div class="aalesund-card">
                 <div class="aalesund-left">
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-
+-->
         <div class="our_projects">
                 <div class="our_projects_content">
                     <h2 class="our_projects_title">Our Projects</h2>
