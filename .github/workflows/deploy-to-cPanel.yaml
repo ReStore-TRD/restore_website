@@ -1,5 +1,6 @@
 name: Deploy To cPanel
 on:
+  workflow_dispatch: # allow manually triggering this workflow
   pull_request:
     types:
       - closed
