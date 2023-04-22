@@ -21,11 +21,11 @@ jobs:
         node-version: latest
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
-    - name: Install Dependencies
-      run: npm install
-    
-    - name: Build
-      run: npm run build
+    - name: Install Dependencies and Build
+      run: |
+        cd "Vue Website"
+        npm install
+        npm run build
     
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
