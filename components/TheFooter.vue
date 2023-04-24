@@ -23,7 +23,7 @@
       </div>
       <div class="footerRight">
         <p>In collabration with</p>
-        <img src="../../assets/images/sit.png" />
+        <img src="../assets/images/sit.png" />
       </div>
     </div>
     <div class="mobile-footer">
@@ -47,7 +47,7 @@
       </div>
       <div class="sit-collab">
         <p>In collabration with</p>
-        <img src="../../assets/images/sit.png" />
+        <img src="../assets/images/sit.png" />
       </div>
     </div>
   </div>
