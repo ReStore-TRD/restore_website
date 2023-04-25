@@ -1,0 +1,235 @@
+@import url("./base.css");
+.anchor {
+  text-decoration: none;
+  color: hsl(340, 93%, 63%);
+}
+.hero_img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.heroDiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 20px;
+}
+
+.paragraphs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraphs h3 {
+  padding-bottom: 20px;
+  font-size: 28px;
+  border-radius: 2px;
+}
+
+.homepageBlocks {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.homepage-image {
+  width: 30%;
+}
+
+.block1 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding: 0px 80px;
+
+}
+
+.text1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text1 .textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text1 .textContent p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.block1img {
+  
+  object-fit: contain;
+}
+
+.block2 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding: 0px 80px;
+}
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.text2 .textContent {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 20px;
+}
+
+.block2img {
+
+  object-fit: contain;
+}
+
+.text2 .textContent p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.block3 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding: 0px 80px;
+}
+
+.text3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+}
+
+.text3 .textContent p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+}
+
+.block3img {
+  object-fit: contain;
+}
+
+.paragraphs a {
+  padding-top: 20px;
+}
+
+.p1 {
+  width: 50%;
+  padding: 20px;
+}
+
+.p2 {
+  width: 50%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .heroDiv {
+    display: none;
+  }
+
+  .hero_img {
+    content: url("/Images/hero_img.png");
+    width: 100%;
+    display: none;
+  }
+
+  .homepageBlocks {
+    gap: 100px;
+  }
+
+  .block1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .block1img {
+    width: 100%;
+  }
+
+  .text1 {
+    width: 100%;
+  }
+  .block2 {
+    flex-direction: column;
+    padding: 10px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .block2img {
+    width: 100%;
+  }
+
+  .text2 {
+    width: 100%;
+    text-align: center;
+  }
+  .block3 {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .img3Container {
+    width: 100%;
+  }
+
+  .block3img {
+    width: 100%;
+  }
+
+  .text3 {
+    width: 100%;
+  }
+
+  .counters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  p {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+}
