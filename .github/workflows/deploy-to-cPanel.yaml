@@ -23,7 +23,6 @@ jobs:
         cache-dependency-path: '**/package-lock.json'
     - name: Install Dependencies and Build
       run: |
-        cd "Vue Website"
         yarn install
         yarn build
     
