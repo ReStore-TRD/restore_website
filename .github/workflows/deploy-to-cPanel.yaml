@@ -1,0 +1,40 @@
+name: Deploy To cPanel
+on:
+  workflow_dispatch: # allow manually triggering this workflow
+  pull_request:
+    types:
+      - closed
+    branches:    
+      - deploy
+      
+jobs:
+  Deploy-On-Merge:
+    name: Deploy-On-Merge
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout latest
+      uses: actions/checkout@v2.1.0
+    - name: Setup Node 
+      uses: actions/setup-node@v3
+      with:
+        node-version: latest
+        cache: 'yarn'
+        cache-dependency-path: '**/package-lock.json'
+    - name: Install Dependencies and Build
+      run: |
+        cd "Vue Website"
+        yarn install
+        yarn build
+    
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: ${{ secrets.FTP_SERVER_DIR }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
