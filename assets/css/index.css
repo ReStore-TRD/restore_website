@@ -57,7 +57,6 @@
   justify-content: space-evenly;
   gap: 50px;
   padding: 0px 80px;
-
 }
 
 .text1 {
@@ -81,7 +80,6 @@
 }
 
 .block1img {
-  
   object-fit: contain;
 }
 
@@ -107,7 +105,6 @@
 }
 
 .block2img {
-
   object-fit: contain;
 }
 
@@ -159,13 +156,12 @@
 }
 
 @media screen and (max-width: 600px) {
-
   .heroDiv {
     display: none;
   }
 
   .hero_img {
-    content: url("/Images/hero_img.png");
+    content: url("../images/Index/hero_img.png");
     width: 100%;
     display: none;
   }

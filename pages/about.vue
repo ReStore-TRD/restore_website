@@ -62,7 +62,7 @@
             </div>
             <div class="rehome_card our_projects_single_card card-odd">
               <img
-                src="../assets/images/About/Project-icons/Restore (2).png"
+                src="../assets/images/About/Project-icons/Restore.png"
                 alt=""
               />
             </div>
