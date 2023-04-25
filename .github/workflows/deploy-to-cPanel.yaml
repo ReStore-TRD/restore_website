@@ -21,10 +21,10 @@ jobs:
           node-version: 18
           cache: "yarn"
           cache-dependency-path: "**/package-lock.json"
-      - name: Install Dependencies and Build
+      - name: Install Dependencies and Generate
         run: |
           yarn install
-          yarn build
+          yarn generate
 
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
