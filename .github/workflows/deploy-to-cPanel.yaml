@@ -29,7 +29,6 @@ jobs:
       - name: FTP-Deploy-Action
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          #'entryPoint', 'args', 'ftp-server', 'ftp-username', 'ftp-password', 'local-dir', 'git-ftp-args'
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
