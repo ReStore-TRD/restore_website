@@ -99,7 +99,7 @@
             <h3>Is ReStore only for NTNU students?</h3>
             <p>
               All students in Trondheim are welcome, whether you’re from NTNU,
-              BI, HiST, or DMMH. PhD students, you’re student too!
+              BI, HiST, or DMMH. PhD students, you’re students too!
             </p>
           </div>
         </div>
@@ -127,7 +127,7 @@
             <p>
               You can leave your donations on the backside portch at our Red
               building at anytime. But, it is recommended to donate items during
-              donation hours on Thursdays 16:30 - 18:30 and Saturdays 10:30 -
+              donation hours on Thursdays 16:00 - 18:00 and Saturdays 10:30 -
               12:30, so that our volunteers can take in the items and organize
               them quickly.
             </p>

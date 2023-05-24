@@ -1,16 +1,18 @@
-name: Deploy To cPanel
+name: Deploy internal To cPanel
 on:
   workflow_dispatch: # allow manually triggering this workflow
+  push:
+    branches:
+      - main
   pull_request:
     types:
       - closed
     branches:
-      - deploy
+      - main
 
 jobs:
-  Deploy-On-Merge:
-    name: Deploy-On-Merge
-    if: github.event.pull_request.merged == true
+  Deploy-internal-page:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout latest

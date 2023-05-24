@@ -19,7 +19,7 @@
             class="fa fa-facebook"
           ></a>
         </div>
-        <p>2022 NTNU RESTORE</p>
+        <p>2022 RESTORE</p>
       </div>
       <div class="footerRight">
         <p>In collabration with</p>
