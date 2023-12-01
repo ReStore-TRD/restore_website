@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
+import Button from "./Button";
 
 
 const Navbar = () => {
@@ -25,6 +26,9 @@ const Navbar = () => {
                 <Link href="/faq">
                   <p>FAQ</p>
                 </Link>
+              </li>
+              <li>
+                <Button />
               </li>
             </ul>
           </div>
