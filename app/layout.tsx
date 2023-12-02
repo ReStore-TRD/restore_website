@@ -1,6 +1,7 @@
 import Navigation from "./components/navigation";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import '@fontsource/montserrat'; 
 
 const inter = Inter({ subsets: ["latin"] });
 

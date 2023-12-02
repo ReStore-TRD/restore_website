@@ -4,7 +4,7 @@ import Link from "next/link";
 const Button = () => {
     return (
       <Link href="/">
-          <button className="rounded-full bg-pink-600 px-3 ">Join us</button>
+          <button className="rounded-full bg-repink px-5 py-2">Join us</button>
       </Link>
       
     );
