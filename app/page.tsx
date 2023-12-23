@@ -12,8 +12,8 @@ import VolunteerButton from "./components/VolunteerButton";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col items-start justify-between bg-background ">
-      <div className="relative min-h-screen text-[96px] flex flex-col pl-40 font-light top-[20vh]">
+    <main className="z-10 relative flex min-h-screen flex-col items-start justify-between bg-background ">
+      <div className="relative h-screen text-[96px] flex flex-col pl-40 font-light top-[20vh]">
         <p className="leading-none">REUSE</p>
         <p className="leading-none">RETHINK</p>
         <div className="flex text-restore-pink leading-none">
@@ -25,10 +25,10 @@ export default function Home() {
       <Image
         src={heroRight}
         alt={""}
-        className="absolute top-0 right-0 w-1/2  z-0 mix-blend-multiply"
+        className="z-0 absolute top-0 right-0 w-1/2   mix-blend-multiply"
       />
 
-      <div className="flex flex-col gap-32 px-20">
+      <div className="z-50 flex flex-col items-center gap-32 px-20">
         <ContentSection
           leftImage={undefined}
           rightImage={undefined}
@@ -48,7 +48,8 @@ export default function Home() {
           life by facilitating reuse of goods for all students in Trondheim."
         />
         <BlockComponent isLeftLayout={false} />
-        <div className="absolute bottom-1/3 left-0 w-full h-96 flex justify-between ">
+
+        <div className="z-0 absolute bottom-1/3 left-0 w-full h-96 flex justify-between ">
           <div className=" bottom-0 left-0 flex items-end">
             <Image
               src={midLeft}

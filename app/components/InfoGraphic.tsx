@@ -4,7 +4,7 @@ interface InfoGraphicProps {
 
 function InfoGraphic({ isLeftLayout }: InfoGraphicProps) {
   return (
-    <div className=" h-[400px] flex justify-between rounded-full bg-beige-dark mx-20">
+    <div className=" h-[400px] w-min lg:w-full flex justify-between rounded-full bg-beige-dark mx-20">
       <div
         className={`flex flex-col ${
           !isLeftLayout ? "order-1" : ""
