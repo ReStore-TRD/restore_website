@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button-zoom-active:active {
+  transform: scale(0.95); /* Slightly shrink the button when pressed */
+  transition: transform 0.1s; /* Smooth transition for the effect */
+}

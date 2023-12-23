@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import BlockComponent from "./components/InfoGraphic";
 import someImage from "./assets/landing_page/img2.png";
@@ -7,6 +8,7 @@ import bottomRight from "./assets/landing_page/bottom-right.svg";
 import InfoGraphic from "./components/InfoGraphic";
 import ContentSection from "./components/ContentSection";
 import Quote from "./components/Quote";
+import VolunteerButton from "./components/VolunteerButton";
 
 export default function Home() {
   return (
@@ -60,6 +62,7 @@ export default function Home() {
           content="“During my time at Restore I have made friends for life!”"
           author={"- Volunteer name"}
         />
+        <VolunteerButton />
       </div>
 
       <div className="relative bottom-0 w-full h-96 flex justify-between ">
@@ -67,7 +70,7 @@ export default function Home() {
           <Image
             src={bottomLeft}
             alt={""}
-            objectFit="contain" // Adjust as needed
+            objectFit="contain"
             className="mix-blend-multiply w-1/2"
           />
         </div>
@@ -75,7 +78,7 @@ export default function Home() {
           <Image
             src={bottomRight}
             alt={""}
-            objectFit="contain" // Adjust as needed
+            objectFit="contain"
             className="mix-blend-multiply w-1/2"
           />
         </div>
