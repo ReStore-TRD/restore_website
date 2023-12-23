@@ -9,10 +9,13 @@ import bottomRight from "./assets/landing_page/bottom-right.svg";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-start justify-between bg-background ">
-      <div className="relative min-h-screen text-[96px] flex flex-col pl-40 top-[20vh]">
-        <p>REUSE</p>
-        <p>RETHINK</p>
-        <p className="text-restore-pink">RESTORE.</p>
+      <div className="relative min-h-screen text-[96px] flex flex-col pl-40 font-light top-[20vh]">
+        <p className="leading-none">REUSE</p>
+        <p className="leading-none">RETHINK</p>
+        <p className="flex text-restore-pink leading-none">
+          <div className="font-bold">RE</div>STORE
+          <div className="font-bold">.</div>
+        </p>
       </div>
 
       <Image
@@ -21,7 +24,7 @@ export default function Home() {
         className="absolute top-0 right-0 w-1/2  z-0 mix-blend-multiply"
       />
 
-      <div className="flex flex-col gap-20 px-20">
+      <div className="flex flex-col gap-32 px-20">
         <TextComponent
           leftImage={undefined}
           rightImage={undefined}
