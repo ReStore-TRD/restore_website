@@ -9,15 +9,10 @@ export default function Home() {
         <p>RETHINK</p>
         <p className="text-blue-600">RESTORE</p>
       </div>
-      {/* <Image
-        className="static right-0 top-0 w-1/2 bg-red-200 hidden sm:block"
-        src={test}
-        alt={""}
-      /> */}
 
-      <div className="flex items-center gap-14 w-1/2">
+      <div className="flex items-center gap-14 bg-red-200">
         <Image src={image} alt={""} />
-        <div>
+        <div className="bg-red-200">
           <h3>We give items new life</h3>
           <p>
             ReStore is a voluntary student organization that works to reduce
