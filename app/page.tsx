@@ -1,10 +1,11 @@
 import Image from "next/image";
-import BlockComponent from "./BlockComponent";
-import TextComponent from "./TextComponent";
+import BlockComponent from "./components/InfoGraphic";
 import someImage from "./assets/landing_page/img2.png";
 import heroRight from "./assets/landing_page/hero-right.svg";
 import bottomLeft from "./assets/landing_page/bottom-left.svg";
 import bottomRight from "./assets/landing_page/bottom-right.svg";
+import InfoGraphic from "./components/InfoGraphic";
+import ContentSection from "./components/ContentSection";
 
 export default function Home() {
   return (
@@ -12,10 +13,10 @@ export default function Home() {
       <div className="relative min-h-screen text-[96px] flex flex-col pl-40 font-light top-[20vh]">
         <p className="leading-none">REUSE</p>
         <p className="leading-none">RETHINK</p>
-        <p className="flex text-restore-pink leading-none">
+        <div className="flex text-restore-pink leading-none">
           <div className="font-bold">RE</div>STORE
           <div className="font-bold">.</div>
-        </p>
+        </div>
       </div>
 
       <Image
@@ -25,7 +26,7 @@ export default function Home() {
       />
 
       <div className="flex flex-col gap-32 px-20">
-        <TextComponent
+        <ContentSection
           leftImage={undefined}
           rightImage={undefined}
           title="We give items new life"
@@ -33,9 +34,9 @@ export default function Home() {
           from household equipment and furniture and improve quality of student
           life by facilitating reuse of goods for all students in Trondheim."
         />
-        <BlockComponent isLeftLayout={true} />
+        <InfoGraphic isLeftLayout={true} />
 
-        <TextComponent
+        <ContentSection
           leftImage={someImage}
           rightImage={undefined}
           title="We give items new life"
@@ -45,7 +46,7 @@ export default function Home() {
         />
         <BlockComponent isLeftLayout={false} />
 
-        <TextComponent
+        <ContentSection
           leftImage={undefined}
           rightImage={someImage}
           title="We give items new life"
@@ -53,7 +54,7 @@ export default function Home() {
           from household equipment and furniture and improve quality of student
           life by facilitating reuse of goods for all students in Trondheim."
         />
-        <BlockComponent isLeftLayout={true} />
+        <InfoGraphic isLeftLayout={true} />
       </div>
 
       <div className="relative bottom-0 w-full h-96 flex justify-between ">

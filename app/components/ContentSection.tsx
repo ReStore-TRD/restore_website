@@ -1,18 +1,18 @@
 import Image from "next/image";
 
-interface TextComponentProps {
+interface ContentSectionProps {
   leftImage?: any;
   rightImage?: any;
   title: String;
   content: String;
 }
 
-function TextComponent({
+function ContentSection({
   leftImage,
   rightImage,
   title,
   content,
-}: TextComponentProps) {
+}: ContentSectionProps) {
   return (
     <div className="flex items-center justify-between ">
       {leftImage ? (
@@ -38,4 +38,4 @@ function TextComponent({
   );
 }
 
-export default TextComponent;
+export default ContentSection;

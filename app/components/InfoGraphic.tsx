@@ -1,8 +1,8 @@
-interface BlockComponentProps {
+interface InfoGraphicProps {
   isLeftLayout: boolean;
 }
 
-function BlockComponent({ isLeftLayout }: BlockComponentProps) {
+function InfoGraphic({ isLeftLayout }: InfoGraphicProps) {
   return (
     <div className=" h-[400px] flex justify-between rounded-full bg-beige-dark mx-20">
       <div
@@ -19,4 +19,4 @@ function BlockComponent({ isLeftLayout }: BlockComponentProps) {
   );
 }
 
-export default BlockComponent;
+export default InfoGraphic;
