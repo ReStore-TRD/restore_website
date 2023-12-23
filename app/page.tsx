@@ -6,6 +6,7 @@ import bottomLeft from "./assets/landing_page/bottom-left.svg";
 import bottomRight from "./assets/landing_page/bottom-right.svg";
 import InfoGraphic from "./components/InfoGraphic";
 import ContentSection from "./components/ContentSection";
+import Quote from "./components/Quote";
 
 export default function Home() {
   return (
@@ -55,6 +56,10 @@ export default function Home() {
           life by facilitating reuse of goods for all students in Trondheim."
         />
         <InfoGraphic isLeftLayout={true} />
+        <Quote
+          content="“During my time at Restore I have made friends for life!”"
+          author={"- Volunteer name"}
+        />
       </div>
 
       <div className="relative bottom-0 w-full h-96 flex justify-between ">
