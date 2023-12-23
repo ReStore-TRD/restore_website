@@ -25,6 +25,8 @@ const config: Config = {
       },
       colors: {
         background: "#FFFCF4",
+        "beige-dark": "#FEF5DD",
+        "restore-pink": "#ED0965",
       },
     },
   },
