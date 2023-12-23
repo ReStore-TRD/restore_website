@@ -7,6 +7,13 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      "50%": "50%",
+      "16": "4rem",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
