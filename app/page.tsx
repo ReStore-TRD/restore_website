@@ -13,7 +13,7 @@ import VolunteerButton from "./components/VolunteerButton";
 export default function Home() {
   return (
     <main className="z-10 relative flex min-h-screen flex-col items-start justify-between bg-background ">
-      <div className="relative h-screen text-[96px] flex flex-col pl-40 font-light top-[20vh]">
+      <div className="relative h-screen text-[128px] flex flex-col pl-40 font-light top-[20vh]">
         <p className="leading-none">REUSE</p>
         <p className="leading-none">RETHINK</p>
         <div className="flex text-restore-pink leading-none">

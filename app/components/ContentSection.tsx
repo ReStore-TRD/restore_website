@@ -21,13 +21,9 @@ function ContentSection({
         <div className="w-1/6"></div>
       )}
 
-      <div className="w-3/6 flex flex-col gap-6">
-        <h3 className="text-2xl font-bold">We give items new life</h3>
-        <p>
-          ReStore is a voluntary student organization that works to reduce waste
-          from household equipment and furniture and improve quality of student
-          life by facilitating reuse of goods for all students in Trondheim.
-        </p>
+      <div className="w-3/6 flex flex-col gap-14">
+        <h3 className="text-6xl font-medium">{title}</h3>
+        <p className="text-3xl font-light">{content}</p>
       </div>
       {rightImage ? (
         <Image src={rightImage} alt={""} className="w-1/6" />
