@@ -1,6 +1,7 @@
 import Image from "next/image";
 import test from "./assets/test.svg";
 import test2 from "./assets/mobile.svg";
+import arrow from "./assets/arrow.svg";
 
 export default function Home() {
   return (
@@ -11,8 +12,13 @@ export default function Home() {
         <p className="text-blue-600">RESTORE</p>
       </div>
       <Image
-        className="absolute right-0 top-0 w-1/2 h-[700px] hidden sm:block"
+        className="absolute right-0 top-0 w-1/2 bg-red-200 hidden sm:block"
         src={test}
+        alt={""}
+      />
+      <Image
+        className="absolute left-0 top-0 w-1/6 bg-red-200 hidden sm:block"
+        src={arrow}
         alt={""}
       />
       <Image
