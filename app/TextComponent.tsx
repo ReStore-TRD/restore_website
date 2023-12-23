@@ -1,10 +1,26 @@
 import Image from "next/image";
-import image from "./assets/landing_page/img2.png";
 
-function TextComponent() {
+interface TextComponentProps {
+  leftImage?: any;
+  rightImage?: any;
+  title: String;
+  content: String;
+}
+
+function TextComponent({
+  leftImage,
+  rightImage,
+  title,
+  content,
+}: TextComponentProps) {
   return (
     <div className="flex items-center justify-between ">
-      <Image src={image} alt={""} className="w-1/6" />
+      {leftImage ? (
+        <Image src={leftImage} alt={""} className="w-1/6" />
+      ) : (
+        <div className="w-1/6"></div>
+      )}
+
       <div className="w-3/6 flex flex-col gap-6">
         <h3 className="text-2xl font-bold">We give items new life</h3>
         <p>
@@ -13,7 +29,11 @@ function TextComponent() {
           life by facilitating reuse of goods for all students in Trondheim.
         </p>
       </div>
-      <div className="w-1/6"></div>
+      {rightImage ? (
+        <Image src={rightImage} alt={""} className="w-1/6" />
+      ) : (
+        <div className="w-1/6"></div>
+      )}
     </div>
   );
 }
