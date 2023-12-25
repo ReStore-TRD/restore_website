@@ -12,26 +12,20 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-full">
             <Logo />
             <div className="flex justify-between gap-x-10">
-              <ul className="hidden my-auto md:flex gap-x-4 text-black text-xs content-center">
-                <li className="border-r pr-4 hover:font-bold ">
-                  <Link href="/about">
-                    <p>About</p>
-                  </Link>
-                </li>
-                <li className="border-r pr-4 hover:font-bold hover-line">
-                  <Link href="/projects">
-                    <p>Projects</p>
-                  </Link>
-                </li>
-                <li className="hover:font-bold hover-line">
-                  <Link href="/faq">
-                    <p>FAQ</p>
-                  </Link>
-                </li>
-              </ul>
-              <li className="text-white hover:opacity-80 text-xs">
+              <div className="hidden my-auto md:flex gap-x-4 text-black text-xs content-center">
+                <Link href="/about" className="border-r pr-4 hover:font-bold ">
+                  About
+                </Link>
+                <Link href="/projects" className="border-r pr-4 hover:font-bold hover-line">
+                  Projects
+                </Link>
+                <Link href="/faq" className="hover:font-bold hover-line">
+                  FAQ
+                </Link>
+              </div>
+              <div className="text-white hover:opacity-80 text-xs">
                   <Button />
-              </li>
+              </div>
             </div>
 
           </div>
