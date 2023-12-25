@@ -1,5 +1,5 @@
-"use client";
 import React from "react";
+import Link from "next/link"
 import {
     FaFacebook,
     FaInstagram,
@@ -23,14 +23,20 @@ const Footer = () => {
                 <div>
                     Sit
                 </div>
+
                 <div className="flex items-center space-x-3 text-2xl">
-                    {items.map((x, index) => {
-                        return <x.icon key={index} href={x.link} rel="noopener noreferrer" target="_blank" className="hover:text-white"/>;
-                    })}
+                  {items.map((x, index) => (
+                    <Link key={index} href={x.link} className="hover:text-white">
+                        <x.icon />
+                    </Link>
+                  ))}
+
                 </div>
+
                 <div>
                     Address
                 </div>
+
             </div>
         </div>
       </div>
