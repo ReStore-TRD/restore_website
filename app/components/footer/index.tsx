@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link"
+import Image from "next/image";
+
 import {
     FaFacebook,
     FaInstagram,
@@ -19,12 +21,21 @@ const Footer = () => {
     <>
       <div className="w-full pt-10 pb-10 bg-gray-300 items-center">
         <div className="container mx-auto px-4 h-full w-11/12">
-            <div className="flex justify-between ">
+            <div className="flex justify-between">
                 <div>
-                    Sit
+                  <a className="text-xs">In partnership with: </a>
+                  <Link href="https://www.sit.no/en/reuse">
+                    <Image
+                      src="/images/logos/sit-logo-standard.svg"
+                      alt="Sit"
+                      width={"136"}
+                      height={"54"}
+                      layout= "responsive"
+                    />
+                  </Link>
                 </div>
 
-                <div className="flex items-center space-x-3 text-2xl">
+                <div className="flex items-center space-x-3 text-4xl">
                   {items.map((x, index) => (
                     <Link key={index} href={x.link} className="hover:text-white">
                         <x.icon />
