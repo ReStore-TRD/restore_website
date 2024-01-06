@@ -5,11 +5,11 @@ interface InfoGraphicProps {
 function InfoGraphic({ isLeftLayout }: InfoGraphicProps) {
   return (
     <div className="w-full">
-      <div className=" h-[600px] w-min lg:w-auto flex justify-between rounded-full bg-beige-dark mx-40">
+      <div className=" h-[400px] w-min lg:w-auto flex justify-between rounded-full bg-beige-dark mx-40">
         <div
           className={`flex flex-col ${
             !isLeftLayout ? "order-1" : ""
-          } text-white items-center justify-center bg-restore-pink w-[600px] rounded-full`}
+          } text-white items-center justify-center bg-restore-pink aspect-square rounded-full`}
         >
           <div>ReStore saves a total of</div>
           <div className="text-[128px] font-bold">275</div>
