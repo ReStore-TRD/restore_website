@@ -12,9 +12,9 @@ import VolunteerButton from "./components/VolunteerButton";
 
 export default function Home() {
   return (
-    <main className="z-10 relative flex min-h-screen flex-col items-center justify-between bg-background ">
-      <div className="flex justify-between  w-full">
-        <div className="relative h-screen text-[128px] flex flex-col pl-40 font-light top-[20vh]">
+    <main className="z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background ">
+      <div className="flex justify-between w-full ">
+        <div className="relative  aspect-square sm:h-[400px] md:h-[500px] lg:h-screen text-[48px] sm:text-[62px] md:text-[96px] lg:text-[128px] flex flex-col pl-10 lg:pl-40 font-light top-[20vh]">
           <p className="leading-none">REUSE</p>
           <p className="leading-none">RETHINK</p>
           <div className="flex text-restore-pink leading-none">
@@ -31,7 +31,7 @@ export default function Home() {
         className="z-0 absolute top-0 right-0 w-1/2   mix-blend-multiply"
       />
 
-      <div className="w-full z-50 flex flex-col items-center gap-32 px-20">
+      <div className="w-full z-50 flex flex-col items-center gap-20 lg:gap-32 px-10 lg:px-20 pt-32">
         <ContentSection
           leftImage={undefined}
           rightImage={undefined}
