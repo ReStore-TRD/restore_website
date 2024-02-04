@@ -35,7 +35,7 @@ export function SvgComponent(props: any) {
       fill="none"
       {...props}
       ref={svgRef}
-      className="line-animation w-full  absolute"
+      className="line-animation w-full absolute"
     >
       <circle
         cx={1045.5}

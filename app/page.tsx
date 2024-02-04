@@ -31,7 +31,7 @@ export default function Home() {
         className="z-0 absolute top-0 right-0 w-1/2 mix-blend-multiply line-animation"
       /> */}
 
-      <div className="z-0 absolute top-0 right-0 w-1/2 mix-blend-multiply">
+      <div className="z-0 absolute top-0 right-0 w-1/2 h-full mix-blend-multiply">
         <SvgComponent />
       </div>
 
