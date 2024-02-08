@@ -45,8 +45,10 @@ const Footer = () => {
                 </div>
 
                 <div className="text-sm text-center">
-                    <p>Prestekragevegen 14 </p>
-                    <p> 7050, Trondheim </p>
+
+                    <p> Prestekragevegen 14 <br></br>
+                        7050, Trondheim </p>
+                        <br></br>
                     <a href="mailto:info@restore-trd.no">info@restore-trd.no</a>
                 </div>
 

@@ -5,7 +5,7 @@ export default function Home() {
       <div className="w-full h-screen bg-green-300"></div>
       <h1 className="text-3xl font-red">New restore website! 🥳</h1>
         <p>
-          Lorem Ipsum is simply dummy text ...
+          text .....
         </p>
     </main>
   );
