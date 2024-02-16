@@ -7,7 +7,7 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <>
-      <div className="w-full h-20 top-10">
+      <div className="w-full h-20 top-10 bg-background">
         <div className="container mx-auto px-4 h-full w-11/12">
           <div className="flex justify-between items-center h-full">
             <Logo />
