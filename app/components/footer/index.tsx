@@ -19,7 +19,7 @@ const items = [
 const Footer = () => {
   return (
     <>
-      <div className="w-full pt-10 pb-10 bg-gray-300 items-center opacity-60">
+      <div className="w-full pt-10 pb-10 items-center opacity-60 bg-background">
         <div className="container mx-auto px-4 h-full w-11/12">
             <div className="flex justify-between">
                 <div>
