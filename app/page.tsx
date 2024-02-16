@@ -1,14 +1,13 @@
 import Image from "next/image";
-import BlockComponent from "./components/InfoGraphic";
 import someImage from "./assets/landing_page/img2.png";
 import bottomLeft from "./assets/landing_page/bottom-left.svg";
 import bottomRight from "./assets/landing_page/bottom-right.svg";
 import midLeft from "./assets/landing_page/mid-left.svg";
-import InfoGraphic from "./components/InfoGraphic";
+import SvgComponent from "./components/HeroRightSvg";
 import ContentSection from "./components/ContentSection";
+import InfoGraphic from "./components/InfoGraphic";
 import Quote from "./components/Quote";
 import VolunteerButton from "./components/VolunteerButton";
-import SvgComponent from "./components/HeroRightSvg";
 
 export default function Home() {
   return (
@@ -54,7 +53,7 @@ export default function Home() {
           from household equipment and furniture and improve quality of student
           life by facilitating reuse of goods for all students in Trondheim."
         />
-        <BlockComponent isLeftLayout={false} />
+        {/* <BlockComponent isLeftLayout={false} /> */}
 
         <div className="z-0 absolute bottom-1/3 left-0 w-full h-96 flex justify-between ">
           <div className=" bottom-0 left-0 flex items-end">
