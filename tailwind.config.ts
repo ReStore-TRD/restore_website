@@ -27,9 +27,10 @@ const config: Config = {
         background: "#FFFCF4",
         "beige-dark": "#FEF5DD",
         "restore-pink": "#ED0965",
+        repink: "#ed0965",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;

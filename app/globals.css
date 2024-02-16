@@ -18,3 +18,7 @@
   stroke-dashoffset: 10000;
   animation: dash 10s linear forwards;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
