@@ -75,7 +75,7 @@
           <div class="accordion-item-body-content">
             <h3>When can I come by to take things?</h3>
             <p>
-              We give away the items on opening days, which are usually held at
+              We are open every Wednesday from 16:00 to 18:00. Also, we have big opening day events, which are usually held at
               the beginning of each semester (August and January). Check
               <a
                 class="anchor"
@@ -126,7 +126,7 @@
             <h3>When can I donate items</h3>
             <p>
               You can leave your donations on the backside portch at our Red
-              building at anytime. But it is highly recommended to donate items during donation hours on Saturdays from 10 to 12 (only in December) and Tuesdays from 17:00 -18:00, so that our volunteers can take in the items and organize
+              building at anytime. But it is highly recommended to donate items during opening hours on Wednesdays from 16:00 to 18:00, so that our volunteers can take in the items and organize
               them quickly.
             </p>
           </div>
