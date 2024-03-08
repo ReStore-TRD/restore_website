@@ -9,20 +9,22 @@ import Quote from "./components/Quote";
 import VolunteerButton from "./components/VolunteerButton";
 import heroRight from "./assets/landing_page/hero-right.svg";
 import heroRightMobile from "./assets/landing_page/mobile.svg";
+import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
 
 export default function Home() {
   return (
     <main className="z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background">
-      <div className="flex justify-between w-full sm:pb-0 ">
-        <div className="relative aspect-square h-auto w-auto md:h-[500px] lg:h-screen text-[96px] sm:text-[96px] md:text-[96px] lg:text-[128px] flex flex-col pl-10 lg:pl-40 font-light sm:top-[20vh]">
-          <p className="leading-none">REUSE</p>
-          <p className="leading-none">RETHINK</p>
-          <div className="flex text-restore-pink leading-none">
-            <div className="font-bold">RE</div>STORE
-            <div className="font-bold">.</div>
-          </div>
+      <div className="relative w-full  mb-44 md:h-[50vh] ">
+        <div className="relative w-auto mt-2 ml-8 mr-16 aspect-square sm:aspect-auto">
+          <Image
+            src={headerTextMobile}
+            alt={""}
+            layout="fill"
+            objectFit="contain"
+            objectPosition="left"
+            className="pl-6  aspect-square"
+          />
         </div>
-        <div></div>
       </div>
 
       <Image
@@ -36,7 +38,7 @@ export default function Home() {
         className="block sm:hidden -z-50 absolute top-0 right-0 w-1/2 mix-blend-multiply line-animation opacity-50"
       />
 
-      <div className="w-full z-50 flex flex-col items-center gap-20 lg:gap-32 px-10 lg:px-20 pt-32">
+      <div className="w-full z-50 flex flex-col items-center gap-20 lg:gap-32 px-10 lg:px-20 ">
         <ContentSection
           leftImage={undefined}
           rightImage={undefined}
@@ -67,6 +69,8 @@ export default function Home() {
           </div>
         </div>
 
+        <InfoGraphic isLeftLayout={true} />
+
         <ContentSection
           leftImage={undefined}
           rightImage={someImage}
@@ -75,7 +79,6 @@ export default function Home() {
           from household equipment and furniture and improve quality of student
           life by facilitating reuse of goods for all students in Trondheim."
         />
-        <InfoGraphic isLeftLayout={true} />
         <Quote
           content="“During my time at Restore I have made friends for life!”"
           author={"- Volunteer name"}
