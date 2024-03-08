@@ -55,7 +55,6 @@ export default function Home() {
           from household equipment and furniture and improve quality of student
           life by facilitating reuse of goods for all students in Trondheim."
         />
-        {/* <BlockComponent isLeftLayout={false} /> */}
 
         <div className="-z-50 absolute bottom-1/3 left-0 w-full h-96 flex justify-between ">
           <div className=" bottom-0 left-0 flex items-end">
