@@ -14,15 +14,14 @@ import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
 export default function Home() {
   return (
     <main className="z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background">
-      <div className="relative w-full  mb-44 md:h-[50vh] ">
-        <div className="relative w-auto mt-2 ml-8 mr-16 aspect-square sm:aspect-auto">
+      <div className="flex w-full mb-24 aspect-square md:aspect-auto md:h-[90vh] ">
+        <div className="flex w-2/3 md:w-1/2 mt-6 md:mt-32 ml-8 md:ml-0 mr-16 mb-0 aspect-square sm:aspect-auto h-56 md:h-80">
           <Image
             src={headerTextMobile}
             alt={""}
-            layout="fill"
+            layout="responsive"
             objectFit="contain"
             objectPosition="left"
-            className="pl-6  aspect-square"
           />
         </div>
       </div>
@@ -30,12 +29,12 @@ export default function Home() {
       <Image
         src={heroRight}
         alt={""}
-        className="hidden sm:block -z-50 absolute top-0 right-0 w-1/2 mix-blend-multiply line-animation opacity-50"
+        className="hidden sm:block -z-50 absolute top-0 right-0 w-1/2 mix-blend-multiply line-animation"
       />
       <Image
         src={heroRightMobile}
         alt={""}
-        className="block sm:hidden -z-50 absolute top-0 right-0 w-1/2 mix-blend-multiply line-animation opacity-50"
+        className="block sm:hidden -z-50 absolute top-0 right-0 w-1/2 mix-blend-multiply line-animation"
       />
 
       <div className="w-full z-50 flex flex-col items-center gap-20 lg:gap-32 px-10 lg:px-20 ">
@@ -64,7 +63,7 @@ export default function Home() {
               src={midLeft}
               alt={""}
               objectFit="contain"
-              className="mix-blend-multiply w-1/2 "
+              className="mix-blend-multiply w-1/3 md:w-1/2"
             />
           </div>
         </div>
@@ -92,7 +91,7 @@ export default function Home() {
             src={bottomLeft}
             alt={""}
             objectFit="contain"
-            className=" w-1/2"
+            className="w-1/2"
           />
         </div>
         <div className="-z-50 bottom-0 left-0 flex justify-end items-center">
@@ -100,7 +99,7 @@ export default function Home() {
             src={bottomRight}
             alt={""}
             objectFit="contain"
-            className=" w-1/2"
+            className="w-1/3 md:w-1/2"
           />
         </div>
       </div>
