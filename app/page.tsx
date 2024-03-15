@@ -23,7 +23,6 @@ export default function Home() {
             objectFit="contain"
             objectPosition="left"
           />
-          <h1>TESTING</h1>
         </div>
       </div>
 
