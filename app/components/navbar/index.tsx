@@ -7,6 +7,7 @@ import AboutLine from "./About.svg";
 import ProjectLine from "./Projects.svg";
 import FaqLine from "./Faq.svg";
 import Image from "next/image";
+import NavigationItem from "./NavigationItem";
 
 const Navbar = () => {
   return (
@@ -16,45 +17,9 @@ const Navbar = () => {
             <Logo />
             <div className="flex justify-between gap-x-10 h-full">
               <div className="hidden my-auto md:flex gap-x-4 text-black text-xs content-center h-full">
-                <div className="relative group flex flex-col absolute inset-0 flex items-center justify-center">
-                  <Link href="/about" className="relative border-r pr-4 hover:font-bold ">
-                    About
-                      <div className="absolute right-4 left-0 opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
-                      <Image
-                        src={AboutLine}
-                        alt={""}
-                        objectFit="contain"
-                        className="mix-blend-multiply"
-                      />
-                    </div>
-                  </Link>
-                </div>
-                <div className="relative group flex flex-col absolute inset-0 flex items-center justify-center">
-                  <Link href="/projects" className="relative border-r pr-4 hover:font-bold">
-                    Projects
-                      <div className="absolute right-4 left-0 opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
-                      <Image
-                        src={ProjectLine}
-                        alt={""}
-                        objectFit="contain"
-                        className="mix-blend-multiply"
-                      />
-                  </div>
-                  </Link>
-                </div>
-                <div className="relative group flex flex-col absolute inset-0 flex items-center justify-center">
-                  <Link href="/faq" className="hover:font-bold relative">
-                    FAQ
-                    <div className="absolute left-0 opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
-                        <Image
-                          src={FaqLine}
-                          alt={""}
-                          objectFit="contain"
-                          className="mix-blend-multiply"
-                        />
-                    </div>
-                  </Link>
-                </div>
+                <NavigationItem href="/About" text="About" imageSrc={AboutLine} altText="" />
+                <NavigationItem href="/Projects" text="Projects" imageSrc={ProjectLine} altText="" />
+                <NavigationItem href="/faq" text="FAQ" imageSrc={FaqLine} altText="" />
                 <div className="relative group flex flex-col items-end absolute inset-0 justify-center">
                   <div className="inline-flex">
                     <div className="text-white hover:opacity-80 text-xs">
