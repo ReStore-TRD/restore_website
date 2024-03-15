@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h2 {
+    @apply text-xl;
+  }
+}
+
 .button-zoom-active:active {
   transform: scale(0.95); /* Slightly shrink the button when pressed */
   transition: transform 0.1s; /* Smooth transition for the effect */
@@ -21,4 +27,5 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #fffcf4;
 }
