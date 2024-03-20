@@ -1,6 +1,7 @@
 import Image from "next/image";
 import topLeft from "../assets/about_page/top-left.svg";
 import sustainabilityGoals from "../assets/about_page/sustainability_goals.png";
+import Quote from "../components/Quote";
 
 function About() {
   return (
@@ -44,6 +45,11 @@ function About() {
           </p>
         </div>
         <Image src={sustainabilityGoals} alt={""} />
+
+        <Quote
+          content="“During my time at Restore I have made friends for life!”"
+          author={"- Volunteer name"}
+        />
       </div>
     </>
   );
