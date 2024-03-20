@@ -11,6 +11,7 @@
   "dependencies": {
     "@fontsource/montserrat": "^5.0.15",
     "@tailwindcss/typography": "^0.5.10",
+    "embla-carousel-react": "^8.0.0",
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18",
@@ -21,6 +22,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "14.0.0",
