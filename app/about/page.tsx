@@ -1,5 +1,6 @@
 import Image from "next/image";
 import topLeft from "../assets/about_page/top-left.svg";
+import middle from "../assets/about_page/middle.svg";
 import sustainabilityGoals from "../assets/about_page/sustainability_goals.png";
 import Quote from "../components/Quote";
 
@@ -9,12 +10,17 @@ function About() {
       <Image
         src={topLeft}
         alt={""}
-        className="hidden md:block -z-50 absolute top-0 left-0 w-1/6 mix-blend-multiply line-animation"
+        className="hidden md:block -z-50 absolute top-1/12 left-0 w-1/6 mix-blend-multiply line-animation"
       />
-      <div className=" flex flex-col gap-16 px-8">
+      <Image
+        src={middle}
+        alt={""}
+        className="hidden md:block -z-50 absolute top-6/12 right-0 w-1/6 mix-blend-multiply line-animation"
+      />
+      <div className=" flex flex-col gap-16 px-8 md:px-48">
         <h1 className="mb-0">About ReStore</h1>
         <div>
-          <h2 className="mb-0">Our story</h2>
+          <h2 className="mb-6">Our story</h2>
           <p>
             ReStore is a student organization with roots in Trondheim. At
             ReStore, we work towards upcycling goods, with the goal of creating
@@ -33,7 +39,7 @@ function About() {
         </div>
 
         <div>
-          <h2 className="mb-0">Our goals</h2>
+          <h2 className="mb-6">Our goals</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
