@@ -5,7 +5,7 @@ import sustainabilityGoals from "../assets/about_page/sustainability_goals.png";
 import Quote from "../components/Quote";
 import EmblaCarousel from "../components/PhotoCarousel";
 import { EmblaOptionsType } from "embla-carousel";
-import exampleImage from "../assets/about_page/sustainability_goals.png";
+import exampleImage from "../assets/about_page/example_image_about_us.png";
 import "../embla.css";
 
 function About() {
