@@ -42,7 +42,7 @@ function About() {
         alt={""}
         className="hidden md:block -z-50 absolute top-6/12 right-0 w-1/6 mix-blend-multiply line-animation"
       />
-      <div className=" flex flex-col gap-16 px-8 md:px-48">
+      <div className=" flex flex-col gap-16 px-8 md:px-48 pb-28">
         <h1 className="mb-0">About ReStore</h1>
         <div>
           <h2 className="mb-6">Our story</h2>
@@ -75,7 +75,7 @@ function About() {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <Image src={sustainabilityGoals} alt={""} />
+        <Image src={sustainabilityGoals} alt={""} className="pb-10" />
 
         <Quote
           content="“During my time at Restore I have made friends for life!”"

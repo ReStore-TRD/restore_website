@@ -1,5 +1,4 @@
 .embla {
-  max-width: 80rem;
   margin: auto;
   --slide-height: 20rem;
   --slide-spacing: 1rem;
@@ -37,10 +36,8 @@
   margin-top: 1.8rem;
 }
 .embla__buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.6rem;
-  align-items: center;
+  display: flex;
+  gap: 50px;
 }
 .embla__button {
   -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
