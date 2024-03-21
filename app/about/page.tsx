@@ -4,6 +4,8 @@ import middle from "../assets/about_page/middle.svg";
 import sustainabilityGoals from "../assets/about_page/sustainability_goals.png";
 import Quote from "../components/Quote";
 import EmblaCarousel from "../components/PhotoCarousel";
+import { EmblaOptionsType } from "embla-carousel";
+import exampleImage from "../assets/about_page/sustainability_goals.png";
 import "../embla.css";
 
 function About() {
@@ -17,8 +19,17 @@ function About() {
     exampleImage,
     exampleImage,
   ]; */
+  const OPTIONS: EmblaOptionsType = { loop: true };
   const SLIDE_COUNT = 5;
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+  const imageArray = [
+    exampleImage,
+    exampleImage,
+    exampleImage,
+    exampleImage,
+    exampleImage,
+    exampleImage,
+  ];
   return (
     <>
       <Image
@@ -71,7 +82,7 @@ function About() {
           author={"- Volunteer name"}
         />
       </div>
-      <EmblaCarousel slides={SLIDES} />
+      <EmblaCarousel slides={imageArray} options={OPTIONS} />
     </>
   );
 }

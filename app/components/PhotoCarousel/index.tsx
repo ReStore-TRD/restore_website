@@ -1,5 +1,6 @@
 "use client";
 import React, { useCallback, useEffect, useRef } from "react";
+import Image from "next/image";
 import {
   EmblaCarouselType,
   EmblaEventType,
@@ -18,15 +19,13 @@ const numberWithinRange = (number: number, min: number, max: number): number =>
   Math.min(Math.max(number, min), max);
 
 type PropType = {
-  slides: number[];
+  slides: any[];
   options?: EmblaOptionsType;
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
-  });
+  const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const tweenFactor = useRef(0);
   const tweenNodes = useRef<HTMLElement[]>([]);
 
@@ -106,9 +105,11 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
+          {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number bg-red-200">{index + 1}</div>
+              <div className="embla__slide__number bg-red-200">
+                <Image src={slide.src} alt={""} width={600} height={600} />
+              </div>
             </div>
           ))}
         </div>

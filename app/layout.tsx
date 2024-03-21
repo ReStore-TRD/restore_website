@@ -3,7 +3,6 @@ import Footer from "./components/footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import "@fontsource/montserrat";
-import EmblaCarousel from "./components/PhotoCarousel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,14 +16,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const SLIDE_COUNT = 5;
-  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navigation />
         {children}
-        <EmblaCarousel slides={SLIDES} />
         <Footer />
       </body>
     </html>
