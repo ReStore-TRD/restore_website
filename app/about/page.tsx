@@ -4,19 +4,21 @@ import middle from "../assets/about_page/middle.svg";
 import sustainabilityGoals from "../assets/about_page/sustainability_goals.png";
 import Quote from "../components/Quote";
 import EmblaCarousel from "../components/PhotoCarousel";
-import exampleImage from "../assets/about_page/sustainability_goals.png";
 import "../embla.css";
 
 function About() {
-  const SLIDE_COUNT = 5;
+  /* const SLIDE_COUNT = 5;
   const SLIDES = [
-    <Image key={1} src={exampleImage} alt={""} />,
-    <Image key={1} src={exampleImage} alt={""} />,
-    <Image key={1} src={exampleImage} alt={""} />,
-    <Image key={1} src={exampleImage} alt={""} />,
-    <Image key={1} src={exampleImage} alt={""} />,
-    <Image key={1} src={exampleImage} alt={""} />,
-  ];
+    exampleImage,
+    exampleImage,
+    exampleImage,
+    exampleImage,
+    exampleImage,
+    exampleImage,
+    exampleImage,
+  ]; */
+  const SLIDE_COUNT = 5;
+  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
   return (
     <>
       <Image
@@ -69,9 +71,7 @@ function About() {
           author={"- Volunteer name"}
         />
       </div>
-      <div className="w-full">
-        <EmblaCarousel slides={SLIDES} />
-      </div>
+      <EmblaCarousel slides={SLIDES} />
     </>
   );
 }

@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useCallback, useEffect, useRef } from "react";
 import {
   EmblaCarouselType,
@@ -12,7 +11,6 @@ import {
   PrevButton,
   usePrevNextButtons,
 } from "./CarouselArrowButtons";
-import { DotButton, useDotButton } from "./CarouselDotButtons";
 
 const TWEEN_FACTOR_BASE = 0.52;
 
@@ -20,22 +18,17 @@ const numberWithinRange = (number: number, min: number, max: number): number =>
   Math.min(Math.max(number, min), max);
 
 type PropType = {
-  slides: React.ReactNode[];
+  slides: number[];
   options?: EmblaOptionsType;
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "center",
-    containScroll: "trimSnaps",
-    loop: false,
+    loop: true,
   });
   const tweenFactor = useRef(0);
   const tweenNodes = useRef<HTMLElement[]>([]);
-
-  const { selectedIndex, scrollSnaps, onDotButtonClick } =
-    useDotButton(emblaApi);
 
   const {
     prevBtnDisabled,
@@ -88,7 +81,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           const tweenValue = 1 - Math.abs(diffToTarget * tweenFactor.current);
           const scale = numberWithinRange(tweenValue, 0, 1).toString();
           const tweenNode = tweenNodes.current[slideIndex];
-          //tweenNode.style.transform = `scale(${scale})`;
+          tweenNode.style.transform = `scale(${scale})`;
         });
       });
     },
@@ -107,15 +100,15 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       .on("reInit", setTweenFactor)
       .on("reInit", tweenScale)
       .on("scroll", tweenScale);
-  }, [emblaApi, tweenScale]);
+  }, [emblaApi, setTweenFactor, setTweenNodes, tweenScale]);
 
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((slide, index) => (
+          {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <div className="bg-green-200 w-80 h-80">{slide}</div>
+              <div className="embla__slide__number bg-red-200">{index + 1}</div>
             </div>
           ))}
         </div>
@@ -127,17 +120,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>
 
-        <div className="embla__dots">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              className={"embla__dot".concat(
-                index === selectedIndex ? " embla__dot--selected" : ""
-              )}
-            />
-          ))}
-        </div>
+        <div className="embla__dots"></div>
       </div>
     </div>
   );

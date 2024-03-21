@@ -1,4 +1,5 @@
 .embla {
+  max-width: 48rem;
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
@@ -8,21 +9,16 @@
   overflow: hidden;
 }
 .embla__container {
+  backface-visibility: hidden;
   display: flex;
-  margin-left: calc(var(--slide-spacing) * -0.5); /* Adjust for peek effect */
+  touch-action: pan-y;
+  margin-left: calc(var(--slide-spacing) * -1);
 }
-
 .embla__slide {
-  position: relative; /* Ensure slides are positioned in flow */
-  width: var(--slide-size); /* Slide width */
-  margin-right: var(--slide-spacing); /* Space between slides */
-  /* Remainder of your styles */
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
 }
-
-.embla__slide:last-child {
-  margin-right: 0;
-}
-
 .embla__slide__number {
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   border-radius: 1.8rem;
