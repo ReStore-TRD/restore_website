@@ -9,19 +9,8 @@ import exampleImage from "../assets/about_page/example_image_about_us.png";
 import "../embla.css";
 
 function About() {
-  /* const SLIDE_COUNT = 5;
-  const SLIDES = [
-    exampleImage,
-    exampleImage,
-    exampleImage,
-    exampleImage,
-    exampleImage,
-    exampleImage,
-    exampleImage,
-  ]; */
   const OPTIONS: EmblaOptionsType = { loop: true };
   const SLIDE_COUNT = 5;
-  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
   const imageArray = [
     exampleImage,
     exampleImage,
@@ -43,7 +32,7 @@ function About() {
         className="hidden md:block -z-50 absolute top-[50vh] right-[5vw] w-1/12 mix-blend-multiply line-animation"
       />
       <div className="w-full flex justify-center">
-        <div className=" flex flex-col gap-16 px-8 w-[50vw]  pb-28">
+        <div className=" flex flex-col gap-16 px-8 md:w-[50vw] pb-28">
           <h1 className="mb-0">About ReStore</h1>
           <div>
             <h2 className="mb-6">Our story</h2>
