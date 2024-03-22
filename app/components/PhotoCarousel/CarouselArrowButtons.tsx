@@ -9,6 +9,8 @@ import { EmblaCarouselType } from "embla-carousel";
 import Image from "next/image";
 import arrowLeft from "../../assets/about_page/arrow_left.png";
 import arrowRight from "../../assets/about_page/arrow_right.png";
+import arrowLeftHover from "../../assets/about_page/arrow_left_hover.png";
+import arrowRightHover from "../../assets/about_page/arrow_right_hover.png";
 
 type UsePrevNextButtonsType = {
   prevBtnDisabled: boolean;
@@ -65,30 +67,36 @@ type PropType = PropsWithChildren<
 >;
 
 export const PrevButton: React.FC<PropType> = (props) => {
+  const [isHovered, setIsHovered] = useState(false);
   const { children, ...restProps } = props;
 
   return (
     <button
       className="embla__button embla__button--prev"
       type="button"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       {...restProps}
     >
-      <Image src={arrowLeft} alt={""} />
+      <Image src={isHovered ? arrowLeftHover : arrowLeft} alt={""} />
       {children}
     </button>
   );
 };
 
 export const NextButton: React.FC<PropType> = (props) => {
+  const [isHovered, setIsHovered] = useState(false);
   const { children, ...restProps } = props;
 
   return (
     <button
       className="embla__button embla__button--next"
       type="button"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       {...restProps}
     >
-      <Image src={arrowRight} alt={""} />
+      <Image src={isHovered ? arrowRightHover : arrowRight} alt={""} />
       {children}
     </button>
   );
