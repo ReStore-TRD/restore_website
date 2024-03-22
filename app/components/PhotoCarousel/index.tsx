@@ -48,7 +48,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   const setTweenNodes = useCallback((emblaApi: EmblaCarouselType): void => {
     tweenNodes.current = emblaApi.slideNodes().map((slideNode) => {
-      return slideNode.querySelector(".embla__slide__number") as HTMLElement;
+      return slideNode.querySelector(".carousel__slide__number") as HTMLElement;
     });
   }, []);
 
@@ -112,18 +112,18 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, setTweenFactor, setTweenNodes, tweenScale]);
 
   return (
-    <div className="embla flex flex-col items-center pb-56 ">
-      <div className="embla__viewport " ref={emblaRef}>
-        <div className="embla__container">
+    <div className="carousel flex flex-col items-center pb-56 ">
+      <div className="carousel__viewport " ref={emblaRef}>
+        <div className="carousel__container">
           {slides.map((slide, index) => (
-            <div className="embla__slide" key={index}>
+            <div className="carousel__slide" key={index}>
               <Image
                 src={slide.src}
                 alt={""}
                 width={600}
                 height={600}
                 onClick={() => handleImageClick(slide.src)}
-                className="embla__slide__number"
+                className="carousel__slide__number hover:cursor-pointer"
               />
             </div>
           ))}
@@ -134,8 +134,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <FullScreenImageModal src={selectedImage} onClose={closeModal} />
       )}
 
-      <div className="embla__controls flex items-center justify-center">
-        <div className="embla__buttons">
+      <div className="carousel__controls flex items-center justify-center">
+        <div className="carousel__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>

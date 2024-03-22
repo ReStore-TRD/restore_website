@@ -6,7 +6,7 @@ import Quote from "../components/Quote";
 import EmblaCarousel from "../components/PhotoCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 import exampleImage from "../assets/about_page/example_image_about_us.png";
-import "../embla.css";
+import "../image_carousel.css";
 
 function About() {
   const OPTIONS: EmblaOptionsType = { loop: true };
