@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import {
   EmblaCarouselType,
@@ -12,6 +12,7 @@ import {
   PrevButton,
   usePrevNextButtons,
 } from "./CarouselArrowButtons";
+import FullScreenImageModal from "./FullScreenImageModal";
 
 const TWEEN_FACTOR_BASE = 0.52;
 
@@ -28,6 +29,15 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const tweenFactor = useRef(0);
   const tweenNodes = useRef<HTMLElement[]>([]);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const handleImageClick = (imageSrc: string | undefined) => {
+    setSelectedImage(imageSrc || null);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
 
   const {
     prevBtnDisabled,
@@ -112,12 +122,17 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                 alt={""}
                 width={600}
                 height={600}
+                onClick={() => handleImageClick(slide.src)}
                 className="embla__slide__number"
               />
             </div>
           ))}
         </div>
       </div>
+
+      {selectedImage && (
+        <FullScreenImageModal src={selectedImage} onClose={closeModal} />
+      )}
 
       <div className="embla__controls flex items-center justify-center">
         <div className="embla__buttons">
