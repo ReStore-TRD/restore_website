@@ -1,9 +1,31 @@
 .embla {
   margin: auto;
-  --slide-height: 20rem;
+  --slide-height: 30rem;
   --slide-spacing: 1rem;
-  --slide-size: 35%;
+  --slide-size: 75%;
 }
+
+/* Small devices (sm) */
+@media (min-width: 640px) {
+  .embla {
+    --slide-size: 60%;
+  }
+}
+
+/* Medium devices (md) */
+@media (min-width: 768px) {
+  .embla {
+    --slide-size: 45%;
+  }
+}
+
+/* Large devices (md) */
+@media (min-width: 1024px) {
+  .embla {
+    --slide-size: 35%;
+  }
+}
+
 .embla__viewport {
   overflow: hidden;
 }
