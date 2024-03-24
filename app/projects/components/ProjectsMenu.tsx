@@ -32,7 +32,7 @@ function ProjectsMenu({ projectGroups }: ProjectsMenuProps) {
 
   return (
     <div className="grid grid-cols-5 gap-10">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 items-center">
         {projectGroups.map((group, index) => {
           return (
             <p
