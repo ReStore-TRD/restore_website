@@ -31,33 +31,49 @@ function ProjectsMenu({ projectGroups }: ProjectsMenuProps) {
     "hover:bg-no-repeat hover:bg-bottom hover:cursor-pointer hover:bg-projects-underline ";
 
   return (
-    <div className="grid grid-cols-5 gap-10">
-      <div className="flex flex-col gap-4 items-center">
-        {projectGroups.map((group, index) => {
-          return (
-            <p
-              key={index}
-              className={
-                selectedGroup == group
-                  ? "bg-no-repeat bg-bottom cursor-pointer bg-projects-underline"
-                  : `hover:bg-no-repeat hover:bg-bottom hover:cursor-pointer hover:bg-projects-underline`
-              }
-              onClick={() => setSelectedGroup(group)}
-            >
-              {group.projectName}
-            </p>
-          );
-        })}
-      </div>
-      <div className="col-span-3">
-        {renderDescriptionWithLineBreaks(selectedGroup.projectDescription)}
-      </div>
-      <div className="relative w-48 h-48 -top-28">
-        <Image
-          src={selectedGroup.projectIconUrl?.url ?? ""}
-          fill={true}
-          alt={""}
-        />
+    <div>
+      <div className="grid grid-flow-cols-5 grid-flow-rows-3 justify-center">
+        <h1 className="text-4xl font-medium col-start-2 col-span-2 pb-28">
+          Our Projects
+        </h1>
+
+        <div className="row-start-2 flex flex-col gap-4 items-center pr-10">
+          {projectGroups.map((group, index) => {
+            return (
+              <p
+                key={index}
+                className={
+                  selectedGroup == group
+                    ? "bg-no-repeat bg-bottom cursor-pointer bg-projects-underline"
+                    : `hover:bg-no-repeat hover:bg-bottom hover:cursor-pointer hover:bg-projects-underline`
+                }
+                onClick={() => setSelectedGroup(group)}
+              >
+                {group.projectName}
+              </p>
+            );
+          })}
+        </div>
+        <div className="col-span-2 w-[500px] pb-28">
+          {renderDescriptionWithLineBreaks(selectedGroup.projectDescription)}
+        </div>
+        <div className="relative -top-28 row-start-2 col-start-4 pl-16">
+          <Image
+            src={selectedGroup.projectIconUrl?.url ?? ""}
+            width={200}
+            height={200}
+            alt={""}
+          />
+        </div>
+        <div className="flex justify-center row-start-3 col-start-2 col-span-2 pb-48">
+          <Image
+            src={selectedGroup.projectImage?.url ?? ""}
+            width={500}
+            height={500}
+            alt={""}
+            className=" "
+          />
+        </div>
       </div>
     </div>
   );

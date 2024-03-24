@@ -4,4 +4,7 @@ export interface ProjectGroup {
   projectIconUrl?: {
     url: string;
   };
+  projectImage?: {
+    url: string;
+  };
 }

@@ -8,6 +8,9 @@ export const GET_ALL_PROJECTS_QUERY = gql`
       projectIconUrl {
         url
       }
+      projectImage {
+        url
+      }
     }
   }
 `;
