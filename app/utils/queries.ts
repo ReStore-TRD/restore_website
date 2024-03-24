@@ -5,7 +5,7 @@ export const GET_ALL_PROJECTS_QUERY = gql`
     allProjectgroups {
       projectName
       projectDescription(markdown: false)
-      projectIcon {
+      projectIconUrl {
         url
       }
     }
