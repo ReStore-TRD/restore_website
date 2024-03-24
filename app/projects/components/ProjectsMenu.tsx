@@ -64,7 +64,7 @@ function ProjectsMenu({ projectGroups }: ProjectsMenuProps) {
             alt={""}
           />
         </div>
-        <div className="flex w-full justify-center row-start-4 lg:row-start-3 col-start-2 col-span-3 lg:col-span-4 pb-48 px-10 lg:px-0">
+        <div className="flex w-full justify-center row-start-4 lg:row-start-3 col-start-2 col-span-3 lg:col-span-4 pb-48 px-16 lg:px-0">
           <Image
             src={selectedGroup.projectImage?.url ?? ""}
             width={500}
