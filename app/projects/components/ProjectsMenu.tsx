@@ -54,7 +54,7 @@ function ProjectsMenu({ projectGroups }: ProjectsMenuProps) {
             );
           })}
         </div>
-        <div className="col-span-3 col-start-2 row-start-3 lg:row-start-2 lg:col-span-2 lg:max-w-[700px] pb-28 mx-16">
+        <div className="col-span-3 col-start-2 row-start-3 lg:row-start-2 lg:col-span-2 lg:max-w-[500px] pb-28 mx-16">
           {renderDescriptionWithLineBreaks(selectedGroup.projectDescription)}
         </div>
         <div className="relative -top-28 row-start-2 col-start-4 pl-16 w-44 h-44">
