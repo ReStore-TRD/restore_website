@@ -3,17 +3,16 @@ import Link from "next/link";
 
 const Logo = () => {
   return (
-    <>
+    <div className="relative h-16 w-36 ">
       <Link href="/">
         <Image
           src="/images/logos/logo.png"
           alt="Logo"
-          width={"194"}
-          height={"35"}
-          layout="responsive"
+          fill={true}
+          objectFit="contain"
         />
       </Link>
-    </>
+    </div>
   );
 };
 
