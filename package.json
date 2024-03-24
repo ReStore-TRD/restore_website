@@ -12,6 +12,7 @@
     "@fontsource/montserrat": "^5.0.15",
     "@tailwindcss/typography": "^0.5.10",
     "embla-carousel-react": "^8.0.0",
+    "flowbite-react": "^0.7.5",
     "graphql": "^16.8.1",
     "graphql-request": "^6.1.0",
     "next": "14.0.0",

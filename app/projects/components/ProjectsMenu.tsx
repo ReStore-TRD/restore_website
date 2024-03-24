@@ -32,12 +32,12 @@ function ProjectsMenu({ projectGroups }: ProjectsMenuProps) {
 
   return (
     <div className="">
-      <div className="grid grid-flow-cols-5 grid-flow-rows-3 justify-center">
+      <div className="grid grid-flow-cols-5 lg:grid-flow-rows-3 grid-flow-rows-4 justify-center">
         <h1 className="text-4xl font-medium col-start-2 col-span-2 pb-28 ml-16">
           Our Projects
         </h1>
 
-        <div className="row-start-2 flex flex-col gap-4 items-center ">
+        <div className="hidden lg:flex row-start-2  flex-col gap-4 items-center ">
           {projectGroups.map((group, index) => {
             return (
               <p
@@ -54,7 +54,7 @@ function ProjectsMenu({ projectGroups }: ProjectsMenuProps) {
             );
           })}
         </div>
-        <div className="col-span-2 max-w-[500px] pb-28 mx-16">
+        <div className="col-span-3 col-start-2 row-start-3 lg:col-span-2 max-w-[500px] pb-28 mx-16">
           {renderDescriptionWithLineBreaks(selectedGroup.projectDescription)}
         </div>
         <div className="relative -top-28 row-start-2 col-start-4 pl-16 w-44 h-44">
@@ -64,7 +64,7 @@ function ProjectsMenu({ projectGroups }: ProjectsMenuProps) {
             alt={""}
           />
         </div>
-        <div className="flex justify-center row-start-3 col-start-2 col-span-2 pb-48">
+        <div className="flex justify-center row-start-4 lg:row-start-3 col-start-2 col-span-3 pb-48 px-10">
           <Image
             src={selectedGroup.projectImage?.url ?? ""}
             width={500}

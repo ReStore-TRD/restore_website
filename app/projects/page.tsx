@@ -18,7 +18,7 @@ async function page() {
   };
 
   return (
-    <div className="min-h-[100vh] flex flex-col gap-32 items-center px-40">
+    <div className="min-h-[100vh] flex flex-col gap-32 items-center">
       <ProjectsMenu projectGroups={projectGroups} />
     </div>
   );
