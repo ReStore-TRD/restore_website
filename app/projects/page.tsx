@@ -9,6 +9,8 @@ async function page() {
     revalidate: 0,
   });
 
+  console.log(res);
+
   const projectGroups: ProjectGroup[] = res.allProjectgroups;
 
   const testFunc = () => {
@@ -16,15 +18,10 @@ async function page() {
   };
 
   return (
-    <div className="min-h-[100vh] grid grid-cols-3 grid-rows-2 justify-center">
-      <div className="row-start-2 flex justify-end">
-        <ProjectsMenu
-          projectGroups={projectGroups}
-          onProjectClicked={testFunc}
-        />
-      </div>
-      <h1 className="text-4xl font-medium col-start-2">Our Projects</h1>
-      <div>right side</div>
+    <div className="min-h-[100vh] flex flex-col gap-32 items-center px-40">
+      <h1 className="text-4xl font-medium">Our Projects</h1>
+
+      <ProjectsMenu projectGroups={projectGroups} />
     </div>
   );
 }
