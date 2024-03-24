@@ -31,7 +31,7 @@ function ProjectsMenu({ projectGroups }: ProjectsMenuProps) {
     "hover:bg-no-repeat hover:bg-bottom hover:cursor-pointer hover:bg-projects-underline ";
 
   return (
-    <div className="">
+    <div className="lg:px-10">
       <div className="grid grid-flow-cols-5 lg:grid-flow-rows-3 grid-flow-rows-4 justify-center">
         <h1 className="text-4xl font-medium col-start-2 col-span-2 pb-28 ml-16">
           Our Projects
