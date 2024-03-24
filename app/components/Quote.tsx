@@ -5,7 +5,7 @@ interface QuoteProps {
 
 function Quote({ content, author }: QuoteProps) {
   return (
-    <div className="text-right text-4xl font-light text-gray-500 m-auto">
+    <div className="flex flex-col gap-2 text-right text-xl md:text-2xl font-light text-gray-500 m-auto">
       <p>{content}</p>
       <p>{author}</p>
     </div>
