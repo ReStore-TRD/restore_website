@@ -1,5 +1,5 @@
-import Logo from "./Logo";
-import Button from "./Button";
+import Logo from "../Logo";
+import Button from "../Button";
 import MySVGImage from "./join_us.svg";
 import AboutLine from "./About.svg";
 import ProjectLine from "./Projects.svg";
@@ -16,13 +16,13 @@ const Navbar = () => {
           <div className="flex justify-between gap-x-10 h-full">
             <div className="hidden my-auto md:flex gap-x-4 text-black text-xs content-center h-full">
               <NavigationItem
-                href="/About"
+                href="/about"
                 text="About"
                 imageSrc={AboutLine}
                 altText=""
               />
               <NavigationItem
-                href="/Projects"
+                href="/projects"
                 text="Projects"
                 imageSrc={ProjectLine}
                 altText=""
