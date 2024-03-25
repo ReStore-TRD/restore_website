@@ -3,7 +3,7 @@ import Button from "../Button";
 import MySVGImage from "./join_us.svg";
 import AboutLine from "./About.svg";
 import ProjectLine from "./Projects.svg";
-import FaqLine from "./Faq.svg";
+import FaqLine from "./FAQ.svg";
 import Image from "next/image";
 import NavigationItem from "./NavigationItem";
 
