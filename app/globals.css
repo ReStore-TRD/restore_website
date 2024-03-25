@@ -11,6 +11,9 @@
     @apply text-xl;
     @apply font-bold;
   }
+  a {
+    @apply text-restore-pink;
+  }
 }
 
 .button-zoom-active:active {

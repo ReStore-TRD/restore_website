@@ -45,7 +45,7 @@ const DropdownItem = ({ question, answer }: FaqDropdownProps) => {
   return (
     <div className=" border-b-beige border-b-2">
       <div
-        className="flex justify-between py-8 cursor-pointer"
+        className="flex justify-between py-10 cursor-pointer"
         onClick={() => setIsActive(!isActive)}
       >
         <div className="text-lg font-medium">{question}</div>
