@@ -10,13 +10,17 @@
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.0.15",
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.3",
     "@tailwindcss/typography": "^0.5.10",
     "embla-carousel-react": "^8.0.0",
+    "flowbite-react": "^0.7.5",
     "graphql": "^16.8.1",
     "graphql-request": "^6.1.0",
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-dropdown": "^1.11.0",
     "react-icons": "^4.12.0",
     "react-intersection-observer": "^9.8.1"
   },
