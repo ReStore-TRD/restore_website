@@ -11,8 +11,11 @@ async function page() {
   const faqData: FaqItem[] = res.allFaqItems;
 
   return (
-    <div>
-      <div className="w-2/3 mx-auto">
+    <div className="flex justify-center">
+      <div className="w-1/2 mb-48">
+        <h1 className="text-4xl font-normal mb-28">
+          Frequently asked questions
+        </h1>
         {faqData.map((faqItem) => {
           return (
             <DropdownItem

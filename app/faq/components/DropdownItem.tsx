@@ -45,11 +45,10 @@ const DropdownItem = ({ question, answer }: FaqDropdownProps) => {
   return (
     <div className=" border-b-beige border-b-2">
       <div
-        className="flex justify-between p-8  cursor-pointer"
+        className="flex justify-between py-8 cursor-pointer"
         onClick={() => setIsActive(!isActive)}
       >
         <div className="text-lg font-medium">{question}</div>
-
         <Image
           src={dropdownArrow}
           alt={"dropdown arrow icon"}
@@ -59,7 +58,7 @@ const DropdownItem = ({ question, answer }: FaqDropdownProps) => {
         />
       </div>
       <animated.div style={contentAnimation} className="overflow-hidden">
-        <div ref={contentRef} className="w-full pb-8 px-8">
+        <div ref={contentRef} className="w-full pb-8 ">
           <StructuredText data={answer} />
         </div>
       </animated.div>
