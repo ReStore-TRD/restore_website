@@ -1,32 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
-
 export function SvgComponent(props: any) {
-  const svgRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            svgRef.current.classList.add("start-animation");
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    if (svgRef.current) {
-      observer.observe(svgRef.current);
-    }
-
-    return () => {
-      if (svgRef.current) {
-        observer.unobserve(svgRef.current);
-      }
-    };
-  }, []);
-
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +7,6 @@ export function SvgComponent(props: any) {
       height={2640}
       fill="none"
       {...props}
-      ref={svgRef}
       className="line-animation w-full absolute"
     >
       <circle
