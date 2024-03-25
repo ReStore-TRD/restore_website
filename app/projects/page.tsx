@@ -19,12 +19,12 @@ async function page() {
       <Image
         src={left}
         alt={""}
-        className="hidden lg:block -z-50 absolute top-1/12 left-0 w-1/6 mix-blend-multiply line-animation"
+        className="hidden md:block -z-50 absolute top-1/12 left-0 w-1/6 mix-blend-multiply line-animation"
       />
       <Image
         src={right}
         alt={""}
-        className="hidden lg:block -z-50 absolute top-28 right-0 w-1/6 mix-blend-multiply line-animation"
+        className="hidden md:block -z-50 absolute top-28 right-0 w-1/6 mix-blend-multiply line-animation"
       />
       <ProjectsMenu projectGroups={projectGroups} />
     </div>

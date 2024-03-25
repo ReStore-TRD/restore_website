@@ -14,3 +14,15 @@ export const GET_ALL_PROJECTS_QUERY = gql`
     }
   }
 `;
+
+export const GET_ALL_FAQ_QUERY = gql`
+  query GetAllFaqQuery {
+    allFaqItems {
+      id
+      question
+      answer {
+        value
+      }
+    }
+  }
+`;

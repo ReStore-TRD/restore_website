@@ -33,12 +33,12 @@ function ProjectsContent({ projectGroups }: ProjectsContentProps) {
     "hover:bg-no-repeat hover:bg-bottom hover:cursor-pointer hover:bg-projects-underline ";
 
   return (
-    <div className="lg:px-10 md:px-16">
-      <div className="grid grid-flow-cols-5 lg:grid-flow-rows-3 grid-flow-rows-4 justify-center">
-        <h1 className="text-4xl font-medium col-start-2 col-span-2 pb-28 ml-6">
+    <div className=" md:px-10">
+      <div className="grid grid-flow-cols-5 md:grid-flow-rows-3 grid-flow-rows-4 justify-center">
+        <h1 className="text-4xl font-medium col-start-2 col-span-2 pb-28 ml-6 mt-16">
           Our Projects
         </h1>
-        <div className="hidden lg:flex row-start-2  flex-col gap-4 items-center ">
+        <div className="hidden md:flex row-start-2  flex-col gap-4 items-center ">
           {projectGroups.map((group, index) => {
             return (
               <p
@@ -55,7 +55,7 @@ function ProjectsContent({ projectGroups }: ProjectsContentProps) {
             );
           })}
         </div>
-        <div className="lg:hidden row-start-2 col-start-2 col-span-2 pl-6 flex items-end pb-6">
+        <div className="md:hidden row-start-2 col-start-2 col-span-2 pl-6 flex items-end pb-6">
           <ProjectsDropdown
             projectGroups={projectGroups}
             handleProjectClicked={(group) => setSelectedGroup(group)}
@@ -63,7 +63,7 @@ function ProjectsContent({ projectGroups }: ProjectsContentProps) {
           />
         </div>
 
-        <div className="col-span-3 col-start-2 row-start-3 lg:row-start-2 lg:col-span-2 lg:max-w-[500px] pb-28 mx-6">
+        <div className="col-span-3 col-start-2 row-start-3 md:row-start-2 md:col-span-2 md:max-w-[500px] pb-28 mx-6">
           {renderDescriptionWithLineBreaks(selectedGroup.projectDescription)}
         </div>
         <div className="relative -top-28 row-start-2 col-start-4 pl-16 w-44 h-44">
@@ -73,7 +73,7 @@ function ProjectsContent({ projectGroups }: ProjectsContentProps) {
             alt={""}
           />
         </div>
-        <div className="flex w-full justify-center row-start-4 lg:row-start-3 col-start-2 col-span-3 lg:col-span-4 pb-48 px-6 lg:px-0">
+        <div className="flex w-full justify-center row-start-4 md:row-start-3 col-start-2 col-span-3 md:col-span-4 pb-48 px-6 md:px-0">
           <Image
             src={selectedGroup.projectImage?.url ?? ""}
             width={500}
