@@ -9,6 +9,7 @@ import topRight from "../assets/faq_page/background/top-right.svg";
 async function page() {
   const res = await performRequest({
     query: GET_ALL_FAQ_QUERY,
+    revalidate: 0,
   });
 
   const faqData: FaqItem[] = res.allFaqItems;
@@ -18,27 +19,18 @@ async function page() {
       <Image
         src={left}
         alt={""}
-        className="hidden lg:block -z-50 absolute top-48 left-0 w-1/5 mix-blend-multiply line-animation"
+        className="hidden md:block -z-50 absolute top-48 left-0 w-1/5 mix-blend-multiply line-animation"
       />
       <Image
         src={topRight}
         alt={""}
-        className="hidden lg:block -z-50 absolute top-28 right-0 w-1/6 mix-blend-multiply line-animation"
+        className="hidden md:block -z-50 absolute top-28 right-0 w-1/6 mix-blend-multiply line-animation"
       />
 
-      <div className="w-1/2 mb-48">
+      <div className="px-8 sm:px-16 md:px-0 md:w-1/2 mb-48">
         <h1 className="text-4xl font-normal mb-28 mt-16">
           Frequently asked questions
         </h1>
-        {faqData.map((faqItem) => {
-          return (
-            <DropdownItem
-              key={faqItem.id}
-              question={faqItem.question}
-              answer={faqItem.answer}
-            />
-          );
-        })}
         {faqData.map((faqItem) => {
           return (
             <DropdownItem
