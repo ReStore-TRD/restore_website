@@ -33,7 +33,7 @@ function About() {
       />
       <div className="w-full flex justify-center">
         <div className=" flex flex-col gap-16 px-8 md:w-[50vw] pb-28">
-          <h1 className="mb-0">About ReStore</h1>
+          <h1 className="mb-0 mt-16 text-4xl font-medium">About ReStore</h1>
           <div>
             <h2 className="mb-6">Our story</h2>
             <p>
