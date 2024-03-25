@@ -6,17 +6,14 @@ import Image from "next/image";
 import "react-dropdown/style.css";
 import ProjectsDropdown from "./ProjectsDropdown";
 
-interface ProjectsMenuProps {
+interface ProjectsContentProps {
   projectGroups: ProjectGroup[];
 }
 
-function ProjectsMenu({ projectGroups }: ProjectsMenuProps) {
+function ProjectsContent({ projectGroups }: ProjectsContentProps) {
   const [selectedGroup, setSelectedGroup] = useState<ProjectGroup>(
     projectGroups[0]
   );
-
-  const options = ["one", "two", "three"];
-  const defaultOption = options[0];
 
   const renderDescriptionWithLineBreaks = (description: string) => {
     return description.split("\n").map((line, index, array) =>
@@ -89,4 +86,4 @@ function ProjectsMenu({ projectGroups }: ProjectsMenuProps) {
   );
 }
 
-export default ProjectsMenu;
+export default ProjectsContent;
