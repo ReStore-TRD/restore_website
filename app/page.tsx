@@ -41,7 +41,7 @@ export default function Home() {
         <ContentSection
           leftImage={undefined}
           rightImage={undefined}
-          title="We give items new life"
+          title="Free Furniture, Free Friends"
           content="ReStore is a voluntary student organization that works to reduce waste
           from household equipment and furniture and improve quality of student
           life by facilitating reuse of goods for all students in Trondheim."
@@ -51,10 +51,10 @@ export default function Home() {
         <ContentSection
           leftImage={someImage}
           rightImage={undefined}
-          title="We give items new life"
-          content="ReStore is a voluntary student organization that works to reduce waste
-          from household equipment and furniture and improve quality of student
-          life by facilitating reuse of goods for all students in Trondheim."
+          title="New life for used goods"
+          content="Making new products consumes high amounts of energy, resources 
+          and causes environmental polution. By reusing of furniture, kitchen utensils 
+          and many other household items, ReStore aims to extend the life cycle of products."
         />
 
         <div className="-z-50 absolute bottom-1/3 left-0 w-full h-96 flex justify-between ">
@@ -73,10 +73,11 @@ export default function Home() {
         <ContentSection
           leftImage={undefined}
           rightImage={someImage}
-          title="We give items new life"
-          content="ReStore is a voluntary student organization that works to reduce waste
-          from household equipment and furniture and improve quality of student
-          life by facilitating reuse of goods for all students in Trondheim."
+          title="From Students, for Students"
+          content="We have opening days in the beginning of semester, when you can come and 
+          pick up furniture you need for free. Check our opening dates on our social media channels.
+          If you’ve got items you don’t need anymore but are too good to throw away, bring them to ReStore! 
+          We also do pick up for heavy or big items for free. Check our FAQ for more information."
         />
         <Quote
           content="“During my time at Restore I have made friends for life!”"

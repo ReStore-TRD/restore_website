@@ -15,7 +15,7 @@ function InfoGraphic({ isLeftLayout }: InfoGraphicProps) {
   useEffect(() => {
     if (inView) {
       const interval = setInterval(() => {
-        if (count < 275) {
+        if (count < 500) {
           setCount((prevCount) => prevCount + 1);
         } else {
           clearInterval(interval);
@@ -33,11 +33,11 @@ function InfoGraphic({ isLeftLayout }: InfoGraphicProps) {
             !isLeftLayout ? "order-1" : ""
           } text-white items-center gap-2 justify-center bg-restore-pink aspect-square rounded-full`}
         >
-          <div>ReStore saves a total of</div>
+          <div>ReStore has saved a total of</div>
           <div className="text-[64px] lg:text-[128px] font-bold" ref={ref}>
             {count}
           </div>
-          <div>tons of CO2 per year!</div>
+          <div>tons of CO2 since 2019!</div>
         </div>
         <div className=""></div>
       </div>
