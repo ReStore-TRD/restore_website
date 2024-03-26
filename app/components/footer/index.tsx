@@ -27,7 +27,9 @@ const Footer = () => {
     <div className="flex flex-col md:flex-row justify-between md:items-center pl-8 pb-8 mt-16 md:mt-0 md:pb-0 md:px-16 lg:px-28 md:h-56 text-sm font-thin gap-10 md:gap-0">
       <div className="md:flex md:flex-col order-3 md:order-1 mx-auto md:mx-0">
         In collaboration with
-        <Image src={sitLogo} alt={"SiT logo"} className="mt-5" />
+        <a href="https://www.sit.no/bolig" target="_blank">
+        <Image src={sitLogo} alt={"Sit logo"} className="mt-5" />
+        </a>
       </div>
 
       <div className="order-2 md:order-2">
@@ -39,7 +41,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/restore_trd/" target="_blank">
               <Image src={instagramLogo} alt={""} />
             </a>
-            <p className="hidden md:block">@restore.trdxals</p>
+            <p className="hidden md:block">@restore_trd</p>
           </div>
           <div className="flex flex-col items-center gap-4 w-10 md:w-auto">
             <a href="https://www.facebook.com/ReStore.TRD" target="_blank">
@@ -55,8 +57,8 @@ const Footer = () => {
         </p>
 
         <p>Prestekrageveien 14</p>
-        <p className="mb-4">1050 Trondheim, Norway</p>
-        <p>info@restore.no</p>
+        <p className="mb-4">7050 Trondheim, Norway</p>
+        <p><a href="mailto:info@restore-trd.no" className="text-black">info@restore-trd.no</a></p>
       </div>
     </div>
   );
