@@ -35,7 +35,7 @@ export default function Home() {
         <Navbar />
       ) : (
         <>
-          <div className="flex justify-between items-center  pl-2 pr-2">
+          <div className="flex justify-between items-center p-6">
             <Logo />
             <button onClick={() => toggleSidebar()}>
               <Image
