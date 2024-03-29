@@ -2,19 +2,26 @@ import Image from "next/image";
 import topLeft from "../assets/about_page/background/top-left.svg";
 import middle from "../assets/about_page/background/middle.svg";
 import sustainabilityGoals from "../assets/about_page/sustainability_goals.png";
-import Quote from "../components/Quote";
 import EmblaCarousel from "../components/PhotoCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 import "../image_carousel.css";
 import { performRequest } from "../utils/fetcher";
-import { GET_CAROUSEL_IMAGES } from "../utils/queries";
-import { CarouselImage } from "../utils/types";
+import { GET_CAROUSEL_IMAGES, GET_VOLUNTEER_QUOTES } from "../utils/queries";
+import { CarouselImage, VolunteerQuote } from "../utils/types";
+import QuoteCycle from "../components/Quote";
 
 async function About() {
   const res = await performRequest({
     query: GET_CAROUSEL_IMAGES,
     revalidate: 0,
   });
+
+  const quotesResponse = await performRequest({
+    query: GET_VOLUNTEER_QUOTES,
+    revalidate: 0,
+  });
+
+  const quotes: VolunteerQuote[] = quotesResponse.allVolunteerQuotes;
 
   const imageUrls: CarouselImage[] = res.allImageGalleries[0].carouselContent;
 
@@ -68,10 +75,7 @@ async function About() {
           </div>
           <Image src={sustainabilityGoals} alt={""} className="pb-10" />
 
-          <Quote
-            content="“During my time at Restore I have made friends for life!”"
-            author={"- Volunteer name"}
-          />
+          <QuoteCycle quotes={quotes} />
         </div>
       </div>
       <EmblaCarousel slides={imageUrls} options={OPTIONS} />
