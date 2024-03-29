@@ -10,8 +10,22 @@ import VolunteerButton from "./components/VolunteerButton";
 import heroRight from "./assets/landing_page/hero-right.svg";
 import heroRightMobile from "./assets/landing_page/mobile.svg";
 import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
+import BasicBars from "./components/charts/BarChart";
+import { performRequest } from "./utils/fetcher";
+import { GET_RESEARCH_DATA_QUERY } from "./utils/queries";
+import { ResearchData } from "./utils/types";
+import volunteersMap from "./assets/landing_page/infographics/volunteers-map.svg";
+import pieChart from "./assets/landing_page/infographics/pie-chart.svg";
 
-export default function Home() {
+export default async function Home() {
+  const res = await performRequest({
+    query: GET_RESEARCH_DATA_QUERY,
+    revalidate: 0,
+  });
+  console.log("res: ", res);
+
+  const researchData: ResearchData = res.allResearches[0];
+
   return (
     <main className="z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background">
       <div className="flex w-full mb-24 aspect-square md:aspect-auto md:h-[90vh] ">
@@ -46,7 +60,17 @@ export default function Home() {
           from household equipment and furniture and improve quality of student
           life by facilitating reuse of goods for all students in Trondheim."
         />
-        <InfoGraphic isLeftLayout={true} />
+        <InfoGraphic
+          isLeftLayout={true}
+          content={
+            <div>
+              <Image src={pieChart} alt={""} />
+            </div>
+          }
+          data={researchData.savedCo2InTons}
+          text1={"ReStore saves a total of"}
+          text2={"tons of CO2 each year!"}
+        />
 
         <ContentSection
           leftImage={someImage}
@@ -68,7 +92,13 @@ export default function Home() {
           </div>
         </div>
 
-        <InfoGraphic isLeftLayout={true} />
+        <InfoGraphic
+          isLeftLayout={false}
+          content={<BasicBars data={researchData} />}
+          data={researchData.totalVoluntaryHours}
+          text1={"So far we have worked"}
+          text2={"voluntary hours"}
+        />
 
         <ContentSection
           leftImage={undefined}
@@ -78,6 +108,17 @@ export default function Home() {
           pick up furniture you need for free. Check our opening dates on our social media channels.
           If you’ve got items you don’t need anymore but are too good to throw away, bring them to ReStore! 
           We also do pick up for heavy or big items for free. Check our FAQ for more information."
+        />
+        <InfoGraphic
+          isLeftLayout={true}
+          content={
+            <div>
+              <Image src={volunteersMap} alt={""} />
+            </div>
+          }
+          data={researchData.numbeOfVolunteers}
+          text1={"We are currently"}
+          text2={"volunteers, and counting!"}
         />
         <Quote
           content="“During my time at Restore I have made friends for life!”"

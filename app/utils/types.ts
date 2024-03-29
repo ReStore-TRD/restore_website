@@ -18,3 +18,12 @@ export interface FaqItem {
 export interface CarouselImage {
   url: string;
 }
+
+export interface ResearchData {
+  id: string;
+  numbeOfVolunteers?: number;
+  savedCo2InTons?: number;
+  volunteerHoursWorkedLastYear?: number;
+  volunteerHoursWorkedThisYear?: number;
+  totalVoluntaryHours?: number;
+}

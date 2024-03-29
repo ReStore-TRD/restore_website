@@ -1,29 +1,46 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, ReactNode } from "react";
 import { useInView } from "react-intersection-observer";
 
 interface InfoGraphicProps {
   isLeftLayout: boolean;
+  content: ReactNode;
+  data?: number;
+  text1: string;
+  text2: string;
 }
 
-function InfoGraphic({ isLeftLayout }: InfoGraphicProps) {
+function InfoGraphic({
+  isLeftLayout,
+  content,
+  data,
+  text1,
+  text2,
+}: InfoGraphicProps) {
   const { ref, inView, entry } = useInView({
     threshold: 0.5,
   });
   const [count, setCount] = useState(0);
+  const [isCounting, setIsCounting] = useState(false);
+
+  const numOfVoluntaryHours = data ?? 0;
 
   useEffect(() => {
-    if (inView) {
+    setIsCounting(true);
+  }, [inView]);
+
+  useEffect(() => {
+    if (isCounting) {
       const interval = setInterval(() => {
-        if (count < 500) {
+        if (count < numOfVoluntaryHours) {
           setCount((prevCount) => prevCount + 1);
         } else {
           clearInterval(interval);
         }
-      }, 7);
+      }, 10);
       return () => clearInterval(interval);
     }
-  }, [inView, count]);
+  }, [isCounting, count]);
 
   return (
     <div className="w-min lg:w-full justify-center">
@@ -33,13 +50,15 @@ function InfoGraphic({ isLeftLayout }: InfoGraphicProps) {
             !isLeftLayout ? "order-1" : ""
           } text-white items-center gap-2 justify-center bg-restore-pink aspect-square rounded-full`}
         >
-          <div>ReStore has saved a total of</div>
+          <div>{text1}</div>
           <div className="text-[64px] lg:text-[128px] font-bold" ref={ref}>
             {count}
           </div>
-          <div>tons of CO2 since 2019!</div>
+          <div>{text2}</div>
         </div>
-        <div className=""></div>
+        <div className=" w-full px-16 justify-center items-center hidden lg:flex">
+          {content}
+        </div>
       </div>
     </div>
   );
