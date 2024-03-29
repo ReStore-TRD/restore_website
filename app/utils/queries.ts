@@ -26,3 +26,14 @@ export const GET_ALL_FAQ_QUERY = gql`
     }
   }
 `;
+
+export const GET_CAROUSEL_IMAGES = gql`
+  query ImageGalleryQuery {
+    allImageGalleries {
+      id
+      carouselContent {
+        url
+      }
+    }
+  }
+`;

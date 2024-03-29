@@ -24,7 +24,6 @@ const dedupedFetch = cache(async (serializedInit: string) => {
       )}`
     );
   }
-  console.log("res body: ", responseBody);
 
   return responseBody;
 });

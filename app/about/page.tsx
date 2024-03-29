@@ -5,20 +5,21 @@ import sustainabilityGoals from "../assets/about_page/sustainability_goals.png";
 import Quote from "../components/Quote";
 import EmblaCarousel from "../components/PhotoCarousel";
 import { EmblaOptionsType } from "embla-carousel";
-import exampleImage from "../assets/about_page/example_image_about_us.png";
 import "../image_carousel.css";
+import { performRequest } from "../utils/fetcher";
+import { GET_CAROUSEL_IMAGES } from "../utils/queries";
+import { CarouselImage } from "../utils/types";
 
-function About() {
+async function About() {
+  const res = await performRequest({
+    query: GET_CAROUSEL_IMAGES,
+    revalidate: 0,
+  });
+
+  const imageUrls: CarouselImage[] = res.allImageGalleries[0].carouselContent;
+
   const OPTIONS: EmblaOptionsType = { loop: true };
-  const SLIDE_COUNT = 5;
-  const imageArray = [
-    exampleImage,
-    exampleImage,
-    exampleImage,
-    exampleImage,
-    exampleImage,
-    exampleImage,
-  ];
+
   return (
     <>
       <Image
@@ -73,7 +74,7 @@ function About() {
           />
         </div>
       </div>
-      <EmblaCarousel slides={imageArray} options={OPTIONS} />
+      <EmblaCarousel slides={imageUrls} options={OPTIONS} />
     </>
   );
 }

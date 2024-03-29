@@ -14,3 +14,7 @@ export interface FaqItem {
   question: string;
   answer: any;
 }
+
+export interface CarouselImage {
+  url: string;
+}

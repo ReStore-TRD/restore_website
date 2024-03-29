@@ -13,6 +13,7 @@ import {
   usePrevNextButtons,
 } from "./CarouselArrowButtons";
 import FullScreenImageModal from "./FullScreenImageModal";
+import { CarouselImage } from "@/app/utils/types";
 
 const TWEEN_FACTOR_BASE = 0.52;
 
@@ -20,7 +21,7 @@ const numberWithinRange = (number: number, min: number, max: number): number =>
   Math.min(Math.max(number, min), max);
 
 type PropType = {
-  slides: any[];
+  slides: CarouselImage[];
   options?: EmblaOptionsType;
 };
 
@@ -118,11 +119,11 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           {slides.map((slide, index) => (
             <div className="carousel__slide" key={index}>
               <Image
-                src={slide.src}
+                src={slide.url}
                 alt={""}
                 width={600}
                 height={600}
-                onClick={() => handleImageClick(slide.src)}
+                onClick={() => handleImageClick(slide.url)}
                 className="carousel__slide__number hover:cursor-pointer"
               />
             </div>
