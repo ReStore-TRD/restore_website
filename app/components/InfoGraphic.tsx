@@ -43,7 +43,7 @@ function InfoGraphic({
   }, [isCounting, count]);
 
   return (
-    <div className="w-min lg:w-full justify-center">
+    <div className="w-min xl:w-full justify-center">
       <div className="h-[300px] lg:h-[400px] w-min lg:w-auto flex justify-between rounded-full bg-beige-dark lg:mx-40">
         <div
           className={`flex flex-col ${
@@ -56,7 +56,7 @@ function InfoGraphic({
           </div>
           <div>{text2}</div>
         </div>
-        <div className=" w-full px-16 justify-center items-center hidden lg:flex">
+        <div className=" w-full px-16 justify-center items-center hidden xl:flex">
           {content}
         </div>
       </div>

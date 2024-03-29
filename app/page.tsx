@@ -43,12 +43,12 @@ export default async function Home() {
       <Image
         src={heroRight}
         alt={""}
-        className="hidden sm:block -z-50 absolute top-0 right-0 w-1/2 mix-blend-multiply line-animation"
+        className="hidden sm:block -z-50 absolute -top-20 right-0 w-1/2 mix-blend-multiply line-animation"
       />
       <Image
         src={heroRightMobile}
         alt={""}
-        className="block sm:hidden -z-50 absolute top-0 right-0 w-1/2 mix-blend-multiply line-animation"
+        className="block sm:hidden -z-50 absolute -top-16 right-0 w-1/2 mix-blend-multiply line-animation"
       />
 
       <div className="w-full z-50 flex flex-col items-center gap-20 lg:gap-32 px-10 lg:px-20 ">
