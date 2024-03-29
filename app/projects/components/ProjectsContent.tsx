@@ -15,9 +15,10 @@ function ProjectsContent({ projectGroups }: ProjectsContentProps) {
     projectGroups[0]
   );
 
+  console.log(selectedGroup);
+
   const renderDescriptionWithLineBreaks = (description: string) => {
     return description.split("\n").map((line, index, array) =>
-      // Don't add a <br> tag after the last line
       index === array.length - 1 ? (
         line
       ) : (
@@ -71,6 +72,7 @@ function ProjectsContent({ projectGroups }: ProjectsContentProps) {
             src={selectedGroup.projectIconUrl?.url ?? ""}
             fill={true}
             alt={""}
+            className="rounded-full object-cover"
           />
         </div>
         <div className="flex w-full justify-center row-start-4 md:row-start-3 col-start-2 col-span-3 md:col-span-4 pb-48 px-6 md:px-0">
@@ -79,6 +81,7 @@ function ProjectsContent({ projectGroups }: ProjectsContentProps) {
             width={500}
             height={500}
             alt={""}
+            className="rounded-full aspect-square object-cover"
           />
         </div>
       </div>

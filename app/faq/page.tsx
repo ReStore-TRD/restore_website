@@ -41,11 +41,6 @@ async function page() {
           );
         })}
       </div>
-      {/*  <Image
-          src={bottomRight}
-          alt={""}
-          className="hidden lg:block -z-50 absolute bottom-0 right-0 w-1/6 mix-blend-multiply line-animation"
-        /> */}
     </div>
   );
 }

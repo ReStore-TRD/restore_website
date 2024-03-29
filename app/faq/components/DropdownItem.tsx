@@ -31,7 +31,6 @@ const DropdownItem = ({ question, answer }: FaqDropdownProps) => {
     };
   }, [answer]);
 
-  // Animation config for the content's height
   const contentAnimation = useSpring({
     height: isActive && contentHeight ? `${contentHeight}px` : "0px",
     opacity: isActive ? 1 : 0,
