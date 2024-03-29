@@ -30,62 +30,54 @@ export default function Home() {
   const toggleSidebar = () => setOpen(!open);
 
   return (
-    <>
-      <main>
-        <div>
-          <div>
-            <div>
-              {isDesktop ? (
-                <Navbar />
-              ) : (
-                <>
-                  <div className="flex justify-between items-center  pl-2 pr-2">
-                    <Logo />
-                    <button onClick={() => toggleSidebar()}>
-                      <Image
-                        src={SidebarLine}
-                        alt="sidebar"
-                        objectFit="contain"
-                        className="mix-blend-multiply"
-                      />
-                    </button>
-                    {open && (
-                      <div
-                        className="fixed inset-0 bg-gray-500 bg-opacity-50 z-40"
-                        onClick={toggleSidebar}
-                      ></div>
-                    )}
-                    <div
-                      className={
-                        open
-                          ? "absolute top-0 right-0 z-50 h-screen w-3/5 bg-background"
-                          : "hidden"
-                      }
-                    >
-                      <div className="flex flex-col text-center">
-                        <button
-                          className="mb-7 mt-7 mr-1 flex justify-end px-5 text-xl"
-                          onClick={() => toggleSidebar()}
-                        >
-                          <GrClose className="text-repink" />
-                        </button>
-                        <div className="flex flex-col">
-                          <Link href="/about">About</Link>
-                          <Link href="/projects">Projects</Link>
-                          <Link href="/faq">FAQ</Link>
-                          <div className="text-white text-xs">
-                            <Button />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+    <nav className="relative z-50 ">
+      {isDesktop ? (
+        <Navbar />
+      ) : (
+        <>
+          <div className="flex justify-between items-center  pl-2 pr-2">
+            <Logo />
+            <button onClick={() => toggleSidebar()}>
+              <Image
+                src={SidebarLine}
+                alt="sidebar"
+                objectFit="contain"
+                className="mix-blend-multiply"
+              />
+            </button>
+            {open && (
+              <div
+                className="fixed inset-0 bg-gray-500 bg-opacity-50 z-40"
+                onClick={toggleSidebar}
+              ></div>
+            )}
+            <div
+              className={
+                open
+                  ? "absolute top-0 right-0 z-50 h-screen w-3/5 bg-background"
+                  : "hidden"
+              }
+            >
+              <div className="flex flex-col text-center">
+                <button
+                  className="mb-7 mt-7 mr-1 flex justify-end px-5 text-xl"
+                  onClick={() => toggleSidebar()}
+                >
+                  <GrClose className="text-repink" />
+                </button>
+                <div className="flex flex-col">
+                  <Link href="/about">About</Link>
+                  <Link href="/projects">Projects</Link>
+                  <Link href="/faq">FAQ</Link>
+                  <div className="text-white text-xs">
+                    <Button />
                   </div>
-                </>
-              )}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
-    </>
+        </>
+      )}
+    </nav>
   );
 }

@@ -5,26 +5,31 @@ import bottomRight from "./assets/landing_page/bottom-right.svg";
 import midLeft from "./assets/landing_page/mid-left.svg";
 import ContentSection from "./components/ContentSection";
 import InfoGraphic from "./components/InfoGraphic";
-import Quote from "./components/Quote";
 import VolunteerButton from "./components/VolunteerButton";
 import heroRight from "./assets/landing_page/hero-right.svg";
 import heroRightMobile from "./assets/landing_page/mobile.svg";
 import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
 import BasicBars from "./components/charts/BarChart";
 import { performRequest } from "./utils/fetcher";
-import { GET_RESEARCH_DATA_QUERY } from "./utils/queries";
-import { ResearchData } from "./utils/types";
+import { GET_RESEARCH_DATA_QUERY, GET_VOLUNTEER_QUOTES } from "./utils/queries";
+import { ResearchData, VolunteerQuote } from "./utils/types";
 import volunteersMap from "./assets/landing_page/infographics/volunteers-map.svg";
 import pieChart from "./assets/landing_page/infographics/pie-chart.svg";
+import QuoteCycle from "./components/Quote";
 
 export default async function Home() {
-  const res = await performRequest({
+  const researchDataResponse = await performRequest({
     query: GET_RESEARCH_DATA_QUERY,
     revalidate: 0,
   });
-  console.log("res: ", res);
 
-  const researchData: ResearchData = res.allResearches[0];
+  const quotesResponse = await performRequest({
+    query: GET_VOLUNTEER_QUOTES,
+    revalidate: 0,
+  });
+
+  const researchData: ResearchData = researchDataResponse.allResearches[0];
+  const quotes: VolunteerQuote[] = quotesResponse.allVolunteerQuotes;
 
   return (
     <main className="z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background">
@@ -120,10 +125,7 @@ export default async function Home() {
           text1={"We are currently"}
           text2={"volunteers, and counting!"}
         />
-        <Quote
-          content="“During my time at Restore I have made friends for life!”"
-          author={"- Volunteer name"}
-        />
+        <QuoteCycle quotes={quotes} />
         <VolunteerButton />
       </div>
 

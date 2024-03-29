@@ -15,6 +15,9 @@ const config: Config = {
         "projects-underline":
           "url('./assets/projects_page/projects_underline.svg')",
       },
+      animation: {
+        fade: "fadeIn 5s ease-in-out",
+      },
       fontFamily: {
         montserrat: ["Montserrat"],
       },

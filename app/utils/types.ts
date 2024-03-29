@@ -27,3 +27,9 @@ export interface ResearchData {
   volunteerHoursWorkedThisYear?: number;
   totalVoluntaryHours?: number;
 }
+
+export interface VolunteerQuote {
+  id: string;
+  quote?: string;
+  author?: string;
+}

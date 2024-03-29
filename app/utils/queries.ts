@@ -50,3 +50,13 @@ export const GET_RESEARCH_DATA_QUERY = gql`
     }
   }
 `;
+
+export const GET_VOLUNTEER_QUOTES = gql`
+  query GetResearchDataQuery {
+    allVolunteerQuotes {
+      id
+      quote
+      author
+    }
+  }
+`;
