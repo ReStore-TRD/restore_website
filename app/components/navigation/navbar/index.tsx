@@ -1,9 +1,9 @@
 import Logo from "../Logo";
 import Button from "../Button";
-import MySVGImage from "./join_us.svg";
-import AboutLine from "./About.svg";
-import ProjectLine from "./Projects.svg";
-import FaqLine from "./FAQ.svg";
+import MySVGImage from "../../../assets/navigation_bar/join_us.svg";
+import AboutLine from "../../../assets/navigation_bar/about.svg";
+import ProjectLine from "../../../assets/navigation_bar/projects.svg";
+import FaqLine from "../../../assets/navigation_bar/faq.svg";
 import Image from "next/image";
 import NavigationItem from "./NavigationItem";
 
