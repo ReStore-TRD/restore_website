@@ -24,8 +24,8 @@ function QuoteCycle({ quotes }: QuoteCycleProps) {
 
   return (
     <div className="transition-opacity duration-500 flex flex-col gap-2 text-right text-xl md:text-2xl font-light text-gray-500 m-auto">
-      <p key={quote}>{quote}</p>
-      <p key={author}>{author}</p>
+      <p key={quote}>{`"${quote}"`}</p>
+      <p key={author}>{`- ${author}`}</p>
     </div>
   );
 }

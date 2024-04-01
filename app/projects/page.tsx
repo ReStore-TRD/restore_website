@@ -9,7 +9,7 @@ import Image from "next/image";
 async function page() {
   const res = await performRequest({
     query: GET_ALL_PROJECTS_QUERY,
-    revalidate: 0,
+    revalidate: 30,
   });
 
   const projectGroups: ProjectGroup[] = res.allProjectgroups;
