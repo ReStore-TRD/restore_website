@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface FullScreenImageModalProps {
   src?: string;
   onClose: () => void;
@@ -12,7 +14,9 @@ function FullScreenImageModal({ src, onClose }: FullScreenImageModalProps) {
         className="absolute inset-0 z-40"
         onClick={onClose}
       ></div>
-      <img src={src} alt="Full Size" className="max-w-full max-h-full z-50" />
+      <div className="relative w-full h-full max-w-3xl max-h-3xl">
+        <Image src={src} alt="" layout="fill" objectFit="contain" />
+      </div>
       <button
         className="absolute top-0 right-0 m-4 text-white"
         onClick={onClose}
