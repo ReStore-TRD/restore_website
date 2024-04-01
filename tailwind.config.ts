@@ -34,6 +34,9 @@ const config: Config = {
         "restore-pink": "#ED0965",
         repink: "#ed0965",
       },
+      screens: {
+        betterhover: { raw: "(hover: hover)" },
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
