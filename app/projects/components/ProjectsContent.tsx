@@ -15,8 +15,6 @@ function ProjectsContent({ projectGroups }: ProjectsContentProps) {
     projectGroups[0]
   );
 
-  console.log(selectedGroup);
-
   const renderDescriptionWithLineBreaks = (description: string) => {
     return description.split("\n").map((line, index, array) =>
       index === array.length - 1 ? (

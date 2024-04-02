@@ -113,7 +113,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, setTweenFactor, setTweenNodes, tweenScale]);
 
   return (
-    <div className="carousel flex flex-col items-center pb-56 ">
+    <div className="carousel flex flex-col items-center">
       <div className="carousel__viewport " ref={emblaRef}>
         <div className="carousel__container">
           {slides.map((slide, index) => (

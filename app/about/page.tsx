@@ -23,8 +23,6 @@ async function About() {
 
   const quotes: VolunteerQuote[] = quotesResponse.allVolunteerQuotes;
 
-  console.log(quotes);
-
   const imageUrls: CarouselImage[] = res.allImageGalleries[0].carouselContent;
 
   const OPTIONS: EmblaOptionsType = { loop: true };
@@ -42,7 +40,7 @@ async function About() {
         className="hidden md:block -z-50 absolute top-[50vh] right-[5vw] w-1/12 mix-blend-multiply line-animation"
       />
       <div className="w-full flex justify-center">
-        <div className="flex flex-col gap-16 px-8 md:w-[50vw] pb-28">
+        <div className="flex flex-col gap-16 px-8 md:w-[50vw] pb-10">
           <h1 className="mb-0 mt-16 text-4xl font-medium">About ReStore</h1>
           <div>
             <h2 className="mb-6">Our story</h2>
