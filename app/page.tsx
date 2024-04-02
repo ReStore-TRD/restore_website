@@ -125,7 +125,9 @@ export default async function Home() {
           text1={"We are currently"}
           text2={"volunteers, and counting!"}
         />
-        <QuoteCycle quotes={quotes} />
+        <div className="md:w-4/6 flex justify-center  h-96 md:h-48">
+          <QuoteCycle quotes={quotes} />
+        </div>
         <VolunteerButton />
       </div>
 

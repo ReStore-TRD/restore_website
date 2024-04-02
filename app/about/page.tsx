@@ -13,15 +13,17 @@ import QuoteCycle from "../components/Quote";
 async function About() {
   const res = await performRequest({
     query: GET_CAROUSEL_IMAGES,
-    revalidate: 0,
+    revalidate: 30,
   });
 
   const quotesResponse = await performRequest({
     query: GET_VOLUNTEER_QUOTES,
-    revalidate: 0,
+    revalidate: 30,
   });
 
   const quotes: VolunteerQuote[] = quotesResponse.allVolunteerQuotes;
+
+  console.log(quotes);
 
   const imageUrls: CarouselImage[] = res.allImageGalleries[0].carouselContent;
 
@@ -75,7 +77,9 @@ async function About() {
           </div>
           <Image src={sustainabilityGoals} alt={""} className="pb-10" />
 
-          <QuoteCycle quotes={quotes} />
+          <div className="md:h-48 h-56">
+            <QuoteCycle quotes={quotes} />
+          </div>
         </div>
       </div>
       <EmblaCarousel slides={imageUrls} options={OPTIONS} />
