@@ -6,6 +6,7 @@ import React, {
   useState,
 } from "react";
 import { EmblaCarouselType } from "embla-carousel";
+import { isMobile } from "react-device-detect";
 import Image from "next/image";
 import arrowLeft from "../../assets/about_page/arrow_left.png";
 import arrowRight from "../../assets/about_page/arrow_right.png";
@@ -74,8 +75,8 @@ export const PrevButton: React.FC<PropType> = (props) => {
     <button
       className="carousel__button carousel__button--prev"
       type="button"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={isMobile ? () => false : () => setIsHovered(true)}
+      onMouseLeave={isMobile ? () => false : () => setIsHovered(false)}
       {...restProps}
     >
       <Image src={isHovered ? arrowLeftHover : arrowLeft} alt={""} />
@@ -92,8 +93,8 @@ export const NextButton: React.FC<PropType> = (props) => {
     <button
       className="carousel__button carousel__button--next"
       type="button"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onMouseEnter={isMobile ? () => false : () => setIsHovered(true)}
+      onMouseLeave={isMobile ? () => false : () => setIsHovered(false)}
       {...restProps}
     >
       <Image src={isHovered ? arrowRightHover : arrowRight} alt={""} />
