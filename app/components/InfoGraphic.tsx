@@ -56,7 +56,7 @@ function InfoGraphic({
           </div>
           <div>{text2}</div>
         </div>
-        <div className=" w-full px-16 justify-center items-center hidden xl:flex">
+        <div className=" w-3/5   px-16 justify-center items-center hidden xl:flex">
           {content}
         </div>
       </div>
