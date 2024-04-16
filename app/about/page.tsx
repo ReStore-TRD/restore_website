@@ -45,11 +45,11 @@ async function About() {
           <div>
             <h2 className="mb-6">Our story</h2>
             <p>
-              ReStore is a student organization with roots in Trondheim. At
-              ReStore, we work towards upcycling goods, with the goal of
-              creating a greener and more inclusive society. In May 2019, in a
-              collaboration with SiT Bolig, ReStore was set up in an old
-              kindergarten in Moholt student village and accepted its first
+              ReStore is a volunteer organization with roots in Trondheim, started in February 2019 by NTNU students. 
+              At ReStore, we work towards upcycling goods, with the goal of
+              creating a greener and more inclusive society. In May 2019, in 
+              collaboration with Sit Bolig, ReStore was set up in an old
+              kindergarten in the Moholt student village and accepted its first
               donations from outgoing students. At the end of each semester,
               outgoing students discard tonnes of usable goods when they return
               home from exchange. Every January and August, new students arrive
@@ -64,13 +64,14 @@ async function About() {
           <div>
             <h2 className="mb-6">Our goals</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              ReStore is built on three core values: sustainability, friendliness, and inclusivity.
+              We are committed to working together towards a greener future. Waste not, want not!
+              By encouraging and facilitating the reuse of items students need, from furniture to bikes, 
+              we aim to reduce the need for purchasing new ones and thereby minimize emissions. 
+              This also helps to raise awareness about the potential for items to have multiple lifetimes, 
+              inspiring more people to donate unwanted items and opt for second-hand alternatives instead of buying new ones.
+              What makes this possible is our teamwork. ReStore is like one big family of volunteers from different countries who join to make an impact. 
+              We work to keep a friendly and welcoming environment that inspires a sense of belonging and responsibility among everyone involved.
             </p>
           </div>
           <Image src={sustainabilityGoals} alt={""} className="pb-10" />
