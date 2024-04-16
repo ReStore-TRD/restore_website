@@ -49,7 +49,7 @@ async function About() {
               At ReStore, we work towards upcycling goods, with the goal of
               creating a greener and more inclusive society. In May 2019, in 
               collaboration with Sit Bolig, ReStore was set up in an old
-              kindergarten in Moholt student village and accepted its first
+              kindergarten in the Moholt student village and accepted its first
               donations from outgoing students. At the end of each semester,
               outgoing students discard tonnes of usable goods when they return
               home from exchange. Every January and August, new students arrive
