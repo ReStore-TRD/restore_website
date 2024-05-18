@@ -10,7 +10,7 @@ import InfoGraphic from "./components/InfoGraphic";
 import VolunteerButton from "./components/VolunteerButton";
 import heroRight from "./assets/landing_page/hero-right3.svg";
 import heroLeft from "./assets/landing_page/hero-left2.svg";
-import heroRightMobile from "./assets/landing_page/mobile.svg";
+import heroRightMobile from "./assets/landing_page/hero-right-mobile.svg";
 import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
 import BasicBars from "./components/charts/BarChart";
 import { performRequest } from "./utils/fetcher";
@@ -56,13 +56,13 @@ export default async function Home() {
       <Image
         src={heroRightMobile}
         alt={""}
-        className="block sm:hidden  -z-50 absolute -top-28 right-0 w-1/2 mix-blend-multiply line-animation"
+        className="block sm:hidden  -z-50 absolute -top-28 right-0  mix-blend-multiply line-animation"
       />
 
 
       <div className="w-full z-50 flex flex-col items-center gap-20 lg:gap-32 px-10 lg:px-20 ">
         <div className="-z-50 absolute left-0 w-full h-96 flex justify-between ">
-          <div className=" bottom-0 left-0 flex items-end">
+          <div className=" bottom-0 left-0 flex items-end hidden lg:block">
             <Image
               src={heroLeft}
               alt={""}
@@ -114,7 +114,7 @@ export default async function Home() {
         </div>
 
         <InfoGraphic
-          isLeftLayout={false}
+          isLeftLayout={true}
           content={<BasicBars data={researchData} />}
           data={researchData.totalVoluntaryHours}
           text1={"So far we have worked"}
@@ -131,7 +131,7 @@ export default async function Home() {
           We also do pick up for heavy or big items for free. Check our FAQ for more information."
         />
         <InfoGraphic
-          isLeftLayout={true}
+          isLeftLayout={false}
           content={
             <div>
               <Image src={volunteersMap} alt={""} />

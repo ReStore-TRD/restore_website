@@ -44,7 +44,7 @@ function InfoGraphic({
 
   return (
     <div className="w-min xl:w-full justify-center">
-      <div className="h-[300px] lg:h-[400px] w-min lg:w-auto flex justify-between rounded-full bg-beige-dark lg:mx-40">
+      <div className="h-[300px] lg:h-[400px] w-min lg:w-auto flex aspect-square lg:aspect-auto justify-between rounded-full  bg-beige-dark lg:mx-40">
         <div
           className={`flex flex-col ${
             !isLeftLayout ? "order-1" : ""
