@@ -1,12 +1,15 @@
 import Image from "next/image";
-import someImage from "./assets/landing_page/img2.png";
+import someImage from "./assets/landing_page/fromfor.jpg";
+import someImage2 from "./assets/landing_page/tables.jpg";
+import someImage3 from "./assets/landing_page/kitchen.jpg";
 import bottomLeft from "./assets/landing_page/bottom-left.svg";
 import bottomRight from "./assets/landing_page/bottom-right.svg";
 import midLeft from "./assets/landing_page/mid-left.svg";
 import ContentSection from "./components/ContentSection";
 import InfoGraphic from "./components/InfoGraphic";
 import VolunteerButton from "./components/VolunteerButton";
-import heroRight from "./assets/landing_page/hero-right.svg";
+import heroRight from "./assets/landing_page/hero-right3.svg";
+import heroLeft from "./assets/landing_page/hero-left2.svg";
 import heroRightMobile from "./assets/landing_page/mobile.svg";
 import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
 import BasicBars from "./components/charts/BarChart";
@@ -48,15 +51,27 @@ export default async function Home() {
       <Image
         src={heroRight}
         alt={""}
-        className="hidden sm:block -z-50 absolute sm:-top-28 md:-top-20  right-0 w-1/2 mix-blend-multiply line-animation"
+        className="hidden sm:block -z-50 absolute sm:-top-28 md:-top-20 right-0 mix-blend-multiply line-animation"
       />
       <Image
         src={heroRightMobile}
         alt={""}
-        className="block sm:hidden -z-50 absolute -top-28 right-0 w-1/2 mix-blend-multiply line-animation"
+        className="block sm:hidden  -z-50 absolute -top-28 right-0 w-1/2 mix-blend-multiply line-animation"
       />
 
+
       <div className="w-full z-50 flex flex-col items-center gap-20 lg:gap-32 px-10 lg:px-20 ">
+        <div className="-z-50 absolute left-0 w-full h-96 flex justify-between ">
+          <div className=" bottom-0 left-0 flex items-end">
+            <Image
+              src={heroLeft}
+              alt={""}
+              objectFit="contain"
+              className="mix-blend-multiply w-1/3 md:w-1/2"
+            />
+          </div>
+        </div>
+        
         <ContentSection
           leftImage={undefined}
           rightImage={undefined}
@@ -65,6 +80,7 @@ export default async function Home() {
           from household equipment and furniture and improve quality of student
           life by facilitating reuse of goods in Trondheim."
         />
+
         <InfoGraphic
           isLeftLayout={true}
           content={
@@ -73,12 +89,12 @@ export default async function Home() {
             </div>
           }
           data={researchData.savedCo2InTons}
-          text1={"ReStore saves a total of"}
-          text2={"tons of CO2 each year!"}
+          text1={"ReStore has saved"}
+          text2={"tons of CO2 since 2019!"}
         />
 
         <ContentSection
-          leftImage={someImage}
+          leftImage={someImage2}
           rightImage={undefined}
           title="New life for used goods"
           content="Making new products consumes high amounts of energy, resources 
@@ -107,7 +123,7 @@ export default async function Home() {
 
         <ContentSection
           leftImage={undefined}
-          rightImage={someImage}
+          rightImage={someImage3}
           title="From Students, for Students"
           content="We have opening days in the beginning of semester, when you can come and 
           pick up furniture you need for free. Check our opening dates on our social media channels.

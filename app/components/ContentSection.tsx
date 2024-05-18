@@ -16,7 +16,7 @@ function ContentSection({
   return (
     <div className="flex items-center  lg:justify-between ">
       {leftImage ? (
-        <Image src={leftImage} alt={""} className="w-3/12 hidden lg:block" />
+        <Image src={leftImage} alt={""} className="w-3/12 hidden lg:block rounded-full aspect-square object-cover" />
       ) : (
         <div className="w-0 lg:w-3/12"></div>
       )}
@@ -27,7 +27,7 @@ function ContentSection({
       </div>
 
       {rightImage ? (
-        <Image src={rightImage} alt={""} className="w-3/12 hidden lg:block" />
+        <Image src={rightImage} alt={""} className="w-3/12 hidden lg:block rounded-full aspect-square object-cover" />
       ) : (
         <div className="w-0 lg:w-3/12"></div>
       )}
