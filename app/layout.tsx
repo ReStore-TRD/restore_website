@@ -3,7 +3,8 @@ import Footer from "./components/footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import "@fontsource/montserrat";
-
+import iconImage from "./assets/logos/icon.png";
+import Head from 'next/head';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -18,7 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <link rel="logo-icon" href="./assets/logos/icon.png" type="image/<generated>" sizes="<generated>"/>
+      </Head>
+      <body className='font-montserrat text-justify  ${inter.className}'>
         <Navigation/>
         {children}
         <Footer />

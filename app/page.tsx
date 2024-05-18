@@ -61,9 +61,9 @@ export default async function Home() {
           leftImage={undefined}
           rightImage={undefined}
           title="Free Furniture, Free Friends"
-          content="ReStore is a voluntary student organization that works to reduce waste
+          content="ReStore is a volunteer student organization that works to reduce waste
           from household equipment and furniture and improve quality of student
-          life by facilitating reuse of goods for all students in Trondheim."
+          life by facilitating reuse of goods in Trondheim."
         />
         <InfoGraphic
           isLeftLayout={true}
