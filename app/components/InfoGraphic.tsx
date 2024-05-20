@@ -30,10 +30,11 @@ function InfoGraphic({
   }, [inView]);
 
   useEffect(() => {
+    const increment = Math.ceil(numOfVoluntaryHours / 100); // Calculate the increment
     if (isCounting) {
       const interval = setInterval(() => {
         if (count < numOfVoluntaryHours) {
-          setCount((prevCount) => prevCount + 1);
+          setCount((prevCount) => prevCount + increment);
         } else {
           clearInterval(interval);
         }
