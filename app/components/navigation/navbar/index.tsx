@@ -1,6 +1,6 @@
 import Logo from "../Logo";
 import Button from "../Button";
-import MySVGImage from "../../../assets/navigation_bar/join_us.svg";
+import ButtonHover from "../../../assets/navigation_bar/join_us.svg";
 import AboutLine from "../../../assets/navigation_bar/about.svg";
 import ProjectLine from "../../../assets/navigation_bar/projects.svg";
 import FaqLine from "../../../assets/navigation_bar/faq.svg";
@@ -41,7 +41,7 @@ const Navbar = () => {
                 </div>
                 <div className="absolute top-2 right-2 transform translate-x-full opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
                   <Image
-                    src={MySVGImage}
+                    src={ButtonHover}
                     alt={""}
                     objectFit="contain"
                     className="mix-blend-multiply w-6 h-6"

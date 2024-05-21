@@ -8,7 +8,7 @@ import midLeft from "./assets/landing_page/mid-left.svg";
 import ContentSection from "./components/ContentSection";
 import InfoGraphic from "./components/InfoGraphic";
 import VolunteerButton from "./components/VolunteerButton";
-import heroRight from "./assets/landing_page/hero-right3.svg";
+import heroRight from "./assets/landing_page/hero-right2.svg";
 import heroLeft from "./assets/landing_page/hero-left2.svg";
 import heroRightMobile from "./assets/landing_page/hero-right-mobile.svg";
 import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
@@ -19,6 +19,7 @@ import { ResearchData, VolunteerQuote } from "./utils/types";
 import volunteersMap from "./assets/landing_page/infographics/volunteers-map.svg";
 import pieChart from "./assets/landing_page/infographics/pie-chart.svg";
 import QuoteCycle from "./components/Quote";
+import ButtonHover from "./assets/navigation_bar/join_us.svg"
 
 export default async function Home() {
   const researchDataResponse = await performRequest({
@@ -36,7 +37,7 @@ export default async function Home() {
 
   return (
     <main className="z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background">
-      <div className="flex w-full mb-24 aspect-square md:aspect-auto md:h-[90vh] ">
+      <div className="flex flex-col w-full mb-24 aspect-square md:aspect-auto md:h-[90vh] ">
         <div className="flex w-2/3 md:w-1/2 mt-6 md:mt-32 ml-8 md:ml-0 mr-16 mb-0 aspect-square sm:aspect-auto h-56 md:h-80">
           <Image
             src={headerTextMobile}
@@ -46,6 +47,15 @@ export default async function Home() {
             objectPosition="left"
           />
         </div>
+        <div className=" z-50 left-0 flex items-end hidden lg:block">
+            <Image
+              src={heroLeft}
+              alt={""}
+              objectFit="contain"
+              objectPosition="left"
+              className="mix-blend-multiply w-1/3 md:w-1/2"
+            />
+          </div>
       </div>
 
       <Image
@@ -59,19 +69,7 @@ export default async function Home() {
         className="block sm:hidden  -z-50 absolute -top-28 right-0  mix-blend-multiply line-animation"
       />
 
-
       <div className="w-full z-50 flex flex-col items-center gap-20 lg:gap-32 px-10 lg:px-20 ">
-        <div className="-z-50 absolute left-0 w-full h-96 flex justify-between ">
-          <div className=" bottom-0 left-0 flex items-end hidden lg:block">
-            <Image
-              src={heroLeft}
-              alt={""}
-              objectFit="contain"
-              className="mix-blend-multiply w-1/3 md:w-1/2"
-            />
-          </div>
-        </div>
-        
         <ContentSection
           leftImage={undefined}
           rightImage={undefined}
@@ -145,6 +143,14 @@ export default async function Home() {
           <QuoteCycle quotes={quotes} />
         </div>
         <VolunteerButton />
+        <div className="absolute top-2 right-2 transform translate-x-full opacity-0 pointer-events-none transition-opacity duration-300 group-hover:opacity-100">
+          <Image
+            src={ButtonHover}
+            alt={""}
+            objectFit="contain"
+            className="mix-blend-multiply w-6 h-6"
+          />
+        </div>
       </div>
 
       <div className="-z-50 absolute bottom-0 w-full h-96 flex justify-between ">
