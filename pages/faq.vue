@@ -75,8 +75,8 @@
           <div class="accordion-item-body-content">
             <h3>When can I come by to take things?</h3>
             <p>
-              We are open every Wednesday from 16:00 to 18:00. Also, we have big opening day events, which are usually held at
-              the beginning of each semester (August and January). Check
+              In summer we don't have opening hours for giving away items, as we are busy sorting donations. We have big opening day events, which are usually held at
+              the beginning of each semester (August and January). You can still check Hytta (the small shed at the front) for taking smaller items. Check
               <a
                 class="anchor"
                 href="https://www.facebook.com/ReStore.TRD"
@@ -126,7 +126,7 @@
             <h3>When can I donate items</h3>
             <p>
               You can leave your donations on the backside portch at our Red
-              building at anytime. But it is highly recommended to donate items during opening hours on Wednesdays from 16:00 to 18:00, so that our volunteers can take in the items and organize
+              building at anytime. But it is highly recommended to donate items during opening hours on Tuesdays and Thursdays from 17:00 to 18:00 so that our volunteers can take in the items and organize
               them quickly.
             </p>
           </div>
