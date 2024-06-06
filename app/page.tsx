@@ -10,7 +10,7 @@ import InfoGraphic from "./components/InfoGraphic";
 import VolunteerButton from "./components/VolunteerButton";
 import heroRight from "./assets/landing_page/hero-right2.svg";
 import heroLeft from "./assets/landing_page/hero-left2.svg";
-import heroRightMobile from "./assets/landing_page/hero-right-mobile.svg";
+import heroRightMobile from "./assets/landing_page/hero-right-mobile2.svg";
 import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
 import BasicBars from "./components/charts/BarChart";
 import { performRequest } from "./utils/fetcher";
@@ -38,7 +38,7 @@ export default async function Home() {
   return (
     <main className="z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background">
       <div className="flex flex-col w-full mb-24 aspect-square md:aspect-auto md:h-[90vh] ">
-        <div className="flex w-2/3 md:w-1/2 mt-6 md:mt-32 ml-8 md:ml-0 mr-16 mb-0 aspect-square sm:aspect-auto h-56 md:h-80">
+        <div className="flex w-2/3 md:w-1/2 mt-6 md:mt-32 ml-8 md:ml-0 mr-16 mb-0 aspect-square sm:aspect-auto h-40 md:h-80">
           <Image
             src={headerTextMobile}
             alt={""}
@@ -66,7 +66,7 @@ export default async function Home() {
       <Image
         src={heroRightMobile}
         alt={""}
-        className="block sm:hidden  -z-50 absolute -top-28 right-0  mix-blend-multiply line-animation"
+        className="block sm:hidden  -z-50 absolute -top-20 right-0  mix-blend-multiply line-animation"
       />
 
       <div className="w-full z-50 flex flex-col items-center gap-20 lg:gap-32 px-10 lg:px-20 ">
