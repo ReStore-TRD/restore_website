@@ -1,6 +1,6 @@
 import Image from "next/image";
 import someImage from "./assets/landing_page/fromfor.jpg";
-import someImage2 from "./assets/landing_page/tables.jpg";
+import someImage2 from "./assets/landing_page/tables.JPG";
 import someImage3 from "./assets/landing_page/kitchen.jpg";
 import bottomLeft from "./assets/landing_page/bottom-left.svg";
 import bottomRight from "./assets/landing_page/bottom-right.svg";
