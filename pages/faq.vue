@@ -126,7 +126,7 @@
             <h3>When can I donate items</h3>
             <p>
               You can leave your donations on the backside portch at our Red
-              building at anytime. But it is highly recommended to donate items during opening hours on Tuesdays and Thursdays from 17:00 to 18:00 so that our volunteers can take in the items and organize
+              building at anytime. But it is highly recommended to donate items during opening hours on Tuesdays and Thursdays from 16:00 to 18:00 so that our volunteers can take in the items and organize
               them quickly.
             </p>
           </div>
