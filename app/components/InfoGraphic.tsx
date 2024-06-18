@@ -17,8 +17,9 @@ function InfoGraphic({
   text1,
   text2,
 }: InfoGraphicProps) {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.5,
+    triggerOnce: true, // Only trigger once when it comes into view
   });
   const [count, setCount] = useState(0);
   const [isCounting, setIsCounting] = useState(false);
@@ -26,26 +27,32 @@ function InfoGraphic({
   const numOfVoluntaryHours = data ?? 0;
 
   useEffect(() => {
-    setIsCounting(true);
+    if (inView) {
+      setIsCounting(true);
+      setCount(0); // Reset the count when in view
+    }
   }, [inView]);
 
   useEffect(() => {
-    const increment = Math.ceil(numOfVoluntaryHours / 100); // Calculate the increment
     if (isCounting) {
+      const increment = Math.ceil(numOfVoluntaryHours / 100); // Calculate the increment
       const interval = setInterval(() => {
-        if (count < numOfVoluntaryHours) {
-          setCount((prevCount) => prevCount + increment);
-        } else {
-          clearInterval(interval);
-        }
+        setCount((prevCount) => {
+          const nextCount = prevCount + increment;
+          if (nextCount >= numOfVoluntaryHours) {
+            clearInterval(interval);
+            return numOfVoluntaryHours;
+          }
+          return nextCount;
+        });
       }, 10);
       return () => clearInterval(interval);
     }
-  }, [isCounting, count]);
+  }, [isCounting, numOfVoluntaryHours]);
 
   return (
     <div className="w-min xl:w-full justify-center">
-      <div className="h-[300px] lg:h-[400px] w-min lg:w-auto flex aspect-square lg:aspect-auto justify-between rounded-full  bg-beige-dark lg:mx-40">
+      <div className="h-[300px] lg:h-[400px] w-min lg:w-auto flex aspect-square lg:aspect-auto justify-between rounded-full bg-beige-dark lg:mx-40">
         <div
           className={`flex flex-col ${
             !isLeftLayout ? "order-1" : ""
@@ -57,7 +64,7 @@ function InfoGraphic({
           </div>
           <div>{text2}</div>
         </div>
-        <div className=" w-3/5   px-16 justify-center items-center hidden xl:flex">
+        <div className="w-3/5 px-16 justify-center items-center hidden xl:flex">
           {content}
         </div>
       </div>
