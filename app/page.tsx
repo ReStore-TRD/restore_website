@@ -36,7 +36,7 @@ export default async function Home() {
   const quotes: VolunteerQuote[] = quotesResponse.allVolunteerQuotes;
 
   return (
-    <main className="z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background">
+    <main className="overflow-x-hidden z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background">
       <div className="flex flex-col w-full mb-24 aspect-square md:aspect-auto md:h-[90vh] ">
         <div className="flex w-2/3 md:w-1/2 mt-6 md:mt-32 ml-8 md:ml-0 mr-16 mb-0 aspect-square sm:aspect-auto h-40 md:h-80">
           <Image
