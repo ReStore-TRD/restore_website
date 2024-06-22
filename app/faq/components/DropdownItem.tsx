@@ -47,7 +47,7 @@ const DropdownItem = ({ question, answer }: FaqDropdownProps) => {
         className="flex justify-between py-10 cursor-pointer"
         onClick={() => setIsActive(!isActive)}
       >
-        <div className="text-lg font-medium">{question}</div>
+        <div className="text-lg font-medium pr-4">{question}</div>
         <Image
           src={dropdownArrow}
           alt={"dropdown arrow icon"}
