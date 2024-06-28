@@ -12,7 +12,7 @@ interface SidebarProps {
 
 function Sidebar({ toggleSidebar, isOpen }: SidebarProps) {
   return (
-    <div className="flex justify-between items-center p-6">
+    <div className="flex justify-between items-center p-2">
       <Logo />
       <button onClick={() => toggleSidebar()}>
         <Image

@@ -8,7 +8,7 @@ import midLeft from "./assets/landing_page/mid-left.svg";
 import ContentSection from "./components/ContentSection";
 import InfoGraphic from "./components/InfoGraphic";
 import VolunteerButton from "./components/VolunteerButton";
-import heroRight from "./assets/landing_page/hero-right2.svg";
+import heroRight from "./assets/landing_page/hero-right-old.svg";
 import heroLeft from "./assets/landing_page/hero-left2.svg";
 import heroRightMobile from "./assets/landing_page/hero-right-mobile2.svg";
 import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
@@ -36,9 +36,9 @@ export default async function Home() {
   const quotes: VolunteerQuote[] = quotesResponse.allVolunteerQuotes;
 
   return (
-    <main className="overflow-x-hidden z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background">
+    <main className="z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background">
       <div className="flex flex-col w-full mb-24 aspect-square md:aspect-auto md:h-[90vh] ">
-        <div className="flex w-2/3 md:w-1/2 mt-6 md:mt-32 ml-8 md:ml-0 mr-16 mb-0 aspect-square sm:aspect-auto h-40 md:h-80">
+        <div className="flex w-2/3 md:w-1/2 mt-6 md:mt-10 ml-8 md:ml-0 mr-16 mb-0 aspect-square sm:aspect-auto h-40 md:h-80">
           <Image
             src={headerTextMobile}
             alt={""}

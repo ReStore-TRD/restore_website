@@ -23,7 +23,7 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
         <link rel="icon" href= "./icon.png" />
       </Head>
-      <body className='font-montserrat text-justify  ${inter.className}'>
+      <body className='font-montserrat text-justify overflow-x-hidden  ${inter.className}'>
         <Navigation/>
         {children}
         <Footer />
