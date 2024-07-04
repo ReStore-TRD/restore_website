@@ -98,7 +98,7 @@
           <div class="accordion-item-body-content">
             <h3>Is ReStore only for students?</h3>
             <p>
-              Give priority to students, but everyone can visit or volunteer!
+              Give priority to students, but everyone is welcome to visit or volunteer!
             </p>
           </div>
         </div>
