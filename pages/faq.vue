@@ -96,10 +96,9 @@
             <p>We are also lucky to have generous support from Sit Bolig.</p>
           </div>
           <div class="accordion-item-body-content">
-            <h3>Is ReStore only for NTNU students?</h3>
+            <h3>Is ReStore only for students?</h3>
             <p>
-              All students in Trondheim are welcome, whether you’re from NTNU,
-              BI, HiST, or DMMH. PhD students, you’re students too!
+              Give priority to students, but everyone can visit or volunteer!
             </p>
           </div>
         </div>
