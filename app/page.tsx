@@ -17,7 +17,7 @@ import { performRequest } from "./utils/fetcher";
 import { GET_RESEARCH_DATA_QUERY, GET_VOLUNTEER_QUOTES } from "./utils/queries";
 import { ResearchData, VolunteerQuote } from "./utils/types";
 import volunteersMap from "./assets/landing_page/infographics/volunteers-map.svg";
-import pieChart from "./assets/landing_page/infographics/pie-chart_new.svg";
+import pieChart from "./assets/landing_page/infographics/pie-chart-new-font.svg";
 import QuoteCycle from "./components/Quote";
 import ButtonHover from "./assets/navigation_bar/join_us.svg"
 
