@@ -9,10 +9,11 @@ interface BasicBarsProps {
 export default function BasicBars({ data }: BasicBarsProps) {
   return (
     <BarChart
-      xAxis={[{ scaleType: "band", data: ["2023", "2024"] }]}
+      xAxis={[{ scaleType: "band", data: ["2023", "2024", "2025"] }]}
       series={[
         {
           data: [
+            data?.volunteerHoursWorked2023 ?? 0,
             data?.volunteerHoursWorkedLastYear ?? 0,
             data?.volunteerHoursWorkedThisYear ?? 0,
           ],

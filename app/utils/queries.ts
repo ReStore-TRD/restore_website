@@ -44,6 +44,7 @@ export const GET_RESEARCH_DATA_QUERY = gql`
       id
       numbeOfVolunteers
       savedCo2InTons
+      volunteerHoursWorked2023
       volunteerHoursWorkedLastYear
       volunteerHoursWorkedThisYear
       totalVoluntaryHours

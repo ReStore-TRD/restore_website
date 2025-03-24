@@ -59,7 +59,7 @@ function InfoGraphic({
           } text-white items-center gap-2 justify-center bg-restore-pink aspect-square rounded-full`}
         >
           <div>{text1}</div>
-          <div className="text-[64px] lg:text-[128px] font-bold" ref={ref}>
+          <div className="text-[64px] lg:text-[100px] font-bold" ref={ref}>
             {count}
           </div>
           <div>{text2}</div>
