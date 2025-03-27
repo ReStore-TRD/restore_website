@@ -25,6 +25,7 @@ export interface ResearchData {
   savedCo2InTons?: number;
   volunteerHoursWorkedLastYear?: number;
   volunteerHoursWorkedThisYear?: number;
+  volunteerHoursWorked2023?: number;
   totalVoluntaryHours?: number;
 }
 
