@@ -115,7 +115,7 @@ export default async function Home() {
           isLeftLayout={true}
           content={<BasicBars data={researchData} />}
           data={researchData.totalVoluntaryHours}
-          text1={"So far we have worked"}
+          text1={"Since 2022, we have counted"}
           text2={"voluntary hours"}
         />
 
@@ -123,10 +123,10 @@ export default async function Home() {
           leftImage={undefined}
           rightImage={someImage3}
           title="From Students, for Students"
-          content="We have opening days in the beginning of semester, when you can come and 
-          pick up furniture you need for free. Check our opening dates on our social media channels.
+          content="We have opening days, usually at the beginning of the semester, when you can come and 
+          pick up the furniture you need for free. Check our opening dates on our social media channels.
           If you’ve got items you don’t need anymore but are too good to throw away, bring them to ReStore! 
-          We also do pick up for heavy or big items for free. Check our FAQ for more information."
+          Check our FAQ for more information."
         />
         <InfoGraphic
           isLeftLayout={false}
