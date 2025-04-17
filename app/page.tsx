@@ -20,6 +20,8 @@ import volunteersMap from "./assets/landing_page/infographics/volunteers-map.svg
 import pieChart from "./assets/landing_page/infographics/pie-chart-new-font.svg";
 import QuoteCycle from "./components/Quote";
 import ButtonHover from "./assets/navigation_bar/join_us.svg"
+import PieChart from "./components/charts/PieChart";
+
 
 export default async function Home() {
   const researchDataResponse = await performRequest({
@@ -81,11 +83,7 @@ export default async function Home() {
 
         <InfoGraphic
           isLeftLayout={true}
-          content={
-            <div>
-              <Image src={pieChart} alt={""} />
-            </div>
-          }
+          content={<PieChart />}
           data={researchData.savedCo2InTons}
           text1={"ReStore has saved"}
           text2={"tons of CO2 since 2019!"}
