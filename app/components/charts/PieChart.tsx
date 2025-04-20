@@ -34,22 +34,29 @@ const defaultData = [
       .join(", ");
   
     return (
-      <div className="flex flex-row items-center">
-          <div className="mt-4 space-y-2 text-sm mr-6">
+      <div className="flex flex-col w-full">
+        <h3 className="text-sm mb-4">
+          Potential Emissions Saved per Category of Items since 2019
+        </h3>
+        <div className="flex flex-row items-center w-full gap-10">
+          <div className="space-y-2 text-xs flex-shrink-0">
             {data.map((d) => (
               <div key={d.label} className="flex items-center gap-2">
                 <span
-                  className="inline-block w-4 h-4 rounded-full"
+                  className="inline-block w-3 h-3 rounded-full"
                   style={{ backgroundColor: d.color }}
                 ></span>
                 <span>{d.label}</span>
               </div>
             ))}
+          </div>
+          <div className="relative flex-1 aspect-square max-w-[250px]">
+            <div
+              className="absolute inset-0 rounded-full"
+              style={{ backgroundImage: `conic-gradient(${conicGradient})` }}
+            ></div>
+          </div>
         </div>
-        <div
-          className="w-64 h-64 rounded-full"
-          style={{ backgroundImage: `conic-gradient(${conicGradient})` }}
-        ></div>
       </div>
     );
   }
