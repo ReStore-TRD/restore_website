@@ -61,3 +61,20 @@ export const GET_VOLUNTEER_QUOTES = gql`
     }
   }
 `;
+
+
+export const GET_CO2_PIE_CHART_DATA_QUERY = gql`
+  query GetPieChartDataQuery {
+    allPieCharts {
+      chartData {
+        __typename
+        ... on CategoryItemRecord{
+          id
+          label
+          color
+          value
+        }
+      }
+    }
+  }
+`;

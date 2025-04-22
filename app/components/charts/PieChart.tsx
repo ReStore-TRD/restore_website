@@ -1,7 +1,7 @@
-interface PieChartProps {
+// hardcoded data for testing purposes
+{/*interface PieChartProps {
     data?: { label: string; value: number; color: string }[];
   }
-  
   
 const defaultData = [
     { label: "Furniture", value: 46, color: "#ED0965" },
@@ -11,13 +11,19 @@ const defaultData = [
     { label: "Beddings", value: 8, color: "#cfe2f3" },
     { label: "Office", value: 28, color: "#ffd966" },
   ];
-
-  
-  export default function PieChart({ data=defaultData }: PieChartProps) {
+*/}
 
 
-    const sortedData = data.sort((a, b) => b.value - a.value); // sort descending  
+import { CategoryItem } from "@/app/utils/types";
 
+interface PieChartProps {
+  data: CategoryItem[];
+}
+
+  export default function PieChart({ data }: PieChartProps) {
+
+    console.log("PieChart data", data);
+    const sortedData = data.sort((a, b) => b.value - a.value); 
     const total = sortedData.reduce((sum, d) => sum + d.value, 0);
     const angles = sortedData.map((d, i) => {
       const start = sortedData.slice(0, i).reduce((sum, d) => sum + d.value, 0);
