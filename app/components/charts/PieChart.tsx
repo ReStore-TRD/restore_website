@@ -39,28 +39,26 @@ interface PieChartProps {
   
     return (
       <div className="flex flex-col w-full items-center">
-        <h3 className="text-s mb-4">
+        <h3 className="text-sm mb-4">
           Potential Emissions Saved per Category
         </h3>
-        <div className="flex flex-row w-full gap-10">
-          <div className="relative flex-1 aspect-square max-w-[250px]">
-            <div
-              className="absolute inset-0 rounded-full"
-              style={{ backgroundImage: `conic-gradient(${conicGradient})` }}
-            ></div>
-          </div>
-          <div className="flex flex-col items-start">
-            <div className="text-sm grid grid-cols-2 gap-x-1 gap-y-2">
-              {data.map((d) => (
-                <div key={d.label} className="flex items-center">
-                  <span
-                    className="inline-block w-3 h-3 rounded-full"
-                    style={{ backgroundColor: d.color }}
-                  ></span>
-                  <span>{d.label}</span>
-                </div>
-              ))}
-            </div>
+        <div className="relative flex-1 w-full aspect-square max-w-[200px] mb-5">
+          <div
+            className="absolute inset-0 rounded-full"
+            style={{ backgroundImage: `conic-gradient(${conicGradient})` }}
+          ></div>
+        </div>
+        <div className="flex flex-col items-start">
+          <div className="text-xs grid grid-cols-3 gap-0.5">
+            {data.map((d) => (
+              <div key={d.label} className="flex items-center ">
+                <span
+                  className="inline-block w-3 h-3 rounded-full"
+                  style={{ backgroundColor: d.color }}
+                ></span>
+                <span>{d.label}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
