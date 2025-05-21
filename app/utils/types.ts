@@ -34,3 +34,21 @@ export interface VolunteerQuote {
   quote?: string;
   author?: string;
 }
+
+export interface CategoryItem {
+  id: string;
+  label: string;
+  value: number;
+  color: string;
+}
+
+
+export interface CategoryItem {
+  label: string;
+  value: number;
+  color: string;
+}
+
+export interface PieChartData {
+  chartData: CategoryItem[];
+}

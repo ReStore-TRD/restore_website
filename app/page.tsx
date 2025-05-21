@@ -14,12 +14,14 @@ import heroRightMobile from "./assets/landing_page/hero-right-mobile2.svg";
 import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
 import BasicBars from "./components/charts/BarChart";
 import { performRequest } from "./utils/fetcher";
-import { GET_RESEARCH_DATA_QUERY, GET_VOLUNTEER_QUOTES } from "./utils/queries";
-import { ResearchData, VolunteerQuote } from "./utils/types";
+import { GET_CO2_PIE_CHART_DATA_QUERY, GET_RESEARCH_DATA_QUERY, GET_VOLUNTEER_QUOTES} from "./utils/queries";
+import { ResearchData, VolunteerQuote, PieChartData, CategoryItem  } from "./utils/types";
 import volunteersMap from "./assets/landing_page/infographics/volunteers-map.svg";
-import pieChart from "./assets/landing_page/infographics/pie-chart-new-font.svg";
+//import pieChart from "./assets/landing_page/infographics/pie-chart-new-font.svg";
 import QuoteCycle from "./components/Quote";
 import ButtonHover from "./assets/navigation_bar/join_us.svg"
+import PieChart from "./components/charts/PieChart";
+
 
 export default async function Home() {
   const researchDataResponse = await performRequest({
@@ -32,9 +34,18 @@ export default async function Home() {
     revalidate: 0,
   });
 
+  const pieChartDataResponse = await performRequest({
+    query: GET_CO2_PIE_CHART_DATA_QUERY,
+    revalidate: 0,
+  });
+
+
   const researchData: ResearchData = researchDataResponse.allResearches[0];
   const quotes: VolunteerQuote[] = quotesResponse.allVolunteerQuotes;
+  const co2ChartData : CategoryItem[] = pieChartDataResponse.allPieCharts[0]?.chartData ?? [];
 
+
+  
   return (
     <main className="z-10 relative w-full flex min-h-screen flex-col items-center justify-between bg-background">
       <div className="flex flex-col w-full mb-24 aspect-square md:aspect-auto md:h-[90vh] ">
@@ -81,11 +92,8 @@ export default async function Home() {
 
         <InfoGraphic
           isLeftLayout={true}
-          content={
-            <div>
-              <Image src={pieChart} alt={""} />
-            </div>
-          }
+          content={<PieChart data= {co2ChartData} />}
+          //content ={<Image src={pieChart} alt={""} />} //using image
           data={researchData.savedCo2InTons}
           text1={"ReStore has saved"}
           text2={"tons of CO2 since 2019!"}
