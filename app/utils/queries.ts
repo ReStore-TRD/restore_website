@@ -48,6 +48,10 @@ export const GET_RESEARCH_DATA_QUERY = gql`
       volunteerHoursWorkedLastYear
       volunteerHoursWorkedThisYear
       totalVoluntaryHours
+      volunteerHoursByYear {
+        year
+        hours
+      }
     }
   }
 `;
