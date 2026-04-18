@@ -42,7 +42,7 @@ export const GET_RESEARCH_DATA_QUERY = gql`
   query GetResearchDataQuery {
     allResearches {
       id
-      numbeOfVolunteers
+      numberOfVolunteers
       savedCo2InTons
       volunteerHoursWorked2023
       volunteerHoursWorkedLastYear
