@@ -24,6 +24,9 @@ export interface ResearchData {
     year: number;
     hours: number;
   }[];
+  savedCo2InTons: number;
+  numberOfVolunteers: number;
+  totalVoluntaryHours: number;
 }
 
 export interface VolunteerQuote {
