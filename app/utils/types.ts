@@ -20,13 +20,13 @@ export interface CarouselImage {
 }
 
 export interface ResearchData {
-  id: string;
-  numbeOfVolunteers?: number;
-  savedCo2InTons?: number;
-  volunteerHoursWorkedLastYear?: number;
-  volunteerHoursWorkedThisYear?: number;
-  volunteerHoursWorked2023?: number;
-  totalVoluntaryHours?: number;
+  volunteerHoursByYear: {
+    year: number;
+    hours: number;
+  }[];
+  savedCo2InTons: number;
+  numberOfVolunteers: number;
+  totalVoluntaryHours: number;
 }
 
 export interface VolunteerQuote {

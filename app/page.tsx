@@ -143,7 +143,7 @@ export default async function Home() {
               <Image src={volunteersMap} alt={""} />
             </div>
           }
-          data={researchData.numbeOfVolunteers}
+          data={researchData.numberOfVolunteers}
           text1={"We are currently"}
           text2={"volunteers, and counting!"}
         />

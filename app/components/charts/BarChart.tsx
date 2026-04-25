@@ -1,22 +1,31 @@
 "use client";
 import { ResearchData } from "@/app/utils/types";
-import { BarChart } from "@mui/x-charts/BarChart";
+import dynamic from "next/dynamic";
+
+const BarChart = dynamic(
+  () => import("@mui/x-charts/BarChart").then((mod) => mod.BarChart),
+  { ssr: false }
+);
+
 
 interface BasicBarsProps {
   data: ResearchData;
 }
-
+  
 export default function BasicBars({ data }: BasicBarsProps) {
+  const chartData = data?.volunteerHoursByYear || [];
   return (
     <BarChart
-      xAxis={[{ scaleType: "band", data: ["2023", "2024", "2025"] }]}
+      height={300}
+      xAxis={[
+        {
+          scaleType: "band",
+          data: chartData.map((item) => item.year),
+        },
+      ]}
       series={[
         {
-          data: [
-            data?.volunteerHoursWorked2023 ?? 0,
-            data?.volunteerHoursWorkedLastYear ?? 0,
-            data?.volunteerHoursWorkedThisYear ?? 0,
-          ],
+          data: chartData.map((item) => item.hours),
           color: "#ed0965",
         },
       ]}
