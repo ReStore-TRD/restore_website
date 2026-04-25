@@ -1,7 +1,7 @@
 import Image from "next/image";
 import topLeft from "../assets/about_page/background/top-left.svg";
 import middle from "../assets/about_page/background/middle.svg";
-import sustainabilityGoals from "../assets/about_page/sustainability_goals.png";
+import sustainabilityGoals from "../assets/about_page/SDG-2026S.png";
 import EmblaCarousel from "../components/PhotoCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 import "../image_carousel.css";

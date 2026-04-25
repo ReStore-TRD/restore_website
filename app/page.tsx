@@ -11,7 +11,7 @@ import VolunteerButton from "./components/VolunteerButton";
 import heroRight from "./assets/landing_page/hero-right-old.svg";
 import heroLeft from "./assets/landing_page/hero-left2.svg";
 import heroRightMobile from "./assets/landing_page/hero-right-mobile2.svg";
-import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
+import headerTextMobile from "./assets/landing_page/hero-slogan-v2025-black-pink.svg";
 import BasicBars from "./components/charts/BarChart";
 import { performRequest } from "./utils/fetcher";
 import { GET_CO2_PIE_CHART_DATA_QUERY, GET_RESEARCH_DATA_QUERY, GET_VOLUNTEER_QUOTES} from "./utils/queries";
