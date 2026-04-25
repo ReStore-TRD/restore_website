@@ -14,7 +14,6 @@ interface BasicBarsProps {
   
 export default function BasicBars({ data }: BasicBarsProps) {
   const chartData = data?.volunteerHoursByYear || [];
-  console.log("ResearchData:", data);
   return (
     <BarChart
       height={300}
