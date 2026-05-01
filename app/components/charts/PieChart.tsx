@@ -1,19 +1,3 @@
-// hardcoded data for testing purposes
-{/*interface PieChartProps {
-    data?: { label: string; value: number; color: string }[];
-  }
-  
-const defaultData = [
-    { label: "Furniture", value: 46, color: "#ED0965" },
-    { label: "Kitchen", value: 10, color: "#f4cccc" },
-    { label: "Bikes", value: 4, color: "#b7b7b7" },
-    { label: "Others", value: 3, color: "#98064e" },
-    { label: "Beddings", value: 8, color: "#cfe2f3" },
-    { label: "Office", value: 28, color: "#ffd966" },
-  ];
-*/}
-
-
 import { CategoryItem } from "@/app/utils/types";
 
 interface PieChartProps {

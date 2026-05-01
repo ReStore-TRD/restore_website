@@ -1,5 +1,4 @@
 import Image from "next/image";
-import someImage from "./assets/landing_page/fromfor.jpg";
 import someImage2 from "./assets/landing_page/tables.jpg";
 import someImage3 from "./assets/landing_page/kitchen.jpg";
 import bottomLeft from "./assets/landing_page/bottom-left.svg";
@@ -15,9 +14,8 @@ import headerTextMobile from "./assets/landing_page/hero-text-mobile.svg";
 import BasicBars from "./components/charts/BarChart";
 import { performRequest } from "./utils/fetcher";
 import { GET_CO2_PIE_CHART_DATA_QUERY, GET_RESEARCH_DATA_QUERY, GET_VOLUNTEER_QUOTES} from "./utils/queries";
-import { ResearchData, VolunteerQuote, PieChartData, CategoryItem  } from "./utils/types";
+import { ResearchData, VolunteerQuote, CategoryItem  } from "./utils/types";
 import volunteersMap from "./assets/landing_page/infographics/volunteers-map.svg";
-//import pieChart from "./assets/landing_page/infographics/pie-chart-new-font.svg";
 import QuoteCycle from "./components/Quote";
 import ButtonHover from "./assets/navigation_bar/join_us.svg"
 import PieChart from "./components/charts/PieChart";
