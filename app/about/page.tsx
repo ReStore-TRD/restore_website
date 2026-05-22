@@ -75,7 +75,7 @@ async function About() {
             </p>
           </div>
           <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer">
-            <Image src={sustainabilityGoals} alt={""} className="pb-10" />
+            <Image src={sustainabilityGoals} title={"UN Sustainable Development Goals"} alt={"UN Sustainable Development Goals"} className="pb-10" />
           </a>
           <div className="md:h-48 h-56">
             <QuoteCycle quotes={quotes} />
