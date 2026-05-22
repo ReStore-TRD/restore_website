@@ -74,8 +74,9 @@ async function About() {
               We work to keep a friendly and welcoming environment that inspires a sense of belonging and responsibility among everyone involved.
             </p>
           </div>
-          <Image src={sustainabilityGoals} alt={""} className="pb-10" />
-
+          <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer">
+            <Image src={sustainabilityGoals} alt={""} className="pb-10" />
+          </a>
           <div className="md:h-48 h-56">
             <QuoteCycle quotes={quotes} />
           </div>

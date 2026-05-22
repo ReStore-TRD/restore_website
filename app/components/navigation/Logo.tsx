@@ -6,7 +6,7 @@ const Logo = () => {
     <div className="relative h-16 w-36 ">
       <Link href="/">
         <Image
-          src="/images/logos/logo.png"
+          src="/images/logos/logo.svg"
           alt="Logo"
           fill={true}
           objectFit="contain"
