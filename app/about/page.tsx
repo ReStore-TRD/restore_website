@@ -64,7 +64,7 @@ async function About() {
           <div>
             <h2 className="mb-6">Our goals</h2>
             <p>
-              ReStore is built on three core values: sustainability, friendliness, and inclusivity.
+              ReStore is built on four core values: sustainability, friendliness, inclusivity and fairness.
               We are committed to working together towards a greener future. Waste not, want not!
               By encouraging and facilitating the reuse of items students need, from furniture to bikes, 
               we aim to reduce the need for purchasing new ones and thereby minimize emissions. 
