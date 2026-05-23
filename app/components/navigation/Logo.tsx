@@ -1,15 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const Logo = () => {
   return (
     <div className="relative h-16 w-36 ">
       <Link href="/">
-        <Image
-          src="/images/logos/logo.png"
+        <img
+          src="/images/logos/logo.svg"
           alt="Logo"
-          fill={true}
-          objectFit="contain"
+          className="w-full h-full object-contain"
         />
       </Link>
     </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import topLeft from "../assets/about_page/background/top-left.svg";
 import middle from "../assets/about_page/background/middle.svg";
-import sustainabilityGoals from "../assets/about_page/sustainability_goals.png";
+import sustainabilityGoals from "../assets/about_page/SDG-2026S.png";
 import EmblaCarousel from "../components/PhotoCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 import "../image_carousel.css";
@@ -64,7 +64,7 @@ async function About() {
           <div>
             <h2 className="mb-6">Our goals</h2>
             <p>
-              ReStore is built on three core values: sustainability, friendliness, and inclusivity.
+              ReStore is built on four core values: sustainability, friendliness, inclusivity and fairness.
               We are committed to working together towards a greener future. Waste not, want not!
               By encouraging and facilitating the reuse of items students need, from furniture to bikes, 
               we aim to reduce the need for purchasing new ones and thereby minimize emissions. 
@@ -74,8 +74,9 @@ async function About() {
               We work to keep a friendly and welcoming environment that inspires a sense of belonging and responsibility among everyone involved.
             </p>
           </div>
-          <Image src={sustainabilityGoals} alt={""} className="pb-10" />
-
+          <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer">
+            <Image src={sustainabilityGoals} title={"UN Sustainable Development Goals"} alt={"UN Sustainable Development Goals"} className="pb-10" />
+          </a>
           <div className="md:h-48 h-56">
             <QuoteCycle quotes={quotes} />
           </div>
