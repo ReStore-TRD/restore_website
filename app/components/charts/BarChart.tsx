@@ -29,7 +29,6 @@ export default function BasicBars({ data }: BasicBarsProps) {
           color: "#ed0965",
         },
       ]}
-      tooltip={{ trigger: "none" }}
     />
   );
 }
