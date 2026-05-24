@@ -1,26 +1,7 @@
-import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import sitLogo from "../../assets/logos/sit.svg";
 import instagramLogo from "../../assets/icons/instagram.svg";
 import facebookLogo from "../../assets/icons/facebook.svg";
-
-const items = [
-  {
-    name: "Instagram",
-    icon: FaInstagram,
-    link: "https://www.instagram.com/restore_trd",
-  },
-  {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://www.facebook.com/ReStore.TRD",
-  },
-  {
-    name: "LinkedIn",
-    icon: FaLinkedinIn,
-    link: "https://www.linkedin.com/company/restore-trd",
-  },
-];
 
 const Footer = () => {
   return (
