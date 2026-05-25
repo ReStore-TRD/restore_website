@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-import { animated, useSpring } from "react-spring";
+import { animated, useSpring } from "@react-spring/web";
 import { StructuredText } from "react-datocms/structured-text";
 import dropdownArrow from "../../assets/faq_page/dropdown-arrow.svg";
 import Image from "next/image";

@@ -42,13 +42,6 @@ export interface CategoryItem {
   color: string;
 }
 
-
-export interface CategoryItem {
-  label: string;
-  value: number;
-  color: string;
-}
-
 export interface PieChartData {
   chartData: CategoryItem[];
 }

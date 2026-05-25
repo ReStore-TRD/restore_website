@@ -1,23 +1,20 @@
 import Image from "next/image";
-import someImage from "./assets/landing_page/fromfor.jpg";
 import someImage2 from "./assets/landing_page/tables.jpg";
 import someImage3 from "./assets/landing_page/kitchen.jpg";
-import bottomLeft from "./assets/landing_page/bottom-left.svg";
-import bottomRight from "./assets/landing_page/bottom-right.svg";
-import midLeft from "./assets/landing_page/mid-left.svg";
+import bottomLeft from "./assets/landing_page/background/bottom-left.svg";
+import bottomRight from "./assets/landing_page/background/bottom-right.svg";
+import midLeft from "./assets/landing_page/background/mid-left.svg";
 import ContentSection from "./components/ContentSection";
 import InfoGraphic from "./components/InfoGraphic";
 import VolunteerButton from "./components/VolunteerButton";
-import heroRight from "./assets/landing_page/hero-right-old.svg";
-import heroLeft from "./assets/landing_page/hero-left2.svg";
-import heroRightMobile from "./assets/landing_page/hero-right-mobile2.svg";
-import headerTextMobile from "./assets/landing_page/hero-slogan-v2025-black-pink.svg";
+import heroRight from "./assets/landing_page/background/hero-right.svg";
+import heroLeft from "./assets/landing_page/background/hero-left.svg";
+import headerTextSlogan from "./assets/landing_page/background/hero-text-slogan.svg";
 import BasicBars from "./components/charts/BarChart";
 import { performRequest } from "./utils/fetcher";
 import { GET_CO2_PIE_CHART_DATA_QUERY, GET_RESEARCH_DATA_QUERY, GET_VOLUNTEER_QUOTES} from "./utils/queries";
-import { ResearchData, VolunteerQuote, PieChartData, CategoryItem  } from "./utils/types";
+import { ResearchData, VolunteerQuote, CategoryItem  } from "./utils/types";
 import volunteersMap from "./assets/landing_page/infographics/volunteers-map.svg";
-//import pieChart from "./assets/landing_page/infographics/pie-chart-new-font.svg";
 import QuoteCycle from "./components/Quote";
 import ButtonHover from "./assets/navigation_bar/join_us.svg"
 import PieChart from "./components/charts/PieChart";
@@ -51,7 +48,7 @@ export default async function Home() {
       <div className="flex flex-col w-full mb-24 aspect-square md:aspect-auto md:h-[90vh] ">
         <div className="flex w-2/3 md:w-1/2 mt-6 md:mt-10 ml-8 md:ml-0 mr-16 mb-0 aspect-square sm:aspect-auto h-40 md:h-80">
           <Image
-            src={headerTextMobile}
+            src={headerTextSlogan}
             alt={""}
             layout="responsive"
             objectFit="contain"
@@ -72,12 +69,7 @@ export default async function Home() {
       <Image
         src={heroRight}
         alt={""}
-        className="hidden sm:block -z-50 absolute sm:-top-28 md:-top-20 right-0 mix-blend-multiply line-animation"
-      />
-      <Image
-        src={heroRightMobile}
-        alt={""}
-        className="block sm:hidden  -z-50 absolute -top-20 right-0  mix-blend-multiply line-animation"
+        className="block -z-50 absolute -top-20 sm:-top-28 md:-top-20 right-0 mix-blend-multiply line-animation"
       />
 
       <div className="w-full z-50 flex flex-col items-center gap-20 lg:gap-32 px-10 lg:px-20 ">
