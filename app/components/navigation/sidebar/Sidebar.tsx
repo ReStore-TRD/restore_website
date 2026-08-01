@@ -50,8 +50,8 @@ function Sidebar({ toggleSidebar, isOpen }: SidebarProps) {
             <Link href="/about" onClick={() => toggleSidebar()}>
               About
             </Link>
-            <Link href="/projects" onClick={() => toggleSidebar()}>
-              Projects
+            <Link href="/teams" onClick={() => toggleSidebar()}>
+              Our Teams
             </Link>
             <Link href="/faq" onClick={() => toggleSidebar()}>
               FAQ

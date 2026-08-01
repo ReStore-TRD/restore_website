@@ -25,11 +25,11 @@ const Navbar = () => {
                 isActiveRoute={pathName.includes("/about")}
               />
               <NavigationItem
-                href="/projects"
-                text="Projects"
+                href="/teams"
+                text="Our Teams"
                 imageSrc={ProjectLine}
                 altText=""
-                isActiveRoute={pathName.includes("/projects")}
+                isActiveRoute={pathName.includes("/teams")}
               />
               <NavigationItem
                 href="/faq"
