@@ -1,5 +1,8 @@
 .carousel {
   margin: auto;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   --slide-height: 30rem;
   --slide-spacing: 1rem;
   --slide-size: 75%;
@@ -27,6 +30,8 @@
 }
 
 .carousel__viewport {
+  width: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 .carousel__container {
@@ -38,6 +43,7 @@
 .carousel__slide {
   flex: 0 0 var(--slide-size);
   min-width: 0;
+  box-sizing: border-box;
   padding-left: var(--slide-spacing);
 }
 .carousel__slide__number {
