@@ -35,7 +35,7 @@ function ProjectsContent({ projectGroups }: ProjectsContentProps) {
     <div className=" md:px-10">
       <div className="grid grid-flow-cols-5 md:grid-flow-rows-3 grid-flow-rows-4 justify-center">
         <h1 className="text-4xl font-medium col-start-2 col-span-2 pb-28 ml-6 mt-16">
-          Our Projects
+          Our Teams
         </h1>
         <div className="hidden md:flex row-start-2  flex-col gap-4 items-center ">
           {projectGroups.map((group, index) => {
