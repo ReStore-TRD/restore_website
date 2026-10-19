@@ -11,7 +11,7 @@ function VolunteerButton() {
           <div className="text-white hover:opacity-80 text-xs">
             <PrimaryButton
             title="Volunteer with us!"
-            callBack={() => window.open("https://linktr.ee/restore.trd", "_blank")}
+            callBack={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSf9siRxrDkx4Q-dW-S0hgw1-ih5Z_yCtVhV-KCF32bB4MaamQ/viewform", "_blank")}
             />
           </div>
         </div>
