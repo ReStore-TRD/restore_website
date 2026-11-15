@@ -5,6 +5,10 @@ import { Montserrat } from "next/font/google";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import { VolunteerSignupProvider } from "./components/VolunteerButton";
+import { performRequest } from "./utils/fetcher";
+import { GET_VOLUNTEER_SIGNUP_QUERY } from "./utils/queries";
+import type { VolunteerSignup } from "./utils/types";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -16,18 +20,27 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: ReactNode;
 }) {
+  const response: { volunteerSignup: VolunteerSignup | null } =
+    await performRequest({
+      query: GET_VOLUNTEER_SIGNUP_QUERY,
+      revalidate: 0,
+    });
+  const linkUrl = response.volunteerSignup?.linkUrl ?? null;
+
   return (
     <html lang="en">
       <body
         className={`${montserrat.className} text-justify overflow-x-hidden`}
       >
-        <Navigation />
-        {children}
+        <VolunteerSignupProvider linkUrl={linkUrl}>
+          <Navigation />
+          {children}
+        </VolunteerSignupProvider>
         <Analytics />
         <Footer />
       </body>

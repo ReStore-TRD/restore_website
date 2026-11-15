@@ -1,3 +1,7 @@
+export interface VolunteerSignup {
+  linkUrl: string | null;
+}
+
 export interface ProjectGroup {
   projectName: string;
   projectDescription: string;

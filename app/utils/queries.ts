@@ -1,5 +1,13 @@
 import { gql } from "graphql-request";
 
+export const GET_VOLUNTEER_SIGNUP_QUERY = gql`
+  query GetVolunteerSignupQuery {
+    volunteerSignup {
+      linkUrl
+    }
+  }
+`;
+
 export const GET_ALL_PROJECTS_QUERY = gql`
   query GetAllProjectsQuery {
     allProjectgroups {
