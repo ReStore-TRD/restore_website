@@ -1,3 +1,23 @@
+export interface VolunteerSignup {
+  linkUrl: string | null;
+}
+
+export interface AboutSection {
+  id: string;
+  sectionTitle: string | null;
+  sectionText: string | null;
+  sectionImage: {
+    id: string;
+    imagelink: string | null;
+    image: {
+      url: string;
+      alt: string | null;
+      width: number | null;
+      height: number | null;
+    } | null;
+  }[];
+}
+
 export interface ProjectGroup {
   projectName: string;
   projectDescription: string;

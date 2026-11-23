@@ -1,5 +1,35 @@
 import { gql } from "graphql-request";
 
+export const GET_VOLUNTEER_SIGNUP_QUERY = gql`
+  query GetVolunteerSignupQuery {
+    volunteerSignup {
+      linkUrl
+    }
+  }
+`;
+
+export const GET_ALL_ABOUT_SECTIONS_QUERY = gql`
+  query GetAllAboutSectionsQuery {
+    aboutpage {
+      aboutsection {
+        id
+        sectionTitle
+        sectionText
+        sectionImage {
+          id
+          imagelink
+          image {
+            url
+            alt
+            width
+            height
+          }
+        }
+      }
+    }
+  }
+`;
+
 export const GET_ALL_PROJECTS_QUERY = gql`
   query GetAllProjectsQuery {
     allProjectgroups {

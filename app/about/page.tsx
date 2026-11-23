@@ -1,13 +1,12 @@
 import Image from "next/image";
 import topLeft from "../assets/about_page/background/top-left.svg";
 import middle from "../assets/about_page/background/middle.svg";
-import sustainabilityGoals from "../assets/about_page/SDG-2026S.png";
 import EmblaCarousel from "../components/PhotoCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 import "../image_carousel.css";
 import { performRequest } from "../utils/fetcher";
-import { GET_CAROUSEL_IMAGES, GET_VOLUNTEER_QUOTES } from "../utils/queries";
-import { CarouselImage, VolunteerQuote } from "../utils/types";
+import { GET_CAROUSEL_IMAGES, GET_VOLUNTEER_QUOTES, GET_ALL_ABOUT_SECTIONS_QUERY } from "../utils/queries";
+import { AboutSection, CarouselImage, VolunteerQuote } from "../utils/types";
 import QuoteCycle from "../components/Quote";
 
 async function About() {
@@ -21,7 +20,15 @@ async function About() {
     revalidate: 30,
   });
 
+  const aboutSectionsResponse = await performRequest({
+    query: GET_ALL_ABOUT_SECTIONS_QUERY,
+    revalidate: 30,
+  });
+
+
   const quotes: VolunteerQuote[] = quotesResponse.allVolunteerQuotes;
+  
+  const aboutSections: AboutSection[] = aboutSectionsResponse.aboutpage?.aboutsection ?? [];
 
   const imageUrls: CarouselImage[] = res.allImageGalleries[0].carouselContent;
 
@@ -42,41 +49,33 @@ async function About() {
       <div className="w-full flex justify-center">
         <div className="flex flex-col gap-16 px-8 md:w-[50vw] pb-10">
           <h1 className="mb-0 mt-16 text-4xl font-medium">About Us</h1>
-          <div>
-            <h2 className="mb-6">Our story</h2>
-            <p>
-              ReStore is a volunteer organization with roots in Trondheim, started in February 2019 by NTNU students. 
-              At ReStore, we work towards upcycling goods, with the goal of
-              creating a greener and more inclusive society. In May 2019, in 
-              collaboration with Sit Bolig, ReStore was set up in an old
-              kindergarten in the Moholt student village and accepted its first
-              donations from outgoing students. At the end of each semester,
-              outgoing students discard tonnes of usable goods when they return
-              home from exchange. Every January and August, new students arrive
-              and need to buy new housewares- the same types that were thrown
-              away only months before. This mismatch in timing between supply
-              and demand perpetuates a cycle of waste. ReStore bridges this gap
-              and facilitates the reuse of goods by storing donated goods for
-              incoming students.
-            </p>
-          </div>
+          {aboutSections.map((section) => (
+            <section key={section.id}>
+              {section.sectionTitle && <h2 className="mb-6">{section.sectionTitle}</h2>}
+              {section.sectionText && <p className="whitespace-pre-line">{section.sectionText}</p>}
+              {section.sectionImage.map((block) => {
+                if (!block.image) return null;
 
-          <div>
-            <h2 className="mb-6">Our goals</h2>
-            <p>
-              ReStore is built on four core values: sustainability, friendliness, inclusivity and fairness.
-              We are committed to working together towards a greener future. Waste not, want not!
-              By encouraging and facilitating the reuse of items students need, from furniture to bikes, 
-              we aim to reduce the need for purchasing new ones and thereby minimize emissions. 
-              This also helps to raise awareness about the potential for items to have multiple lifetimes, 
-              inspiring more people to donate unwanted items and opt for second-hand alternatives instead of buying new ones.
-              What makes this possible is our teamwork. ReStore is like one big family of volunteers from different countries who join to make an impact. 
-              We work to keep a friendly and welcoming environment that inspires a sense of belonging and responsibility among everyone involved.
-            </p>
-          </div>
-          <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer">
-            <Image src={sustainabilityGoals} title={"UN Sustainable Development Goals"} alt={"UN Sustainable Development Goals"} className="pb-10" />
-          </a>
+                const image = (
+                  <Image
+                    src={block.image.url}
+                    alt={block.image.alt ?? section.sectionTitle ?? ""}
+                    width={block.image.width ?? 800}
+                    height={block.image.height ?? 600}
+                    className="mt-16 pb-10"
+                  />
+                );
+
+                return block.imagelink ? (
+                  <a key={block.id} href={block.imagelink} target="_blank" rel="noopener noreferrer">
+                    {image}
+                  </a>
+                ) : (
+                  <div key={block.id}>{image}</div>
+                );
+              })}
+            </section>
+          ))}
           <div className="md:h-48 h-56">
             <QuoteCycle quotes={quotes} />
           </div>
